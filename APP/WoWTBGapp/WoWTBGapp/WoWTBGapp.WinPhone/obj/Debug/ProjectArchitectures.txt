@@ -1,0 +1,2 @@
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\WoWTBGapp.WinPhone.csproj;neutral
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp\WoWTBGapp.csproj;neutral
