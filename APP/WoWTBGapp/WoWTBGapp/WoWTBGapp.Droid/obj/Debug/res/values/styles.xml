@@ -1,0 +1,3 @@
+<resources><color name="xamarin_blue">#3498DB</color><color name="Navigation_Bar">#006600</color><color name="SplashScreenBackgroundColor">#003300</color><style name="Theme.Splash" parent="android:Theme"><item name="android:windowBackground">
+      @drawable/splashscreen
+    </item><item name="android:windowNoTitle">true</item><item name="android:windowIsTranslucent">false</item><item name="android:windowIsFloating">false</item><item name="android:backgroundDimEnabled">true</item></style></resources>
