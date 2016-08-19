@@ -18,7 +18,6 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGap
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp\obj\Debug\WoWTBGapp.Views.ItemCardsView.xaml.g.cs
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp\obj\Debug\WoWTBGapp.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp\obj\Debug\WoWTBGapp.pdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp\obj\Debug\WoWTBGapp.csprojResolveAssemblyReference.cache
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp\obj\Debug\WoWTBGapp.dll.mdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp\bin\Debug\WoWTBGapp.dll.mdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp\obj\Debug\WoWTBGapp.dll.mdb

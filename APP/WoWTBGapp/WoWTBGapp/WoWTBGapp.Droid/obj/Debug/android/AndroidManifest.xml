@@ -6,8 +6,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:label="WoWTBGapp" android:icon="@drawable/logowow" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/logowow" android:label="WoWTBGapp" android:name="md5dda528d3f2835e78f3b20332e7bf0b93.MainActivity" />
-    <activity android:configChanges="orientation|screenSize" android:label="" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5a88fb06ee5cc6faa14d5cf946c9697c0.SplashScreen">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/logowow" android:label="WoWTBGapp" android:launchMode="singleTask" android:name="md5dda528d3f2835e78f3b20332e7bf0b93.MainActivity" />
+    <activity android:icon="@drawable/logowow" android:label="WoWTBGapp" android:theme="@style/SplashTheme" android:name="md5a88fb06ee5cc6faa14d5cf946c9697c0.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

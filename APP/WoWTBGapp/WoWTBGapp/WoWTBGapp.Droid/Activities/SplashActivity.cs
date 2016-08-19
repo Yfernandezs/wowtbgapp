@@ -13,9 +13,8 @@ using Android.Content.PM;
 
 namespace WoWTBGapp.Droid.Activities
 {
-    [Activity(Label = "", MainLauncher = true, NoHistory = true, Theme = "@style/Theme.Splash",
-    ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class SplashScreen : Activity
+    [Activity(Label = "WoWTBGapp", Icon = "@drawable/logoWoW", Theme = "@style/SplashTheme", MainLauncher = true)]
+    public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -24,7 +23,10 @@ namespace WoWTBGapp.Droid.Activities
             // Create your application here
 
             var intent = new Intent(this, typeof(MainActivity));
+
             StartActivity(intent);
+
+            Finish();
         }
     }
 }

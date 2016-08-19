@@ -1,7 +1,7 @@
 package md5a88fb06ee5cc6faa14d5cf946c9697c0;
 
 
-public class SplashScreen
+public class SplashActivity
 	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
@@ -12,15 +12,15 @@ public class SplashScreen
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("WoWTBGapp.Droid.Activities.SplashScreen, WoWTBGapp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", SplashScreen.class, __md_methods);
+		mono.android.Runtime.register ("WoWTBGapp.Droid.Activities.SplashActivity, WoWTBGapp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", SplashActivity.class, __md_methods);
 	}
 
 
-	public SplashScreen () throws java.lang.Throwable
+	public SplashActivity () throws java.lang.Throwable
 	{
 		super ();
-		if (getClass () == SplashScreen.class)
-			mono.android.TypeManager.Activate ("WoWTBGapp.Droid.Activities.SplashScreen, WoWTBGapp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+		if (getClass () == SplashActivity.class)
+			mono.android.TypeManager.Activate ("WoWTBGapp.Droid.Activities.SplashActivity, WoWTBGapp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

@@ -2194,24 +2194,26 @@ containing a value of this type.
         public static int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0c0007;
     }
     public static final class color {
-        public static int Navigation_Bar=0x7f0b0049;
-        public static int SplashScreenBackgroundColor=0x7f0b004a;
-        public static int abc_background_cache_hint_selector_material_dark=0x7f0b004b;
-        public static int abc_background_cache_hint_selector_material_light=0x7f0b004c;
-        public static int abc_color_highlight_material=0x7f0b004d;
+        public static int Navigation_Bar=0x7f0b0053;
+        public static int SplashScreenBackgroundColor=0x7f0b0054;
+        public static int abc_background_cache_hint_selector_material_dark=0x7f0b0055;
+        public static int abc_background_cache_hint_selector_material_light=0x7f0b0056;
+        public static int abc_color_highlight_material=0x7f0b0057;
         public static int abc_input_method_navigation_guard=0x7f0b0004;
-        public static int abc_primary_text_disable_only_material_dark=0x7f0b004e;
-        public static int abc_primary_text_disable_only_material_light=0x7f0b004f;
-        public static int abc_primary_text_material_dark=0x7f0b0050;
-        public static int abc_primary_text_material_light=0x7f0b0051;
-        public static int abc_search_url_text=0x7f0b0052;
+        public static int abc_primary_text_disable_only_material_dark=0x7f0b0058;
+        public static int abc_primary_text_disable_only_material_light=0x7f0b0059;
+        public static int abc_primary_text_material_dark=0x7f0b005a;
+        public static int abc_primary_text_material_light=0x7f0b005b;
+        public static int abc_search_url_text=0x7f0b005c;
         public static int abc_search_url_text_normal=0x7f0b0005;
         public static int abc_search_url_text_pressed=0x7f0b0006;
         public static int abc_search_url_text_selected=0x7f0b0007;
-        public static int abc_secondary_text_material_dark=0x7f0b0053;
-        public static int abc_secondary_text_material_light=0x7f0b0054;
+        public static int abc_secondary_text_material_dark=0x7f0b005d;
+        public static int abc_secondary_text_material_light=0x7f0b005e;
+        public static int accent=0x7f0b004b;
         public static int accent_material_dark=0x7f0b0008;
         public static int accent_material_light=0x7f0b0009;
+        public static int activated_color=0x7f0b0050;
         public static int background_floating_material_dark=0x7f0b000a;
         public static int background_floating_material_light=0x7f0b000b;
         public static int background_material_dark=0x7f0b000c;
@@ -2242,12 +2244,14 @@ containing a value of this type.
         public static int dim_foreground_disabled_material_light=0x7f0b0017;
         public static int dim_foreground_material_dark=0x7f0b0018;
         public static int dim_foreground_material_light=0x7f0b0019;
+        public static int divider=0x7f0b004f;
         public static int foreground_material_dark=0x7f0b001a;
         public static int foreground_material_light=0x7f0b001b;
         public static int highlighted_text_material_dark=0x7f0b001c;
         public static int highlighted_text_material_light=0x7f0b001d;
         public static int hint_foreground_material_dark=0x7f0b001e;
         public static int hint_foreground_material_light=0x7f0b001f;
+        public static int icons=0x7f0b004e;
         public static int material_blue_grey_800=0x7f0b0020;
         public static int material_blue_grey_900=0x7f0b0021;
         public static int material_blue_grey_950=0x7f0b0022;
@@ -2260,27 +2264,35 @@ containing a value of this type.
         public static int material_grey_800=0x7f0b0029;
         public static int material_grey_850=0x7f0b002a;
         public static int material_grey_900=0x7f0b002b;
+        /** Get colors from: http://www.materialpalette.com/
+         */
+        public static int primary=0x7f0b0048;
+        public static int primary_dark=0x7f0b0049;
         public static int primary_dark_material_dark=0x7f0b002c;
         public static int primary_dark_material_light=0x7f0b002d;
+        public static int primary_light=0x7f0b004a;
         public static int primary_material_dark=0x7f0b002e;
         public static int primary_material_light=0x7f0b002f;
+        public static int primary_text=0x7f0b004c;
         public static int primary_text_default_material_dark=0x7f0b0030;
         public static int primary_text_default_material_light=0x7f0b0031;
         public static int primary_text_disabled_material_dark=0x7f0b0032;
         public static int primary_text_disabled_material_light=0x7f0b0033;
         public static int ripple_material_dark=0x7f0b0034;
         public static int ripple_material_light=0x7f0b0035;
+        public static int secondary_text=0x7f0b004d;
         public static int secondary_text_default_material_dark=0x7f0b0036;
         public static int secondary_text_default_material_light=0x7f0b0037;
         public static int secondary_text_disabled_material_dark=0x7f0b0038;
         public static int secondary_text_disabled_material_light=0x7f0b0039;
         public static int switch_thumb_disabled_material_dark=0x7f0b003a;
         public static int switch_thumb_disabled_material_light=0x7f0b003b;
-        public static int switch_thumb_material_dark=0x7f0b0055;
-        public static int switch_thumb_material_light=0x7f0b0056;
+        public static int switch_thumb_material_dark=0x7f0b005f;
+        public static int switch_thumb_material_light=0x7f0b0060;
         public static int switch_thumb_normal_material_dark=0x7f0b003c;
         public static int switch_thumb_normal_material_light=0x7f0b003d;
-        public static int xamarin_blue=0x7f0b0048;
+        public static int window_background=0x7f0b0051;
+        public static int xamarin_blue=0x7f0b0052;
     }
     public static final class dimen {
         public static int abc_action_bar_content_inset_material=0x7f060019;
@@ -2988,6 +3000,21 @@ containing a value of this type.
         public static int CardView=0x7f0a0017;
         public static int CardView_Dark=0x7f0a0019;
         public static int CardView_Light=0x7f0a001a;
+        /** 
+        Base application theme for API 21+. This theme completely replaces
+        MyTheme from BOTH res/values/styles.xml on API 21+ devices.
+    
+         */
+        public static int MyTheme=0x7f0a0172;
+        public static int MyTheme_ActionBar=0x7f0a0174;
+        /**  Base theme applied no matter what API 
+ Option to hide the drop shadow here
+    
+      <item name="actionBarStyle">@style/MyTheme.ActionBar</item>
+      <item name="android:windowContentOverlay">@null</item>
+    
+         */
+        public static int MyTheme_Base=0x7f0a0173;
         public static int Platform_AppCompat=0x7f0a0032;
         public static int Platform_AppCompat_Light=0x7f0a0033;
         public static int Platform_ThemeOverlay_AppCompat=0x7f0a0095;
@@ -3012,6 +3039,10 @@ containing a value of this type.
         public static int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0a004e;
         public static int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0a004f;
         public static int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0a0050;
+        public static int SplashTheme=0x7f0a0175;
+        /** <item name="android:windowNoTitle">true</item>
+         */
+        public static int SplashTheme_Base=0x7f0a0176;
         public static int TextAppearance_AppCompat=0x7f0a00d1;
         public static int TextAppearance_AppCompat_Body1=0x7f0a00d2;
         public static int TextAppearance_AppCompat_Body2=0x7f0a00d3;
@@ -3102,7 +3133,6 @@ containing a value of this type.
         public static int Theme_MediaRouter_Light=0x7f0a0001;
         public static int Theme_MediaRouter_Light_DarkControlPanel=0x7f0a0002;
         public static int Theme_MediaRouter_LightControlPanel=0x7f0a0003;
-        public static int Theme_Splash=0x7f0a0172;
         public static int ThemeOverlay_AppCompat=0x7f0a010e;
         public static int ThemeOverlay_AppCompat_ActionBar=0x7f0a010f;
         public static int ThemeOverlay_AppCompat_Dark=0x7f0a0110;

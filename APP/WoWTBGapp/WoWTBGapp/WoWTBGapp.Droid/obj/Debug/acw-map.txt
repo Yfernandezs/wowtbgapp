@@ -2,10 +2,10 @@ WoWTBGapp.Droid.MainActivity, WoWTBGapp.Droid;md5dda528d3f2835e78f3b20332e7bf0b9
 WoWTBGapp.Droid.MainActivity, WoWTBGapp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dda528d3f2835e78f3b20332e7bf0b93.MainActivity
 WoWTBGapp.Droid.MainActivity;md5dda528d3f2835e78f3b20332e7bf0b93.MainActivity
 wowtbgapp.droid.MainActivity;md5dda528d3f2835e78f3b20332e7bf0b93.MainActivity
-WoWTBGapp.Droid.Activities.SplashScreen, WoWTBGapp.Droid;md5a88fb06ee5cc6faa14d5cf946c9697c0.SplashScreen
-WoWTBGapp.Droid.Activities.SplashScreen, WoWTBGapp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a88fb06ee5cc6faa14d5cf946c9697c0.SplashScreen
-WoWTBGapp.Droid.Activities.SplashScreen;md5a88fb06ee5cc6faa14d5cf946c9697c0.SplashScreen
-wowtbgapp.droid.activities.SplashScreen;md5a88fb06ee5cc6faa14d5cf946c9697c0.SplashScreen
+WoWTBGapp.Droid.Activities.SplashActivity, WoWTBGapp.Droid;md5a88fb06ee5cc6faa14d5cf946c9697c0.SplashActivity
+WoWTBGapp.Droid.Activities.SplashActivity, WoWTBGapp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a88fb06ee5cc6faa14d5cf946c9697c0.SplashActivity
+WoWTBGapp.Droid.Activities.SplashActivity;md5a88fb06ee5cc6faa14d5cf946c9697c0.SplashActivity
+wowtbgapp.droid.activities.SplashActivity;md5a88fb06ee5cc6faa14d5cf946c9697c0.SplashActivity
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android;md52c2a61d8deb1f49fcf6497b6269d54e8.ImageCircleRenderer
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null;md52c2a61d8deb1f49fcf6497b6269d54e8.ImageCircleRenderer
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer;md52c2a61d8deb1f49fcf6497b6269d54e8.ImageCircleRenderer

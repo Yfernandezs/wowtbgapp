@@ -6,95 +6,120 @@
              
              Title="   Item Cards"
              BackgroundColor="White" >
-  <ListView
-        x:Name="ItemCardsList"
-        RowHeight="400"
-        BackgroundColor="White" >
+<ContentPage.Resources>
+  <ResourceDictionary>
+    <OnPlatform x:TypeArguments="x:Double" Android="16" iOS="16" WinPhone="13" x:Key="EvolveListItemTextStyleSize" />
 
-    <ListView.ItemTemplate>
-      <DataTemplate>
-        <ViewCell>
-          <Frame Margin="10" Padding="10" OutlineColor="Black" BackgroundColor="Black"  >
-           <Grid
-                BackgroundColor="White" >
-              <Grid.RowDefinitions>
-                <RowDefinition Height="70" />
-                <RowDefinition Height="56" />
+    <Style x:Key="EvolveListItemTextStyle" TargetType="Label" BaseResourceKey="ListItemTextStyle">
+      <Setter Property="FontSize" Value="{DynamicResource EvolveListItemTextStyleSize}" />
+      <Setter Property="TextColor" Value="#757575" />
+    </Style>
+
+  </ResourceDictionary>
+</ContentPage.Resources>
+  <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+       BackgroundColor="White">
+    
+    <ListView
+          x:Name="ItemCardsList"
+          HasUnevenRows ="true"
+          IsPullToRefreshEnabled="{Binding IsNotBusy}"
+          RefreshCommand="{Binding ForceRefreshCommand}"
+          IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+          IsVisible="{Binding IsNotBusy}"
+          AbsoluteLayout.LayoutFlags="All" 
+          AbsoluteLayout.LayoutBounds="0,0,1,1" >
+
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Frame Margin="10" Padding="5" OutlineColor="Black" BackgroundColor="Black"  >
+              <Grid
+                    ColumnSpacing="0"
+                    Padding="0">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="1*" />
+                  <!--<RowDefinition Height="56" />
                 <RowDefinition Height="1*" />
-                <RowDefinition Height="1*" />
-              </Grid.RowDefinitions>
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-              </Grid.ColumnDefinitions>
-              
-              <Label
-                  Grid.Row="0"
-                  Grid.Column="0"
-                  Grid.ColumnSpan="4"
-                  BackgroundColor="#007acc"
-                  VerticalOptions="Fill"
-                  HorizontalOptions="Fill" />
-             
-              <controls:CircleImage
+                <RowDefinition Height="1*" />-->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="66" />
+                  <ColumnDefinition Width="1*" />
+                  <ColumnDefinition Width="1*" />
+                  <ColumnDefinition Width="1*" />
+                  <ColumnDefinition Width="66" />
+                </Grid.ColumnDefinitions>
+
+                <Label
                     Grid.Row="0"
                     Grid.Column="0"
-                    BackgroundColor="Transparent"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="StartAndExpand"
-                    Source="{Binding TypeIconUrl}"
-                    Aspect="AspectFit"
-                    BorderThickness="1"
-                    BorderColor="#FFCC00" >
-                <controls:CircleImage.WidthRequest>
-                  <OnPlatform x:TypeArguments="x:Double"
-                    iOS="56"
-                    Android="56"
-                    WinPhone="44"/>
-                </controls:CircleImage.WidthRequest>
-                <controls:CircleImage.HeightRequest>
-                  <OnPlatform x:TypeArguments="x:Double"
+                    Grid.ColumnSpan="5"
+                    BackgroundColor="#0073e6"
+                    VerticalOptions="Fill"
+                    HorizontalOptions="Fill" />
+
+                <controls:CircleImage
+                      Grid.Row="0"
+                      Grid.Column="0"
+                      Margin="5"
+                      BackgroundColor="Transparent"
+                      VerticalOptions="CenterAndExpand"
+                      HorizontalOptions="CenterAndExpand"
+                      Source="{Binding TypeIconUrl}"
+                      Aspect="AspectFit"
+                      BorderThickness="2"
+                      BorderColor="#FFCC00" >
+                  <controls:CircleImage.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double"
                       iOS="56"
                       Android="56"
                       WinPhone="44"/>
-                </controls:CircleImage.HeightRequest>
-              </controls:CircleImage>
+                  </controls:CircleImage.WidthRequest>
+                  <controls:CircleImage.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double"
+                        iOS="56"
+                        Android="56"
+                        WinPhone="44"/>
+                  </controls:CircleImage.HeightRequest>
+                </controls:CircleImage>
 
-              <Label
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="3"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="{Binding Name}" />
+
+                <!--<Label
                   Grid.Row="0"
-                  Grid.Column="1"
-                  Grid.ColumnSpan="3"
-                  TextColor="Black" 
-                  FontAttributes="Bold" 
-                  BackgroundColor="Transparent"
-                  VerticalTextAlignment="Center" 
-                  HorizontalTextAlignment="Center"
-                  VerticalOptions="CenterAndExpand"
-                  HorizontalOptions="CenterAndExpand" 
-                  Text="{Binding Name}" />
-
-              <Label
-                  Grid.Row="1"
-                  Grid.Column="0"
-                  Grid.ColumnSpan="4"
+                  Grid.Column="4"
                   BackgroundColor="White"
                   VerticalOptions="Fill"
-                  HorizontalOptions="Fill" />
-             
-              <Image
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    Grid.ColumnSpan="2"
-                    BackgroundColor="Transparent"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Source="{Binding IconUrl}"
-                    Aspect="AspectFit" >
-             </Image> 
-             
-             <Label
+                  HorizontalOptions="Fill" />-->
+                <Frame
+                      Grid.Row="0"
+                      Grid.Column="4"
+                      Margin="5" 
+                      Padding="2" 
+                      OutlineColor="White"
+                      BackgroundColor="White"
+                      VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand" >
+                  <Image
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Source="{Binding IconUrl}"
+                        Aspect="AspectFit" >
+                  </Image>
+                </Frame>
+                <!--<Label
                   Grid.Row="2"
                   Grid.Column="0"
                   Grid.ColumnSpan="4"
@@ -112,94 +137,26 @@
                   BackgroundColor="White"
                   VerticalTextAlignment="Center" 
                   VerticalOptions="FillAndExpand"
-                  HorizontalOptions="FillAndExpand" />
+                  HorizontalOptions="FillAndExpand" />-->
 
-              <!--<ListView
-                  x:Name="CountersList"
-                  Grid.Row="2"
-                  Grid.ColumnSpan="3"
-                  BackgroundColor="Transparent"
-                  ItemsSource="{Binding Requirements}" >
-                <ListView.ItemTemplate>
-                  <DataTemplate>
-                    <ViewCell>
-                      <StackLayout
-                          VerticalOptions="FillAndExpand"
-                          Orientation="Horizontal"
-                          Spacing="10"
-                          Margin="5"
-                          Padding="10,0" >
-                          <Label TextColor="Black" Text="{Binding Name}" />
-                          <Label TextColor="Black" FontAttributes="Bold" Text="{Binding Value}" />
-                      </StackLayout>
-                    </ViewCell>
-                  </DataTemplate>
-                </ListView.ItemTemplate>
-              </ListView>-->
-              
-              <!--<controls:CircleImage
-                    Grid.Column="2"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand"
-                    Source="{Binding IconUrl}"
-                    Aspect="AspectFill"
-                    BorderThickness="1"
-                    BorderColor="#3C3C3C" >
-                <controls:CircleImage.WidthRequest>
-                  <OnPlatform x:TypeArguments="x:Double"
-                    iOS="64"
-                    Android="64"
-                    WinPhone="52"/>
-                </controls:CircleImage.WidthRequest>
-                <controls:CircleImage.HeightRequest>
-                  <OnPlatform x:TypeArguments="x:Double"
-                      iOS="64"
-                      Android="64"
-                      WinPhone="52"/>
-                </controls:CircleImage.HeightRequest>
-              </controls:CircleImage>-->
-
-              <!--<StackLayout VerticalOptions="CenterAndExpand">
-                <StackLayout
-                    VerticalOptions="Center"
-                    Orientation="Horizontal"
-                    Spacing="3"
-                    Padding="10,0">
-                
-                </StackLayout>
-
-                <StackLayout
-                    VerticalOptions="Center"
-                    Orientation="Horizontal"
-                    Spacing="3"
-                    Padding="10,0" >
-                  <Label TextColor="White" Text="ID:" />
-                  <Label TextColor="White" FontAttributes="Italic" Text="{Binding Identificacion}" />
-                </StackLayout>
-
-                <StackLayout
-                    VerticalOptions="Center"
-                    Orientation="Horizontal"
-                    Spacing="3"
-                    Padding="10,0" >
-                  <Label TextColor="White" Text="Teléfono:" />
-                  <Label TextColor="White" FontAttributes="Italic" Text="{Binding Telefono1}" />
-                </StackLayout>
-
-                <StackLayout
-                    VerticalOptions="Center"
-                    Orientation="Horizontal"
-                    Spacing="3"
-                    Padding="10,0" >
-                  <Label TextColor="White" Text="E-mail:" />
-                  <Label TextColor="White" FontAttributes="Italic" Text="{Binding Email}" />
-                </StackLayout>
-
-              </StackLayout>-->
-            </Grid>
+              </Grid>
             </Frame>
-        </ViewCell>
-      </DataTemplate>
-    </ListView.ItemTemplate>
-  </ListView>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <StackLayout IsVisible="{Binding IsBusy}"
+                  AbsoluteLayout.LayoutFlags="PositionProportional"
+                  AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+                  <StackLayout.Orientation>
+                  <OnPlatform x:TypeArguments="StackOrientation" iOS="Horizontal"/>
+                  </StackLayout.Orientation>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" >
+                <ActivityIndicator.Color>
+                    <OnPlatform x:TypeArguments="Color" Android="#00b300"/>
+                </ActivityIndicator.Color>
+            </ActivityIndicator>
+            <Label Text="Loading Item Cards..." HorizontalOptions="Center" Style="{DynamicResource EvolveListItemTextStyle}" />
+       </StackLayout>
+  </AbsoluteLayout>
 </ContentPage>
