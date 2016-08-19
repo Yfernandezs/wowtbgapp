@@ -29,7 +29,7 @@ namespace WoWTBGapp
 
             // Se crea un NavigationPage para poder movernos entre diferentes pantallas y le damos la primera pantalla que debe mostrar
             // junto con la definición de otras propiedades para lograr una apariencia similar en Android y iOS.
-            MainPage = new NavigationPage(new ItemCardsView()) { BarBackgroundColor = Color.FromHex("3498DB"), BarTextColor = Color.White };
+            MainPage = new NavigationPage(new ItemCardsView()) { BarBackgroundColor = Color.FromHex("009900"), BarTextColor = Color.White };
 
         }
 

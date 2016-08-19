@@ -1,5 +1,4 @@
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\API\wowtbgapp.api\wowtbgapp.api\bin\Release\wowtbgapp.api.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\API\wowtbgapp.api\wowtbgapp.api\bin\Release\wowtbgapp.api.pdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\API\wowtbgapp.api\wowtbgapp.api\obj\Release\wowtbgapp.api.csprojResolveAssemblyReference.cache
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\API\wowtbgapp.api\wowtbgapp.api\obj\Release\wowtbgapp.api.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\API\wowtbgapp.api\wowtbgapp.api\obj\Release\wowtbgapp.api.pdb

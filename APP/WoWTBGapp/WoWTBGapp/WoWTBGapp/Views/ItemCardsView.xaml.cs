@@ -45,7 +45,7 @@ namespace WoWTBGapp.Views
                 {
                     // Deserializamos los datos formato JSON obtenidos por el servicio Web en una colección de empleados.
                     var tempCards = JsonConvert.DeserializeObject<List<ItemCard>>(respuesta.DatosObtenidos);
-
+                    
                     ItemCards = new ObservableCollection<ItemCard>(tempCards);
                 }
                 catch //( Exception ex)

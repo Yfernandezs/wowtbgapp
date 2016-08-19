@@ -2194,20 +2194,22 @@ containing a value of this type.
         public static int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0c0007;
     }
     public static final class color {
-        public static int abc_background_cache_hint_selector_material_dark=0x7f0b0048;
-        public static int abc_background_cache_hint_selector_material_light=0x7f0b0049;
-        public static int abc_color_highlight_material=0x7f0b004a;
+        public static int Navigation_Bar=0x7f0b0049;
+        public static int SplashScreenBackgroundColor=0x7f0b004a;
+        public static int abc_background_cache_hint_selector_material_dark=0x7f0b004b;
+        public static int abc_background_cache_hint_selector_material_light=0x7f0b004c;
+        public static int abc_color_highlight_material=0x7f0b004d;
         public static int abc_input_method_navigation_guard=0x7f0b0004;
-        public static int abc_primary_text_disable_only_material_dark=0x7f0b004b;
-        public static int abc_primary_text_disable_only_material_light=0x7f0b004c;
-        public static int abc_primary_text_material_dark=0x7f0b004d;
-        public static int abc_primary_text_material_light=0x7f0b004e;
-        public static int abc_search_url_text=0x7f0b004f;
+        public static int abc_primary_text_disable_only_material_dark=0x7f0b004e;
+        public static int abc_primary_text_disable_only_material_light=0x7f0b004f;
+        public static int abc_primary_text_material_dark=0x7f0b0050;
+        public static int abc_primary_text_material_light=0x7f0b0051;
+        public static int abc_search_url_text=0x7f0b0052;
         public static int abc_search_url_text_normal=0x7f0b0005;
         public static int abc_search_url_text_pressed=0x7f0b0006;
         public static int abc_search_url_text_selected=0x7f0b0007;
-        public static int abc_secondary_text_material_dark=0x7f0b0050;
-        public static int abc_secondary_text_material_light=0x7f0b0051;
+        public static int abc_secondary_text_material_dark=0x7f0b0053;
+        public static int abc_secondary_text_material_light=0x7f0b0054;
         public static int accent_material_dark=0x7f0b0008;
         public static int accent_material_light=0x7f0b0009;
         public static int background_floating_material_dark=0x7f0b000a;
@@ -2274,10 +2276,11 @@ containing a value of this type.
         public static int secondary_text_disabled_material_light=0x7f0b0039;
         public static int switch_thumb_disabled_material_dark=0x7f0b003a;
         public static int switch_thumb_disabled_material_light=0x7f0b003b;
-        public static int switch_thumb_material_dark=0x7f0b0052;
-        public static int switch_thumb_material_light=0x7f0b0053;
+        public static int switch_thumb_material_dark=0x7f0b0055;
+        public static int switch_thumb_material_light=0x7f0b0056;
         public static int switch_thumb_normal_material_dark=0x7f0b003c;
         public static int switch_thumb_normal_material_light=0x7f0b003d;
+        public static int xamarin_blue=0x7f0b0048;
     }
     public static final class dimen {
         public static int abc_action_bar_content_inset_material=0x7f060019;
@@ -2544,22 +2547,26 @@ containing a value of this type.
         public static int ic_tv_dark=0x7f02008f;
         public static int ic_tv_light=0x7f020090;
         public static int icon=0x7f020091;
-        public static int mr_dialog_material_background_dark=0x7f020092;
-        public static int mr_dialog_material_background_light=0x7f020093;
-        public static int mr_ic_audiotrack_light=0x7f020094;
-        public static int mr_ic_cast_dark=0x7f020095;
-        public static int mr_ic_cast_light=0x7f020096;
-        public static int mr_ic_close_dark=0x7f020097;
-        public static int mr_ic_close_light=0x7f020098;
-        public static int mr_ic_media_route_connecting_mono_dark=0x7f020099;
-        public static int mr_ic_media_route_connecting_mono_light=0x7f02009a;
-        public static int mr_ic_media_route_mono_dark=0x7f02009b;
-        public static int mr_ic_media_route_mono_light=0x7f02009c;
-        public static int mr_ic_pause_dark=0x7f02009d;
-        public static int mr_ic_pause_light=0x7f02009e;
-        public static int mr_ic_play_dark=0x7f02009f;
-        public static int mr_ic_play_light=0x7f0200a0;
-        public static int notification_template_icon_bg=0x7f0200a1;
+        public static int logo=0x7f020092;
+        public static int logoex=0x7f020093;
+        public static int logowow=0x7f020094;
+        public static int mr_dialog_material_background_dark=0x7f020095;
+        public static int mr_dialog_material_background_light=0x7f020096;
+        public static int mr_ic_audiotrack_light=0x7f020097;
+        public static int mr_ic_cast_dark=0x7f020098;
+        public static int mr_ic_cast_light=0x7f020099;
+        public static int mr_ic_close_dark=0x7f02009a;
+        public static int mr_ic_close_light=0x7f02009b;
+        public static int mr_ic_media_route_connecting_mono_dark=0x7f02009c;
+        public static int mr_ic_media_route_connecting_mono_light=0x7f02009d;
+        public static int mr_ic_media_route_mono_dark=0x7f02009e;
+        public static int mr_ic_media_route_mono_light=0x7f02009f;
+        public static int mr_ic_pause_dark=0x7f0200a0;
+        public static int mr_ic_pause_light=0x7f0200a1;
+        public static int mr_ic_play_dark=0x7f0200a2;
+        public static int mr_ic_play_light=0x7f0200a3;
+        public static int notification_template_icon_bg=0x7f0200a5;
+        public static int splashscreen=0x7f0200a4;
     }
     public static final class id {
         public static int action0=0x7f07008b;
@@ -3095,6 +3102,7 @@ containing a value of this type.
         public static int Theme_MediaRouter_Light=0x7f0a0001;
         public static int Theme_MediaRouter_Light_DarkControlPanel=0x7f0a0002;
         public static int Theme_MediaRouter_LightControlPanel=0x7f0a0003;
+        public static int Theme_Splash=0x7f0a0172;
         public static int ThemeOverlay_AppCompat=0x7f0a010e;
         public static int ThemeOverlay_AppCompat_ActionBar=0x7f0a010f;
         public static int ThemeOverlay_AppCompat_Dark=0x7f0a0110;

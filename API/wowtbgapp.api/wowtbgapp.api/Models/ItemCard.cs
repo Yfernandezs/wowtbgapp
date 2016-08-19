@@ -18,6 +18,8 @@ namespace wowtbgapp.api.Models
 
         public List<string> Effects { get; set; } = new List<string>();
 
+        public string TypeIconUrl { get; set; }
+
         public string IconUrl { get; set; }
 
         public int BagSpace { get; set; }
