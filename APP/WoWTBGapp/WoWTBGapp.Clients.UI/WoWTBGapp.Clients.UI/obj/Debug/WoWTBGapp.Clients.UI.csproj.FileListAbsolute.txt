@@ -1,0 +1,4 @@
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.csprojResolveAssemblyReference.cache
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.App.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.Pages.ItemCards.ItemCardsView.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.Pages.Android.MenuPage.xaml.g.cs

@@ -129,10 +129,20 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WoWTBGapp\WoWTBGapp.csproj">
-      <Name>WoWTBGapp</Name>
+    <ProjectReference Include="..\..\WoWTBGapp.Clients.Portable\WoWTBGapp.Clients.Portable.csproj">
+      <Project>{5dd54e9a-02e4-4172-8460-4340fec50878}</Project>
+      <Name>WoWTBGapp.Clients.Portable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI.csproj">
+      <Project>{828e00d9-67cb-49ab-ad5e-dc2dc2663b74}</Project>
+      <Name>WoWTBGapp.Clients.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WoWTBGapp.Utils\WoWTBGapp.Utils.csproj">
+      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
+      <Name>WoWTBGapp.Utils</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\..\WoWTBGapp.Shared\WoWTBGapp.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

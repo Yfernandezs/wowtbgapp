@@ -28,7 +28,7 @@ namespace WoWTBGapp.WinPhone
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
-            LoadApplication(new WoWTBGapp.App());
+            LoadApplication(new WoWTBGapp.Clients.UI.App());
         }
 
         /// <summary>
