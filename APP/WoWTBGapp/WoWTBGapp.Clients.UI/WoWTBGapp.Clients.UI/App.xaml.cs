@@ -16,6 +16,9 @@ namespace WoWTBGapp.Clients.UI
     {
         public static App current;
 
+        private static ILogger logger;
+        public static ILogger Logger => logger ?? (logger = DependencyService.Get<ILogger>());
+
         public App()
         {
             InitializeComponent();
@@ -23,6 +26,12 @@ namespace WoWTBGapp.Clients.UI
             current = this;
 
             //ViewModelBase.Init();
+
+            Settings.Current.Email = ""; //"sergio-n-g@hotmail.com";
+
+            Settings.Current.FirstName = "Darkshogun";
+
+            Settings.Current.LastName = "CR";
 
             // The root page of your application
             switch (Device.OS)
@@ -64,7 +73,9 @@ namespace WoWTBGapp.Clients.UI
 
             if (registered)
                 return;
+
             registered = true;
+
             // Handle when your app resumes
             Settings.Current.IsConnected = CrossConnectivity.Current.IsConnected;
             CrossConnectivity.Current.ConnectivityChanged += ConnectivityChanged;
@@ -78,6 +89,7 @@ namespace WoWTBGapp.Clients.UI
                     return;
 
                 await task;
+
                 info?.OnCompleted?.Invoke();
             });
 
@@ -108,13 +120,19 @@ namespace WoWTBGapp.Clients.UI
                 }
 
                 Page page = null;
-                //if (Settings.Current.FirstRun && Device.OS == TargetPlatform.Android)
-                //    page = new LoginPage();
-                //else
-                //    page = new EvolveNavigationPage(new LoginPage());
+
+                if (Settings.Current.FirstRun && Device.OS == TargetPlatform.Android)
+                {
+                    //page = new LoginPage();
+                }
+                else
+                {
+                    page = new WoWTBGappNavigationPage(new ItemCardsView());
+                }
 
 
                 var nav = Application.Current?.MainPage?.Navigation;
+
                 if (nav == null)
                     return;
 
@@ -172,6 +190,7 @@ namespace WoWTBGapp.Clients.UI
         protected override void OnAppLinkRequestReceived(Uri uri)
         {
             var data = uri.ToString().ToLowerInvariant();
+
             //only if deep linking
             if (!data.Contains("/session/"))
                 return;

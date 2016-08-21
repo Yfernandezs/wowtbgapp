@@ -8,11 +8,10 @@ namespace WoWTBGapp.Utils
 {
     public static class MessageKeys
     {
-        public const string NavigateToEvent = "navigate_event";
-        public const string NavigateToSession = "navigate_session";
-        public const string NavigateToSpeaker = "navigate_speaker";
-        public const string NavigateToSponsor = "navigate_sponsor";
-        public const string NavigateToImage = "navigate_image";
+        public const string NavigateToCharacter = "navigate_character";
+        public const string NavigateToPlayers = "navigate_players";
+        public const string NavigateToQuests = "navigate_quests";
+        public const string NavigateToBroker = "navigate_broker";
         public const string NavigateLogin = "navigate_login";
         public const string Error = "error";
         public const string Connection = "connection";

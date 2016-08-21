@@ -10,13 +10,5 @@
   <color name="icons">#FFFFFF</color>
   <color name="divider">#BDBDBD</color>
   <color name="activated_color">#E8E8E8</color>
-  <color name="window_background">#e6ffe6</color>
-
-
-  <color name="xamarin_blue">#3498DB</color>
-
-  <color name="Navigation_Bar">#009900</color>
-
-  <color name="SplashScreenBackgroundColor">#003300</color>
-  
+  <color name="window_background">#F4FFF4</color>
 </resources>

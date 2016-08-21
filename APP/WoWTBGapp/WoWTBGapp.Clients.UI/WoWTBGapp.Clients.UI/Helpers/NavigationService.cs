@@ -12,7 +12,9 @@ namespace WoWTBGapp.Clients.UI
     /// </summary>
     public static class NavigationService
     {
+
         static bool navigating;
+
         /// <summary>
         /// PUsh a page async
         /// </summary>

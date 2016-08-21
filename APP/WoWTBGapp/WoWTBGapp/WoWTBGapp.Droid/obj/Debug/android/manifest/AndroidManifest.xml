@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.sergiong.wowtbagapp" android:versionCode="1" android:versionName="1.0.0">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="15" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <application android:label="WoWTBGapp" android:icon="@drawable/logowow" android:theme="@style/MyTheme" android:name="md5dda528d3f2835e78f3b20332e7bf0b93.MainApplication" android:allowBackup="true" android:debuggable="true">
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:icon="@drawable/logowow" android:label="WoWTBGapp" android:theme="@style/SplashTheme" android:name="md5dda528d3f2835e78f3b20332e7bf0b93.SplashActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/logowow" android:label="WoWTBGapp" android:launchMode="singleTask" android:name="md5dda528d3f2835e78f3b20332e7bf0b93.MainActivity" />
+    <receiver android:enabled="true" android:label="Connectivity Plugin Broadcast Receiver" android:name="md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver" />
+    <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.sergiong.wowtbagapp.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.sergiong.wowtbagapp" />
+      </intent-filter>
+    </receiver>
+    <activity android:name="net.hockeyapp.android.UpdateActivity" />
+    <activity android:name="net.hockeyapp.android.FeedbackActivity" />
+    <activity android:name="net.hockeyapp.android.PaintActivity" />
+    <activity android:name="net.hockeyapp.android.LoginActivity" />
+    <activity android:name="net.hockeyapp.android.ExpiryInfoActivity" />
+    <activity android:name="net.hockeyapp.android.UpdateActivity" />
+    <activity android:name="net.hockeyapp.android.FeedbackActivity" />
+    <activity android:name="net.hockeyapp.android.PaintActivity" />
+    <activity android:name="net.hockeyapp.android.LoginActivity" />
+    <activity android:name="net.hockeyapp.android.ExpiryInfoActivity" />
+  </application>
+</manifest>

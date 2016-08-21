@@ -9,12 +9,13 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.Content.PM;
+using Android.Support.V7.App;
 
-namespace WoWTBGapp.Droid.Activities
+namespace WoWTBGapp.Droid
 {
-    [Activity(Label = "WoWTBGapp", Icon = "@drawable/logoWoW", Theme = "@style/SplashTheme", MainLauncher = true)]
-    public class SplashActivity : Activity
+    [Activity(Label = "WoWTBGapp", Icon = "@drawable/logoWoW", Theme = "@style/SplashTheme", MainLauncher = true )]
+
+    public class SplashActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {

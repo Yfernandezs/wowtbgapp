@@ -34,10 +34,7 @@ namespace WoWTBGapp.Utils
 
 
         #region Setting Constants
-
-        private const string SettingsKey = "settings_key";
-        private static readonly string SettingsDefault = string.Empty;
-
+        
         const string PushNotificationsEnabledKey = "push_enabled";
         static readonly bool PushNotificationsEnabledDefault = false;
 
@@ -49,6 +46,9 @@ namespace WoWTBGapp.Utils
 
         const string FirstNameKey = "firstname_key";
         readonly string FirstNameDefault = string.Empty;
+
+        const string FirstRunKey = "first_run";
+        static readonly bool FirstRunDefault = true;
 
         #endregion
 
@@ -118,20 +118,21 @@ namespace WoWTBGapp.Utils
         }
 
 
-        public static string GeneralSettings
+        /// <summary>
+        /// Gets or sets a value indicating whether the user wants to see favorites only.
+        /// </summary>
+        /// <value><c>true</c> if favorites only; otherwise, <c>false</c>.</value>
+        public bool FirstRun
         {
-            get
-            {
-                return AppSettings.GetValueOrDefault<string>(SettingsKey, SettingsDefault);
-            }
+            get { return AppSettings.GetValueOrDefault<bool>(FirstRunKey, FirstRunDefault); }
             set
             {
-                AppSettings.AddOrUpdateValue<string>(SettingsKey, value);
+                if (AppSettings.AddOrUpdateValue<bool>(FirstRunKey, value))
+                    OnPropertyChanged();
             }
-
         }
 
-
+        
         bool isConnected;
         public bool IsConnected
         {
@@ -151,7 +152,7 @@ namespace WoWTBGapp.Utils
 
         public string UserDisplayName => IsLoggedIn ? $"{FirstName} {LastName}" : "Sign In";
 
-        public string UserAvatar => IsLoggedIn ? Gravatar.GetURL(Email) : "profile_generic.png";
+        public string UserAvatar => IsLoggedIn ? Gravatar.GetURL(Email) : "http://www.wowroster.net/Interface/Icons/achievement_character_nightelf_male.jpg";
 
         public bool IsLoggedIn => !string.IsNullOrWhiteSpace(Email);
 
@@ -160,9 +161,12 @@ namespace WoWTBGapp.Utils
         #endregion
 
         #region INotifyPropertyChanged implementation
+
         public event PropertyChangedEventHandler PropertyChanged;
+
         void OnPropertyChanged([CallerMemberName]string name = "") =>
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+                                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+
         #endregion
     }
 }

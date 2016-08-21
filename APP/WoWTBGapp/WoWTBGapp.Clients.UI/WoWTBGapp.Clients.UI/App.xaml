@@ -20,7 +20,7 @@
 
             <x:Double x:Key="SmallSpacing">4</x:Double>
             <x:Double x:Key="MediumSpacing">8</x:Double>
-            <x:Double x:Key="StandardSpacing">16</x:Double>
+            <x:Double x:Key="StandardSpacing">16</x:Double>-->
 
 
             <OnPlatform x:TypeArguments="Color" Android="#F5F5F5" iOS="#EFEFF4" WinPhone="#EFEFF4" x:Key="WindowBackgroundTable"/>
@@ -30,8 +30,8 @@
             <Color x:Key="ListSeparator">#C8C7CC</Color>
             <OnPlatform x:TypeArguments="Thickness" Android="8,16" iOS="0,0,0,16" WinPhone="0,0,0,16" x:Key="CardPadding"/>
             <OnPlatform x:TypeArguments="x:Double" Android="16" iOS="0" WinPhone="0" x:Key="CardSpacing"/>
-            
-            <OnPlatform x:TypeArguments="x:Double" Android="16" iOS="16" WinPhone="13" x:Key="EvolveListItemTextStyleSize" />
+
+        <!--<OnPlatform x:TypeArguments="x:Double" Android="16" iOS="16" WinPhone="13" x:Key="EvolveListItemTextStyleSize" />
             <OnPlatform x:TypeArguments="x:Double" Android="13" iOS="13" WinPhone="13" x:Key="EvolveListItemDetailTextStyleSize" />
             <OnPlatform x:TypeArguments="x:Double" Android="18" iOS="13" WinPhone="13" x:Key="LabelSectionFontSize" />
             <OnPlatform x:TypeArguments="x:Double" Android="14" iOS="14" WinPhone="14" x:Key="TweetTextSize" />

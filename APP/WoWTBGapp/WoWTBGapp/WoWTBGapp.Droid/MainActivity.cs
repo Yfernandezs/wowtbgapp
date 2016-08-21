@@ -29,7 +29,7 @@ using ImageCircle.Forms.Plugin.Droid;
 namespace WoWTBGapp.Droid
 {
     [Activity(Label = "WoWTBGapp", Icon = "@drawable/logoWoW", LaunchMode = LaunchMode.SingleTask, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : FormsApplicationActivity
+    public class MainActivity : FormsAppCompatActivity
     {
         private static MainActivity current;
         public static MainActivity Current { get { return current; } }
@@ -38,8 +38,8 @@ namespace WoWTBGapp.Droid
 
         protected override void OnCreate(Bundle bundle)
         {
-            //FormsAppCompatActivity.ToolbarResource = Resource.Layout.toolbar;
-            //FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
+            FormsAppCompatActivity.ToolbarResource = Resource.Layout.toolbar;
+            FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
 
             base.OnCreate(bundle);
 
@@ -56,8 +56,8 @@ namespace WoWTBGapp.Droid
 
             LoadApplication(new App());
 
-            if (!Settings.Current.PushNotificationsEnabled)
-                return;
+            //if (!Settings.Current.PushNotificationsEnabled)
+            //    return;
 
             //DataRefreshService.ScheduleRefresh(this);
 
@@ -66,7 +66,9 @@ namespace WoWTBGapp.Droid
         void InitializeHockeyApp()
         {
             if (string.IsNullOrWhiteSpace(ApiKeys.HockeyAppAndroid) || ApiKeys.HockeyAppAndroid == nameof(ApiKeys.HockeyAppAndroid))
+            {
                 return;
+            }
             
             HockeyApp.Android.CrashManager.Register(this, ApiKeys.HockeyAppAndroid);
             //HockeyApp.UpdateManager.Register(this, ApiKeys.HockeyAppAndroid);
