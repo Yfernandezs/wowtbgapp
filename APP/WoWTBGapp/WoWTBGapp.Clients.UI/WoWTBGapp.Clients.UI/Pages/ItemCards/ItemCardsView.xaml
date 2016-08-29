@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage 
+<ContentPage
   xmlns="http://xamarin.com/schemas/2014/forms"
   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:local="clr-namespace:WoWTBGapp.Clients.UI;assembly=WoWTBGapp.Clients.UI"
   x:Class="WoWTBGapp.Clients.UI.ItemCardsView"
   xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-             
-  Icon=""
-  Title="Item Cards"
+
+  Icon="tab_itemcards.png"
+  Title="{Binding Title}"
   BackgroundColor="{DynamicResource WindowBackground}" >
-  
+
   <ContentPage.Resources>
     <ResourceDictionary>
       <OnPlatform x:TypeArguments="x:Double" Android="16" iOS="16" WinPhone="13" x:Key="EvolveListItemTextStyleSize" />
@@ -20,110 +21,126 @@
 
     </ResourceDictionary>
   </ContentPage.Resources>
-  
-    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-         BackgroundColor="White">
-    
-      <ListView
-            x:Name="ItemCardsList"
-            HasUnevenRows ="true"
-            IsPullToRefreshEnabled="{Binding IsNotBusy}"
-            RefreshCommand="{Binding ForceRefreshCommand}"
-            IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-            IsVisible="{Binding IsNotBusy}"
-            AbsoluteLayout.LayoutFlags="All" 
-            AbsoluteLayout.LayoutBounds="0,0,1,1" >
 
-        <ListView.ItemTemplate>
-          <DataTemplate>
-            <ViewCell>
-              <Frame Margin="10" Padding="5" OutlineColor="Black" BackgroundColor="Black"  >
-                <Grid
-                      ColumnSpacing="0"
-                      Padding="0">
-                  <Grid.RowDefinitions>
-                    <RowDefinition Height="1*" />
-                    <!--<RowDefinition Height="56" />
+  <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+       BackgroundColor="White">
+
+    <ListView
+          x:Name="ItemCardsList"
+          ItemsSource="{Binding CardsGrouped}"
+          GroupDisplayBinding="{Binding Key}"
+          IsGroupingEnabled="true"
+          HasUnevenRows ="true"
+          IsPullToRefreshEnabled="{Binding IsNotBusy}"
+          RefreshCommand="{Binding ForceRefreshCommand}"
+          IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+          IsVisible="{Binding IsNotBusy}"
+          StyleId="ItemCardsViewIdentifier"
+          AbsoluteLayout.LayoutFlags="All"
+          AbsoluteLayout.LayoutBounds="0,0,1,1" >
+      <ListView.SeparatorColor>
+        <OnPlatform x:TypeArguments="Color" iOS="{StaticResource ListSeparator}"  WinPhone="{StaticResource ListSeparator}"/>
+      </ListView.SeparatorColor>
+      <ListView.GroupHeaderTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <ViewCell.Height>
+              <OnPlatform x:TypeArguments="x:Double" iOS="28"/>
+            </ViewCell.Height>
+            <local:WoWTBGGroupHeaderView/>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.GroupHeaderTemplate>
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Frame Margin="10" Padding="5" OutlineColor="Black" BackgroundColor="Black"  >
+              <Grid
+                    ColumnSpacing="0"
+                    Padding="0">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="1*" />
+                  <!--<RowDefinition Height="56" />
                   <RowDefinition Height="1*" />
                   <RowDefinition Height="1*" />-->
-                  </Grid.RowDefinitions>
-                  <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="66" />
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="66" />
-                  </Grid.ColumnDefinitions>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="66" />
+                  <ColumnDefinition Width="1*" />
+                  <ColumnDefinition Width="1*" />
+                  <ColumnDefinition Width="1*" />
+                  <ColumnDefinition Width="66" />
+                </Grid.ColumnDefinitions>
 
-                  <Label
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="5"
+                    BackgroundColor="#0073e6"
+                    VerticalOptions="Fill"
+                    HorizontalOptions="Fill" />
+
+                <controls:CircleImage
                       Grid.Row="0"
                       Grid.Column="0"
-                      Grid.ColumnSpan="5"
-                      BackgroundColor="#0073e6"
-                      VerticalOptions="Fill"
-                      HorizontalOptions="Fill" />
-
-                  <controls:CircleImage
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        Margin="5"
-                        BackgroundColor="Transparent"
-                        VerticalOptions="CenterAndExpand"
-                        HorizontalOptions="CenterAndExpand"
-                        Source="{Binding TypeIconUrl}"
-                        Aspect="AspectFit"
-                        BorderThickness="2"
-                        BorderColor="#FFCC00" >
-                    <controls:CircleImage.WidthRequest>
-                      <OnPlatform x:TypeArguments="x:Double"
+                      Margin="5"
+                      BackgroundColor="Transparent"
+                      VerticalOptions="CenterAndExpand"
+                      HorizontalOptions="CenterAndExpand"
+                      Source="{Binding TypeIconUrl}"
+                      Aspect="AspectFit"
+                      BorderThickness="2"
+                      BorderColor="#FFCC00" >
+                  <controls:CircleImage.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double"
+                      iOS="56"
+                      Android="56"
+                      WinPhone="44"/>
+                  </controls:CircleImage.WidthRequest>
+                  <controls:CircleImage.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double"
                         iOS="56"
                         Android="56"
                         WinPhone="44"/>
-                    </controls:CircleImage.WidthRequest>
-                    <controls:CircleImage.HeightRequest>
-                      <OnPlatform x:TypeArguments="x:Double"
-                          iOS="56"
-                          Android="56"
-                          WinPhone="44"/>
-                    </controls:CircleImage.HeightRequest>
-                  </controls:CircleImage>
+                  </controls:CircleImage.HeightRequest>
+                </controls:CircleImage>
 
-                  <Label
-                      Grid.Row="0"
-                      Grid.Column="1"
-                      Grid.ColumnSpan="3"
-                      TextColor="White"
-                      FontAttributes="Bold"
-                      BackgroundColor="Transparent"
-                      VerticalTextAlignment="Center"
-                      HorizontalTextAlignment="Center"
-                      VerticalOptions="CenterAndExpand"
-                      HorizontalOptions="CenterAndExpand"
-                      Text="{Binding Name}" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="3"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="{Binding Name}" />
 
-                  <!--<Label
+                <!--<Label
                     Grid.Row="0"
                     Grid.Column="4"
                     BackgroundColor="White"
                     VerticalOptions="Fill"
                     HorizontalOptions="Fill" />-->
-                  <Frame
-                        Grid.Row="0"
-                        Grid.Column="4"
-                        Margin="5" 
-                        Padding="2" 
-                        OutlineColor="White"
-                        BackgroundColor="White"
+                <Frame
+                      Grid.Row="0"
+                      Grid.Column="4"
+                      Margin="5"
+                      Padding="2"
+                      OutlineColor="White"
+                      BackgroundColor="White"
+                      VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand" >
+                  <Image
                         VerticalOptions="FillAndExpand"
-                        HorizontalOptions="FillAndExpand" >
-                    <Image
-                          VerticalOptions="FillAndExpand"
-                          HorizontalOptions="FillAndExpand"
-                          Source="{Binding IconUrl}"
-                          Aspect="AspectFit" >
-                    </Image>
-                  </Frame>
-                  <!--<Label
+                        HorizontalOptions="FillAndExpand"
+                        Source="{Binding IconUrl}"
+                        Aspect="AspectFit" >
+                  </Image>
+                </Frame>
+                <!--<Label
                     Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="4"
@@ -143,25 +160,25 @@
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand" />-->
 
-                </Grid>
-              </Frame>
-            </ViewCell>
-          </DataTemplate>
-        </ListView.ItemTemplate>
-      </ListView>
-    
-      <StackLayout IsVisible="{Binding IsBusy}"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"
-                    AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
-                    <StackLayout.Orientation>
-                      <OnPlatform x:TypeArguments="StackOrientation" iOS="Horizontal"/>
-                    </StackLayout.Orientation>
-              <ActivityIndicator IsRunning="{Binding IsBusy}" >
-                  <ActivityIndicator.Color>
-                      <OnPlatform x:TypeArguments="Color" Android="#00b300"/>
-                  </ActivityIndicator.Color>
-              </ActivityIndicator>
-              <Label Text="Loading Item Cards..." HorizontalOptions="Center" Style="{DynamicResource EvolveListItemTextStyle}" />
-         </StackLayout>
-    </AbsoluteLayout>
+              </Grid>
+            </Frame>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+    <StackLayout IsVisible="{Binding IsBusy}"
+                  AbsoluteLayout.LayoutFlags="PositionProportional"
+                  AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+      <StackLayout.Orientation>
+        <OnPlatform x:TypeArguments="StackOrientation" iOS="Horizontal"/>
+      </StackLayout.Orientation>
+      <ActivityIndicator IsRunning="{Binding IsBusy}" >
+        <ActivityIndicator.Color>
+          <OnPlatform x:TypeArguments="Color" Android="{StaticResource Accent}"/>
+        </ActivityIndicator.Color>
+      </ActivityIndicator>
+      <Label Text="Loading Item Cards..." HorizontalOptions="Center" Style="{DynamicResource WoWTBGListItemTextStyle}" />
+    </StackLayout>
+  </AbsoluteLayout>
 </ContentPage>

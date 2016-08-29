@@ -19,7 +19,6 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Plugin.Share.Abstractions.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Plugin.Share.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Refractored.XamForms.PullToRefresh.dll
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\wowtbgapp.api.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\WoWTBGapp.Clients.Portable.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\WoWTBGapp.Utils.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Xamarin.Forms.Core.dll
@@ -49,7 +48,6 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Plugin.Share.Abstractions.pdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Plugin.Share.Abstractions.xml
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Refractored.XamForms.PullToRefresh.xml
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\wowtbgapp.api.pdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Xamarin.Forms.Core.pdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Xamarin.Forms.Core.xml
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Xamarin.Forms.Platform.pdb
@@ -57,5 +55,10 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.pdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\WoWTBGapp.DataAccess.Abstractions.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\WoWTBGapp.DataAccess.Abstractions.pdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.Cells.WoWTBGGroupHeaderView.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\WoWTBGapp.DataAccess.Nodejs.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\WoWTBGapp.DataAccess.Nodejs.pdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.dll.mdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\WoWTBGapp.Clients.UI.dll.mdb

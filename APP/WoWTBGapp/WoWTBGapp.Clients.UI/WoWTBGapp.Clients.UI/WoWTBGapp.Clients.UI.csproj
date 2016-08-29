@@ -38,6 +38,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Cells\WoWTBGGroupHeaderView.xaml.cs">
+      <DependentUpon>WoWTBGGroupHeaderView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\NavigationView.cs" />
     <Compile Include="Controls\WoWTBGappNavigationPage.cs" />
     <Compile Include="Helpers\NavigationService.cs" />
@@ -122,9 +125,6 @@
       <HintPath>..\..\packages\Refractored.XamForms.PullToRefresh.1.0.10\lib\portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Refractored.XamForms.PullToRefresh.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="wowtbgapp.api">
-      <HintPath>..\..\..\..\API\wowtbgapp.api\wowtbgapp.api\bin\Release\wowtbgapp.api.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.1.114\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
@@ -152,6 +152,10 @@
       <Project>{5dd54e9a-02e4-4172-8460-4340fec50878}</Project>
       <Name>WoWTBGapp.Clients.Portable</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\WoWTBGapp.DataAccess.Abstractions\WoWTBGapp.DataAccess.Abstractions.csproj">
+      <Project>{42c5fd2d-2174-4740-ada3-0a117016affa}</Project>
+      <Name>WoWTBGapp.DataAccess.Abstractions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\WoWTBGapp.Utils\WoWTBGapp.Utils.csproj">
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>WoWTBGapp.Utils</Name>
@@ -159,6 +163,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\Android\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cells\WoWTBGGroupHeaderView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

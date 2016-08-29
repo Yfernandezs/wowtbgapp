@@ -298,6 +298,14 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Refractored.MvvmHelpers/1.0.1": {
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        }
+      },
       "runtime.native.System.IO.Compression/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2314,6 +2322,14 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Refractored.MvvmHelpers/1.0.1": {
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -4465,6 +4481,14 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Refractored.MvvmHelpers/1.0.1": {
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -6659,6 +6683,14 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Refractored.MvvmHelpers/1.0.1": {
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.0.11": {
         "dependencies": {
           "System.Runtime": "4.1.0"
@@ -8817,6 +8849,14 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Refractored.MvvmHelpers/1.0.1": {
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -11016,6 +11056,14 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Refractored.MvvmHelpers/1.0.1": {
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.0.11": {
         "dependencies": {
           "System.Runtime": "4.1.0"
@@ -13174,6 +13222,14 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Refractored.MvvmHelpers/1.0.1": {
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -15596,6 +15652,17 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Refractored.MvvmHelpers/1.0.1": {
+      "sha512": "ZaQAQF+NqmOQC9jetZfKaafDgdu2pB+7E+hoaUjGDN5ydw+h0haxo5NPINr/zQ9+LOPiyIBZA0tcikiFp5kz0w==",
+      "type": "package",
+      "path": "Refractored.MvvmHelpers/1.0.1",
+      "files": [
+        "Refractored.MvvmHelpers.1.0.1.nupkg.sha512",
+        "Refractored.MvvmHelpers.nuspec",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.xml"
       ]
     },
     "runtime.any.System.Collections/4.0.11": {
@@ -21673,6 +21740,7 @@
       "Microsoft.Bcl.Build >= 1.0.21",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "Microsoft.Net.Http >= 2.2.29",
+      "Refractored.MvvmHelpers >= 1.0.1",
       "Xamarin.Forms >= 2.3.1.114"
     ],
     "UAP,Version=v10.0": []

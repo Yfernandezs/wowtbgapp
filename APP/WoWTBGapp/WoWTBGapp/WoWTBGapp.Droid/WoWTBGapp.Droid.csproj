@@ -50,8 +50,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
     <BundleAssemblies>False</BundleAssemblies>
     <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
@@ -62,6 +62,7 @@
     <EnableProguard>False</EnableProguard>
     <DebugSymbols>False</DebugSymbols>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <AndroidSupportedAbis>armeabi-v7a,arm64-v8a</AndroidSupportedAbis>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FormsToolkit, Version=1.1.18.0, Culture=neutral, processorArchitecture=MSIL">
@@ -258,8 +259,19 @@
       <HintPath>..\..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Gcm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices.Gcm.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.Gcm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Measurement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices.Measurement.29.0.0.1\lib\MonoAndroid41\Xamarin.GooglePlayServices.Measurement.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backgrounding\DataRefreshService.cs" />
+    <Compile Include="Backgrounding\DataRefreshServiceBinder.cs" />
+    <Compile Include="Helpers\Toaster.cs" />
     <Compile Include="Renderers\NavigationViewRenderer.cs" />
     <Compile Include="SplashActivity.cs" />
     <Compile Include="Helpers\Settings.cs" />
@@ -321,6 +333,14 @@
     <ProjectReference Include="..\..\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI.csproj">
       <Project>{828e00d9-67cb-49ab-ad5e-dc2dc2663b74}</Project>
       <Name>WoWTBGapp.Clients.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WoWTBGapp.DataAccess.Abstractions\WoWTBGapp.DataAccess.Abstractions.csproj">
+      <Project>{42c5fd2d-2174-4740-ada3-0a117016affa}</Project>
+      <Name>WoWTBGapp.DataAccess.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WoWTBGapp.DataAccess.Nodejs\WoWTBGapp.DataAccess.Nodejs.csproj">
+      <Project>{22431958-6a61-413b-aa0c-9b39feedd090}</Project>
+      <Name>WoWTBGapp.DataAccess.Nodejs</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\WoWTBGapp.Utils\WoWTBGapp.Utils.csproj">
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>

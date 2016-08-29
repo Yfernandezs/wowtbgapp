@@ -53,6 +53,10 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\obj\Release\WoWTBGapp.Clients.Portable.csprojResolveAssemblyReference.cache
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\obj\Release\WoWTBGapp.Clients.Portable.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\obj\Release\WoWTBGapp.Clients.Portable.pdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\bin\Release\WoWTBGapp.DataAccess.Abstractions.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\bin\Release\WoWTBGapp.DataAccess.Nodejs.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\bin\Release\WoWTBGapp.DataAccess.Abstractions.pdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\bin\Release\WoWTBGapp.DataAccess.Nodejs.pdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\obj\Release\WoWTBGapp.Clients.Portable.dll.mdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\bin\Release\WoWTBGapp.Clients.Portable.dll.mdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\obj\Release\WoWTBGapp.Clients.Portable.dll.mdb

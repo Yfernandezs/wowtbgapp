@@ -1,3 +1,11 @@
+WoWTBGapp.Droid.DataRefreshService, WoWTBGapp.Droid;com.sergiong.wowtbagapp.DataRefreshService
+WoWTBGapp.Droid.DataRefreshService, WoWTBGapp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;com.sergiong.wowtbagapp.DataRefreshService
+WoWTBGapp.Droid.DataRefreshService;com.sergiong.wowtbagapp.DataRefreshService
+com.sergiong.wowtbagapp.DataRefreshService;com.sergiong.wowtbagapp.DataRefreshService
+WoWTBGapp.Droid.DataRefreshServiceBinder, WoWTBGapp.Droid;md5dda528d3f2835e78f3b20332e7bf0b93.DataRefreshServiceBinder
+WoWTBGapp.Droid.DataRefreshServiceBinder, WoWTBGapp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dda528d3f2835e78f3b20332e7bf0b93.DataRefreshServiceBinder
+WoWTBGapp.Droid.DataRefreshServiceBinder;md5dda528d3f2835e78f3b20332e7bf0b93.DataRefreshServiceBinder
+wowtbgapp.droid.DataRefreshServiceBinder;md5dda528d3f2835e78f3b20332e7bf0b93.DataRefreshServiceBinder
 WoWTBGapp.Droid.NavigationViewRenderer, WoWTBGapp.Droid;md5dda528d3f2835e78f3b20332e7bf0b93.NavigationViewRenderer
 WoWTBGapp.Droid.NavigationViewRenderer, WoWTBGapp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5dda528d3f2835e78f3b20332e7bf0b93.NavigationViewRenderer
 WoWTBGapp.Droid.NavigationViewRenderer;md5dda528d3f2835e78f3b20332e7bf0b93.NavigationViewRenderer

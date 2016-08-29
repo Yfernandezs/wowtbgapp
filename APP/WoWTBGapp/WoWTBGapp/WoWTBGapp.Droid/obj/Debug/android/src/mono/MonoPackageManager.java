@@ -146,9 +146,13 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.AppIndexing.dll",
 		"Xamarin.GooglePlayServices.Base.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Gcm.dll",
+		"Xamarin.GooglePlayServices.Measurement.dll",
 		"Java.Interop.dll",
 		"WoWTBGapp.Clients.Portable.dll",
 		"WoWTBGapp.Clients.UI.dll",
+		"WoWTBGapp.DataAccess.Abstractions.dll",
+		"WoWTBGapp.DataAccess.Nodejs.dll",
 		"WoWTBGapp.Utils.dll",
 		"System.Runtime.dll",
 		"System.Resources.ResourceManager.dll",
@@ -177,7 +181,6 @@ class MonoPackageManager_Resources {
 		"System.Net.Primitives.dll",
 		"System.ComponentModel.dll",
 		"System.Collections.Concurrent.dll",
-		"wowtbgapp.api.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -1,0 +1,16 @@
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\bin\Release\WoWTBGapp.DataAccess.Abstractions.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\bin\Release\WoWTBGapp.DataAccess.Abstractions.pdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\bin\Release\MvvmHelpers.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\bin\Release\Newtonsoft.Json.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\bin\Release\MvvmHelpers.xml
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\bin\Release\Newtonsoft.Json.xml
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\obj\Release\WoWTBGapp.DataAccess.Abstractions.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\obj\Release\WoWTBGapp.DataAccess.Abstractions.pdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\obj\Release\WoWTBGapp.DataAccess.Abstractions.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\bin\Release\WoWTBGapp.DataAccess.Abstractions.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\obj\Release\WoWTBGapp.DataAccess.Abstractions.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\bin\Release\WoWTBGapp.DataAccess.Abstractions.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\obj\Release\WoWTBGapp.DataAccess.Abstractions.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\bin\Release\WoWTBGapp.DataAccess.Abstractions.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\obj\Release\WoWTBGapp.DataAccess.Abstractions.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\bin\Release\WoWTBGapp.DataAccess.Abstractions.dll.mdb

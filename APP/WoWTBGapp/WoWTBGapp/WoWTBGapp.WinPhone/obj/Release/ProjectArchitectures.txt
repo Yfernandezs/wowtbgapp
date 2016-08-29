@@ -1,6 +1,13 @@
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\WoWTBGapp.Clients.Portable.csproj;neutral
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\WoWTBGapp.Clients.Portable.csproj;neutral
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI.csproj;neutral
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\WoWTBGapp.DataAccess.Abstractions.csproj;neutral
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\WoWTBGapp.DataAccess.Abstractions.csproj;neutral
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\WoWTBGapp.DataAccess.Abstractions.csproj;neutral
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\WoWTBGapp.DataAccess.Abstractions.csproj;neutral
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Abstractions\WoWTBGapp.DataAccess.Abstractions.csproj;neutral
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Nodejs\WoWTBGapp.DataAccess.Nodejs.csproj;neutral
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.DataAccess.Nodejs\WoWTBGapp.DataAccess.Nodejs.csproj;neutral
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\WoWTBGapp.Utils.csproj;neutral
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\WoWTBGapp.Utils.csproj;neutral
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\WoWTBGapp.Utils.csproj;neutral

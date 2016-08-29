@@ -15,7 +15,6 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\Plugin.Share.Abstractions.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\Plugin.Share.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\Refractored.XamForms.PullToRefresh.dll
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\wowtbgapp.api.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\WoWTBGapp.Clients.Portable.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\WoWTBGapp.Utils.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\Xamarin.Forms.Core.dll
@@ -45,7 +44,6 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\Plugin.Share.Abstractions.pdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\Plugin.Share.Abstractions.xml
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\Refractored.XamForms.PullToRefresh.xml
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\wowtbgapp.api.pdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\Xamarin.Forms.Core.pdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\Xamarin.Forms.Core.xml
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\Xamarin.Forms.Platform.pdb
@@ -57,5 +55,10 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Pages.Android.MenuPage.xaml.g.cs
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.pdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\WoWTBGapp.DataAccess.Abstractions.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\WoWTBGapp.DataAccess.Abstractions.pdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Cells.WoWTBGGroupHeaderView.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\WoWTBGapp.DataAccess.Nodejs.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\WoWTBGapp.DataAccess.Nodejs.pdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.dll.mdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\WoWTBGapp.Clients.UI.dll.mdb

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace WoWTBGapp.Clients.Portable
 {
+    /// <summary>
+    /// This Enum help to define all the Views the application has, so it can help with deeplinking and navigation as a whole.
+    /// </summary>
     public enum AppPage
     {
         //Feed,
@@ -16,20 +19,29 @@ namespace WoWTBGapp.Clients.Portable
         //Venue,
         //FloorMap,
         //ConferenceInfo,
-        //Settings,
         //Session,
         //Speaker,
         //Sponsor,
-        //Login,
         //Event,
         //Notification,
         //TweetImage,
         //WiFi,
         //CodeOfConduct,
         //Filter,
-        //Information,
         //Tweet,
         //Evals,
+
+        #region WoWTBGapp
+
+        Login,
+        Settings,
+        Information,
+
+        Characters,
+        GameInfo,
         ItemCards
+
+        #endregion WoWTBGapp
+
     }
 }

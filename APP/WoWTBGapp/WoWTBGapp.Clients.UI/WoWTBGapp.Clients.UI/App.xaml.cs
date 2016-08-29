@@ -16,16 +16,13 @@ namespace WoWTBGapp.Clients.UI
     {
         public static App current;
 
-        private static ILogger logger;
-        public static ILogger Logger => logger ?? (logger = DependencyService.Get<ILogger>());
-
         public App()
         {
             InitializeComponent();
 
             current = this;
 
-            //ViewModelBase.Init();
+            ViewModelBase.Init(false);
 
             Settings.Current.Email = ""; //"sergio-n-g@hotmail.com";
 
@@ -55,9 +52,13 @@ namespace WoWTBGapp.Clients.UI
             
         }
 
+        private static ILogger logger;
+        public static ILogger Logger => logger ?? (logger = DependencyService.Get<ILogger>());
+
         protected override void OnStart()
         {
             // Handle when your app starts
+            OnResume();
         }
         
         public void SecondOnResume()
@@ -124,6 +125,7 @@ namespace WoWTBGapp.Clients.UI
                 if (Settings.Current.FirstRun && Device.OS == TargetPlatform.Android)
                 {
                     //page = new LoginPage();
+                    page = new WoWTBGappNavigationPage(new ItemCardsView());
                 }
                 else
                 {
@@ -192,7 +194,7 @@ namespace WoWTBGapp.Clients.UI
             var data = uri.ToString().ToLowerInvariant();
 
             //only if deep linking
-            if (!data.Contains("/session/"))
+            if (!data.Contains("/itemcard/"))
                 return;
 
             var id = data.Substring(data.LastIndexOf("/", StringComparison.Ordinal) + 1);

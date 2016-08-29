@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace WoWTBGapp.Utils
 {
+    /// <summary>
+    /// This Class helps to define a set of keys to record in regars to the actions the user is taking on the app and navigation itself.
+    /// </summary>
     public static class MessageKeys
     {
         public const string NavigateToCharacter = "navigate_character";
+        public const string NavigateToItemCard = "navigate_itemcard";
         public const string NavigateToPlayers = "navigate_players";
         public const string NavigateToQuests = "navigate_quests";
         public const string NavigateToBroker = "navigate_broker";

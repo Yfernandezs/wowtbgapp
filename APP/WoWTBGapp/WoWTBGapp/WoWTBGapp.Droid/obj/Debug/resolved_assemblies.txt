@@ -46,6 +46,8 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGap
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\Xamarin.GooglePlayServices.AppIndexing.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\Xamarin.GooglePlayServices.Base.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\Xamarin.GooglePlayServices.Basement.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\Xamarin.GooglePlayServices.Gcm.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\Xamarin.GooglePlayServices.Measurement.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\Java.Interop.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\Mono.Android.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\mscorlib.dll
@@ -56,6 +58,8 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGap
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\System.Xml.Linq.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\WoWTBGapp.Clients.Portable.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\WoWTBGapp.Clients.UI.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\WoWTBGapp.DataAccess.Abstractions.dll
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\WoWTBGapp.DataAccess.Nodejs.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\WoWTBGapp.Utils.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\System.Runtime.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
@@ -88,7 +92,6 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGap
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\System.Net.Primitives.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\System.Collections.Concurrent.dll
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\android\assets\wowtbgapp.api.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\linksrc\af\Humanizer.resources.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\linksrc\ar\Humanizer.resources.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.Droid\obj\Debug\linksrc\bg\Humanizer.resources.dll

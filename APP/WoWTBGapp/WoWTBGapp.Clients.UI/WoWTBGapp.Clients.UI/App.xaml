@@ -31,7 +31,13 @@
             <OnPlatform x:TypeArguments="Thickness" Android="8,16" iOS="0,0,0,16" WinPhone="0,0,0,16" x:Key="CardPadding"/>
             <OnPlatform x:TypeArguments="x:Double" Android="16" iOS="0" WinPhone="0" x:Key="CardSpacing"/>
 
-        <!--<OnPlatform x:TypeArguments="x:Double" Android="16" iOS="16" WinPhone="13" x:Key="EvolveListItemTextStyleSize" />
+            <OnPlatform x:TypeArguments="x:Double" Android="16" iOS="16" WinPhone="13" x:Key="WoWTBGListItemTextStyleSize" />
+
+            <Style x:Key="WoWTBGListItemTextStyle" TargetType="Label" BaseResourceKey="ListItemTextStyle">
+              <Setter Property="FontSize" Value="{DynamicResource WoWTBGListItemTextStyleSize}" />
+            </Style>
+
+            <!--
             <OnPlatform x:TypeArguments="x:Double" Android="13" iOS="13" WinPhone="13" x:Key="EvolveListItemDetailTextStyleSize" />
             <OnPlatform x:TypeArguments="x:Double" Android="18" iOS="13" WinPhone="13" x:Key="LabelSectionFontSize" />
             <OnPlatform x:TypeArguments="x:Double" Android="14" iOS="14" WinPhone="14" x:Key="TweetTextSize" />
@@ -47,10 +53,6 @@
             <Style x:Key="TweetTextStyle" TargetType="Label" BaseResourceKey="ListItemDetailTextStyle">
                 <Setter Property="FontSize" Value="{DynamicResource TweetTextSize}" />
                 <Setter Property="TextColor" Value="{DynamicResource DetailTextColor}"/>
-            </Style>
-
-            <Style x:Key="EvolveListItemTextStyle" TargetType="Label" BaseResourceKey="ListItemTextStyle">
-                <Setter Property="FontSize" Value="{DynamicResource EvolveListItemTextStyleSize}" />
             </Style>
 
             <Style x:Key="EvolveDetailTextStyle" TargetType="Label" BaseResourceKey="ListItemDetailTextStyle">

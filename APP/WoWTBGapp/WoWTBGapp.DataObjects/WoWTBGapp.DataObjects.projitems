@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>eb63fe55-6800-4a56-ad28-fd5917f5712f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>WoWTBGapp.DataObjects</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Counter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IBaseDataObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ItemCard.cs" />
+  </ItemGroup>
+</Project>

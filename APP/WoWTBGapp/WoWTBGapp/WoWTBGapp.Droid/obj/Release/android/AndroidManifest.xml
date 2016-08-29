@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.sergiong.wowtbagapp" android:versionName="1.0.1" android:versionCode="2">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.sergiong.wowtbagapp" android:versionName="0.1.2" android:versionCode="3">
   <!--suppress UsesMinSdkAttributes-->
-  <uses-sdk android:minSdkVersion="15" />
+  <uses-sdk android:minSdkVersion="16" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
   <application android:label="WoWTBGapp" android:icon="@drawable/logowow" android:theme="@style/MyTheme" android:name="md5dda528d3f2835e78f3b20332e7bf0b93.MainApplication" android:allowBackup="true">
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <service android:exported="true" android:name="com.sergiong.wowtbagapp.DataRefreshService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+      <intent-filter>
+        <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+      </intent-filter>
+    </service>
     <activity android:icon="@drawable/logowow" android:label="WoWTBGapp" android:theme="@style/SplashTheme" android:name="md5dda528d3f2835e78f3b20332e7bf0b93.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -18,6 +24,13 @@
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/logowow" android:label="WoWTBGapp" android:launchMode="singleTask" android:name="md5dda528d3f2835e78f3b20332e7bf0b93.MainActivity" />
     <receiver android:enabled="true" android:label="Connectivity Plugin Broadcast Receiver" android:name="md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver" />
     <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
+    <provider android:authorities="com.sergiong.wowtbagapp.google_measurement_service" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementContentProvider" />
+    <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService" />
+    <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+      <intent-filter>
+        <action android:name="com.google.android.gms.measurement.UPLOAD" />
+      </intent-filter>
+    </receiver>
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.sergiong.wowtbagapp.mono.MonoRuntimeProvider.__mono_init__" />
     <activity android:name="net.hockeyapp.android.UpdateActivity" />
     <activity android:name="net.hockeyapp.android.FeedbackActivity" />

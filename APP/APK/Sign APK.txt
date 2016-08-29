@@ -1,0 +1,12 @@
+SDK location:
+
+	C:\Program Files (x86)\Java\jdk1.8.0\bin
+
+Generate a Keystore to sign an APK:
+
+	keytool -genkey -v -keystore "C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\APK\wowtbgapp_keystore.keystore" -alias WoWTBGapp -keyalg RSA -keysize 2048 -validity 10000
+
+
+Sing the APK with the Keystore:
+
+	jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore "C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\APK\wowtbgapp_keystore.keystore" -signedjar "C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\APK\com.sergiong.wowtbagapp-Signed.apk" "C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\APK\com.sergiong.wowtbagapp.apk" WoWTBGapp

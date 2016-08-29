@@ -58,9 +58,10 @@ namespace WoWTBGapp.Droid
 
             //if (!Settings.Current.PushNotificationsEnabled)
             //    return;
+            
+            //OnNewIntent(Intent);
 
             //DataRefreshService.ScheduleRefresh(this);
-
         }
 
         void InitializeHockeyApp()
@@ -74,7 +75,6 @@ namespace WoWTBGapp.Droid
             //HockeyApp.UpdateManager.Register(this, ApiKeys.HockeyAppAndroid);
 
             HockeyApp.Android.Metrics.MetricsManager.Register(this, Application, ApiKeys.HockeyAppAndroid);
-
         }
 
     }

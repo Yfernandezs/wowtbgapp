@@ -108,10 +108,10 @@ namespace WoWTBGapp.Clients.UI
         {
             base.OnAppearing();
             
-            if (Settings.Current.FirstRun)
-            {
-                MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
-            }
+            //if (Settings.Current.FirstRun)
+            //{
+            //    MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
+            //}
 
             isRunning = true;
 
