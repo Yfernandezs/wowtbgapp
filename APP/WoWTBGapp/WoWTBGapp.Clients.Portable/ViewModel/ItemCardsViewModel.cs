@@ -49,6 +49,19 @@ namespace WoWTBGapp.Clients.Portable
             }
         }
 
+        bool groupingEnabled = true;
+
+        public bool GroupingEnabled
+        {
+            get { return groupingEnabled; }
+            set
+            {
+                groupingEnabled = value;
+
+                OnPropertyChanged();
+            }
+        }
+
         #endregion Properties
 
 
@@ -65,6 +78,15 @@ namespace WoWTBGapp.Clients.Portable
 
 
         #region Commands
+
+        ICommand itemCardSelectedCommand;
+        public ICommand ItemCardSelectedCommand =>
+        itemCardSelectedCommand ?? (itemCardSelectedCommand = new Command<ItemCard>(async (t) => await ItemCardSelectedCommandAsync(t)));
+
+        async Task ItemCardSelectedCommandAsync(ItemCard card)
+        {
+            Toast.SendToast("Item Card: " + card.Name, 0);
+        }
 
         ICommand forceRefreshCommand;
         public ICommand ForceRefreshCommand =>

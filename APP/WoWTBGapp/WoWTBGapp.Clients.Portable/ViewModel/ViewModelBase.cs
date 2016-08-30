@@ -57,6 +57,7 @@ namespace WoWTBGapp.Clients.Portable
             else
             {
                 DependencyService.Register<IItemCardAccess, WoWTBGapp.DataAccess.Nodejs.ItemCardAccess>();
+                DependencyService.Register<IRequirementImageData, WoWTBGapp.DataAccess.Nodejs.RequirementImageDataAccess>();
 
                 DependencyService.Register<IAccessManager, WoWTBGapp.DataAccess.Nodejs.NodejsAccessManager>();
             }
@@ -78,15 +79,6 @@ namespace WoWTBGapp.Clients.Portable
             get { return Settings.Current; }
         }
 
-
-        ICommand itemCardSelectedCommand;
-        public ICommand ItemCardSelectedCommand =>
-        itemCardSelectedCommand ?? (itemCardSelectedCommand = new Command<ItemCard>(async (t) => await ItemCardSelectedCommandAsync(t)));
-
-        async Task ItemCardSelectedCommandAsync(ItemCard card)
-        {
-            Toast.SendToast("Item Card: " + card.Name, 0);
-        }
 
         ICommand launchBrowserCommand;
         public ICommand LaunchBrowserCommand =>

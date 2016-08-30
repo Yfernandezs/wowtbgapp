@@ -3,6 +3,7 @@
   xmlns="http://xamarin.com/schemas/2014/forms"
   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
   xmlns:local="clr-namespace:WoWTBGapp.Clients.UI;assembly=WoWTBGapp.Clients.UI"
+  xmlns:toolkit="clr-namespace:FormsToolkit;assembly=FormsToolkit"
   x:Class="WoWTBGapp.Clients.UI.ItemCardsView"
   xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
 
@@ -29,23 +30,25 @@
           x:Name="ItemCardsList"
           ItemsSource="{Binding CardsGrouped}"
           GroupDisplayBinding="{Binding Key}"
-          IsGroupingEnabled="true"
+          IsGroupingEnabled="{Binding GroupingEnabled}"
           HasUnevenRows ="true"
+          BackgroundColor="#F5F5F5"
           IsPullToRefreshEnabled="{Binding IsNotBusy}"
           RefreshCommand="{Binding ForceRefreshCommand}"
           IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+          CachingStrategy="RecycleElement"
           IsVisible="{Binding IsNotBusy}"
           StyleId="ItemCardsViewIdentifier"
           AbsoluteLayout.LayoutFlags="All"
           AbsoluteLayout.LayoutBounds="0,0,1,1" >
       <ListView.SeparatorColor>
-        <OnPlatform x:TypeArguments="Color" iOS="{StaticResource ListSeparator}"  WinPhone="{StaticResource ListSeparator}"/>
+        <OnPlatform x:TypeArguments="Color" iOS="{StaticResource ListSeparator}"  WinPhone="{StaticResource ListSeparator}" Android="Transparent"/>
       </ListView.SeparatorColor>
       <ListView.GroupHeaderTemplate>
         <DataTemplate>
           <ViewCell>
             <ViewCell.Height>
-              <OnPlatform x:TypeArguments="x:Double" iOS="28"/>
+              <OnPlatform x:TypeArguments="x:Double" iOS="28" Android="45"/>
             </ViewCell.Height>
             <local:WoWTBGGroupHeaderView/>
           </ViewCell>
@@ -53,16 +56,17 @@
       </ListView.GroupHeaderTemplate>
       <ListView.ItemTemplate>
         <DataTemplate>
-          <ViewCell>
+          <!--<ViewCell>
             <Frame Margin="10" Padding="5" OutlineColor="Black" BackgroundColor="Black"  >
               <Grid
                     ColumnSpacing="0"
                     Padding="0">
                 <Grid.RowDefinitions>
                   <RowDefinition Height="1*" />
-                  <!--<RowDefinition Height="56" />
+                  -->
+          <!--<RowDefinition Height="56" />
                   <RowDefinition Height="1*" />
-                  <RowDefinition Height="1*" />-->
+                  <RowDefinition Height="1*" />--><!--
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                   <ColumnDefinition Width="66" />
@@ -118,12 +122,12 @@
                     HorizontalOptions="CenterAndExpand"
                     Text="{Binding Name}" />
 
-                <!--<Label
+                --><!--<Label
                     Grid.Row="0"
                     Grid.Column="4"
                     BackgroundColor="White"
                     VerticalOptions="Fill"
-                    HorizontalOptions="Fill" />-->
+                    HorizontalOptions="Fill" />--><!--
                 <Frame
                       Grid.Row="0"
                       Grid.Column="4"
@@ -140,7 +144,7 @@
                         Aspect="AspectFit" >
                   </Image>
                 </Frame>
-                <!--<Label
+                --><!--<Label
                     Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="4"
@@ -158,11 +162,13 @@
                     BackgroundColor="White"
                     VerticalTextAlignment="Center" 
                     VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand" />-->
+                    HorizontalOptions="FillAndExpand" />--><!--
 
               </Grid>
-            </Frame>
-          </ViewCell>
+            </Frame>-->
+            <ViewCell StyleId="ItemCards">
+              <local:ItemCardsListCell/>
+            </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>

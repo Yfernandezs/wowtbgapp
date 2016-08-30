@@ -37,6 +37,7 @@
     <Compile Include="IAccessManager.cs" />
     <Compile Include="IBaseAccess.cs" />
     <Compile Include="IItemCardAccess.cs" />
+    <Compile Include="IRequirementImageData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebResponse.cs" />
   </ItemGroup>

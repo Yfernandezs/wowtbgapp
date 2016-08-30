@@ -13,6 +13,7 @@ namespace WoWTBGapp.DataAccess.Abstractions
         Task InitializeAsync();
 
         IItemCardAccess ItemCardAccess { get; }
+        IRequirementImageData RequirementImageAccess { get; }
         //IFavoriteStore FavoriteStore { get; }
         //IFeedbackStore FeedbackStore { get; }
         //ISessionStore SessionStore { get; }

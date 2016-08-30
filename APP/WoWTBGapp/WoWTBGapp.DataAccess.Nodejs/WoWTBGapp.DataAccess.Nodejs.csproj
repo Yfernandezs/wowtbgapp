@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Access\BaseAccess.cs" />
     <Compile Include="Access\ItemCardAccess.cs" />
+    <Compile Include="Access\RequirementImageDataAccess.cs" />
     <Compile Include="NodejsAccessManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

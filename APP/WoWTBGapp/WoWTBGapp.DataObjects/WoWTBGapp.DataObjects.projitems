@@ -10,7 +10,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Counter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CardEffect.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IBaseDataObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItemCard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RequirementImageData.cs" />
   </ItemGroup>
 </Project>

@@ -42,6 +42,7 @@
     <Compile Include="Model\Extensions\ItemCardExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FavoriteService.cs" />
+    <Compile Include="ViewModel\ItemCardDetailsViewModel.cs" />
     <Compile Include="ViewModel\ItemCardsViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
   </ItemGroup>

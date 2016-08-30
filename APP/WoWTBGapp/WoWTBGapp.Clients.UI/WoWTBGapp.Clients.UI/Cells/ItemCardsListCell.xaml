@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView 
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:local="clr-namespace:WoWTBGapp.Clients.UI;assembly=WoWTBGapp.Clients.UI"
+  xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+  x:Class="WoWTBGapp.Clients.UI.ItemCardsListCell">
+  <ContentView.Resources>
+    <ResourceDictionary>
+      <!--<local:RequirementImageURLConverter x:Key="RequirementImageURLConverter" />-->
+    </ResourceDictionary>
+  </ContentView.Resources>
+  <StackLayout Spacing="0">
+    <StackLayout.Padding>
+      <OnPlatform x:TypeArguments="Thickness" iOS="0" Android="10,5" WinPhone="0"/>
+    </StackLayout.Padding>
+    <local:CardView>
+      <Frame
+            Padding="2"
+            OutlineColor="Black"
+            BackgroundColor="Black" >
+        <StackLayout Padding="0" Spacing="0" BackgroundColor="#0073E6">
+
+          <Grid Margin="5">
+
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="70" />
+              <ColumnDefinition Width="1*" />
+              <ColumnDefinition Width="1*" />
+              <ColumnDefinition Width="1*" />
+              <ColumnDefinition Width="70" />
+            </Grid.ColumnDefinitions>
+
+            <controls:CircleImage
+              Grid.Row="0"
+              Grid.Column="0"
+              BackgroundColor="Transparent"
+              VerticalOptions="CenterAndExpand"
+              HorizontalOptions="CenterAndExpand"
+              Aspect="AspectFit"
+              BorderThickness="2"
+              BorderColor="#FFCC00" >
+              <controls:CircleImage.Source>
+                <UriImageSource Uri="{Binding TypeIconUrl}"
+                    CacheValidity="1"
+                    CachingEnabled="true"/>
+              </controls:CircleImage.Source>
+              <controls:CircleImage.WidthRequest>
+                <OnPlatform x:TypeArguments="x:Double"
+                  iOS="56"
+                  Android="56"
+                  WinPhone="44"/>
+              </controls:CircleImage.WidthRequest>
+              <controls:CircleImage.HeightRequest>
+                <OnPlatform x:TypeArguments="x:Double"
+                    iOS="56"
+                    Android="56"
+                    WinPhone="44"/>
+              </controls:CircleImage.HeightRequest>
+            </controls:CircleImage>
+
+            <Frame
+              Grid.Row="0"
+              Grid.Column="4"
+              Padding="2"
+              OutlineColor="White"
+              BackgroundColor="White"
+              VerticalOptions="CenterAndExpand"
+              HorizontalOptions="CenterAndExpand" >
+              <Image
+                    HorizontalOptions="StartAndExpand"
+                    HeightRequest="52"
+                    WidthRequest="52"
+                    Aspect="AspectFill" >
+                <Image.Source>
+                  <UriImageSource Uri="{Binding IconUrl}"
+                      CacheValidity="1"
+                      CachingEnabled="true"/>
+                </Image.Source>
+              </Image>
+            </Frame>
+
+            <Label
+              Grid.Row="0"
+              Grid.Column="1"
+              Grid.ColumnSpan="3"
+              Margin="10"
+              Text="{Binding Name}"
+              TextColor="White"
+              Style="{DynamicResource ItemCardTitleStyle}"
+              StyleId="ItemCardTitle"
+              LineBreakMode="WordWrap"
+              VerticalOptions="CenterAndExpand"
+              HorizontalOptions="CenterAndExpand"
+              VerticalTextAlignment="Center"
+              HorizontalTextAlignment="Center"/>
+
+          </Grid>
+
+        </StackLayout>
+      </Frame>
+    </local:CardView>
+  </StackLayout>
+</ContentView>

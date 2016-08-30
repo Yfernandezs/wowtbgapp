@@ -31,6 +31,9 @@ namespace WoWTBGapp.DataAccess.Nodejs
         private IItemCardAccess itemCardAccess;
         public IItemCardAccess ItemCardAccess => itemCardAccess ?? (itemCardAccess = DependencyService.Get<IItemCardAccess>());
 
+        private IRequirementImageData requirementImageAccess;
+        public IRequirementImageData RequirementImageAccess => requirementImageAccess ?? (requirementImageAccess = DependencyService.Get<IRequirementImageData>());
+
         object locker = new object();
         public async Task InitializeAsync()
         {

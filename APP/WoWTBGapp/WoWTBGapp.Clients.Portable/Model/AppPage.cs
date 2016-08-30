@@ -39,7 +39,8 @@ namespace WoWTBGapp.Clients.Portable
 
         Characters,
         GameInfo,
-        ItemCards
+        ItemCards,
+        ItemCardDetails
 
         #endregion WoWTBGapp
 

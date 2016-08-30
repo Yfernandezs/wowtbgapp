@@ -48,13 +48,14 @@ namespace WoWTBGapp.Clients.UI
                     return;
                 }
 
-                ViewModel.ItemCardSelectedCommand.Execute(card);
+                // Show toast about the card.
+                //ViewModel.ItemCardSelectedCommand.Execute(card);
 
-                //var eventDetails = new EventDetailsPage();
+                var itemCardDetails = new ItemCardDetailsPage();
 
-                //eventDetails.Event = ev;
-                //App.Logger.TrackPage(AppPage.Event.ToString(), ev.Title);
-                //await NavigationService.PushAsync(Navigation, eventDetails);
+                itemCardDetails.Card = card;
+                App.Logger.TrackPage(AppPage.ItemCardDetails.ToString(), card.Name);
+                await NavigationService.PushAsync(Navigation, itemCardDetails);
 
                 ItemCardsList.SelectedItem = null;
             };

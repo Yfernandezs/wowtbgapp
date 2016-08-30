@@ -48,7 +48,7 @@ namespace WoWTBGapp.Droid
             Toolkit.Init();
             
             PullToRefreshLayoutRenderer.Init();
-            typeof(Color).GetProperty("Accent", BindingFlags.Public | BindingFlags.Static).SetValue(null, Color.FromHex("#757575"));
+            //typeof(Color).GetProperty("Accent", BindingFlags.Public | BindingFlags.Static).SetValue(null, Color.FromHex("#757575"));
 
             ImageCircleRenderer.Init(); // Inicializamos primero el paquete del control plugin de CircleImage.
 

@@ -61,3 +61,7 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\bin\Debug\WoWTBGapp.Clients.Portable.dll.mdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\obj\Debug\WoWTBGapp.Clients.Portable.dll.mdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\bin\Debug\WoWTBGapp.Clients.Portable.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\obj\Debug\WoWTBGapp.Clients.Portable.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\bin\Debug\WoWTBGapp.Clients.Portable.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\obj\Debug\WoWTBGapp.Clients.Portable.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.Portable\bin\Debug\WoWTBGapp.Clients.Portable.dll.mdb
