@@ -1,0 +1,5 @@
+"/t:System.Collections.Generic.IDictionary`2[[System.String,System.Runtime],[System.Object,System.Runtime]],System.Runtime,dcs"
+"/t:System.Collections.Generic.List`1[[Microsoft.HockeyApp.Model.AppVersion,Microsoft.HockeyApp.Core45]],mscorlib,json"
+"/t:Microsoft.HockeyApp.Model.AuthStatus,Microsoft.HockeyApp.Core45,json"
+"/t:Microsoft.HockeyApp.Model.CrashData,Microsoft.HockeyApp.Core45,json"
+"/t:Microsoft.HockeyApp.Model.FeedbackResponseSingle,Microsoft.HockeyApp.Core45,json"

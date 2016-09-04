@@ -43,8 +43,8 @@ namespace WoWTBGapp.Clients.UI
                     break;
                 case TargetPlatform.Windows:
                 case TargetPlatform.WinPhone:
-                    //MainPage = new RootPageWindows();
-                    MainPage = new NavigationPage(new ItemCardsView()) { BarBackgroundColor = (Color)Application.Current.Resources["Primary"], BarTextColor = (Color)Application.Current.Resources["NavigationText"] };
+                    MainPage = new RootPageWindows();
+                    //MainPage = new NavigationPage(new ItemCardsView()) { BarBackgroundColor = (Color)Application.Current.Resources["Primary"], BarTextColor = (Color)Application.Current.Resources["NavigationText"] };
                     break;
                 default:
                     throw new NotImplementedException();

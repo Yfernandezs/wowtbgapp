@@ -1,0 +1,15 @@
+Humanizer, Version=2.1.0.0, Culture=neutral, PublicKeyToken=979442b78dfc278e
+  Humanizer.Properties.Resources.resources
+WoWTBGapp.Clients.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  WoWTBGapp.Clients.UI.App.xaml
+  WoWTBGapp.Clients.UI.Pages.ItemCards.ItemCardsView.xaml
+  WoWTBGapp.Clients.UI.Pages.Android.MenuPage.xaml
+  WoWTBGapp.Clients.UI.Cells.WoWTBGGroupHeaderView.xaml
+  WoWTBGapp.Clients.UI.Pages.ItemCards.ItemCardDetailsPage.xaml
+  WoWTBGapp.Clients.UI.Controls.HeaderDivider.xaml
+  WoWTBGapp.Clients.UI.Controls.SectionDivider.xaml
+  WoWTBGapp.Clients.UI.Controls.FooterDivider.xaml
+  WoWTBGapp.Clients.UI.Cells.ItemCardRequirementsCell.xaml
+  WoWTBGapp.Clients.UI.Cells.ItemCardsListCell.xaml
+  WoWTBGapp.Clients.UI.Controls.LabelSection.xaml
+  WoWTBGapp.Clients.UI.Pages.Windows.MenuPageUWP.xaml

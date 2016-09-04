@@ -115,6 +115,18 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\logoEX.png">
+      <PackagePath>logoEX.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\menu_info.png">
+      <PackagePath>menu_info.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\menu_settings.png">
+      <PackagePath>menu_settings.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\profile_generic.png">
+      <PackagePath>profile_generic.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\bin\Release\WoWTBGapp.WinPhone.xr.xml">
       <PackagePath>WoWTBGapp.WinPhone.xr.xml</PackagePath>
     </AppxPackagedFile>

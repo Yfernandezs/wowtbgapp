@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -14,6 +16,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Reflection;
+using WoWTBGapp.Clients.Portable;
+using WoWTBGapp.Utils;
+using Microsoft.HockeyApp;
+using WoWTBGapp.DataObjects;
 
 namespace WoWTBGapp.UWP
 {
@@ -22,6 +29,9 @@ namespace WoWTBGapp.UWP
     /// </summary>
     sealed partial class App : Application
     {
+        // This variable help to keep a reference to the Window.Current for Binding updates later on.
+        public Window CurrentWindow { get; set; }
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -30,6 +40,18 @@ namespace WoWTBGapp.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+        }
+
+        private async Task InitNotificationsAsync()
+        {
+            //var channel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
+            //var storeManager = Xamarin.Forms.DependencyService.Get<IStoreManager>() as XamarinEvolve.DataStore.Azure.StoreManager;
+
+            //if (storeManager == null)
+            //    return;
+
+            //await storeManager.InitializeAsync();
+            //await XamarinEvolve.DataStore.Azure.StoreManager.MobileService.GetPush().RegisterAsync(channel.Uri);
         }
 
         /// <summary>
@@ -43,9 +65,19 @@ namespace WoWTBGapp.UWP
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                this.DebugSettings.EnableFrameRateCounter = true;
+                this.DebugSettings.EnableFrameRateCounter = false;
             }
 #endif
+
+            // If we are on mobile (Hence having the status bar API), set the status bar color to purple.
+            if (Windows.Foundation.Metadata.ApiInformation.IsTypePresent("Windows.UI.ViewManagement.StatusBar"))
+            {
+                var statusBar = Windows.UI.ViewManagement.StatusBar.GetForCurrentView();
+
+                // Set this to any Windows Color or ARGB value.
+                statusBar.BackgroundColor = Color.FromArgb(56, 142, 60, 1);
+                statusBar.BackgroundOpacity = 1;
+            }
 
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -58,7 +90,67 @@ namespace WoWTBGapp.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                Xamarin.Forms.Forms.Init(e);
+                // you'll need to add `using System.Reflection;`
+                List<Assembly> assembliesToInclude = new List<Assembly>();
+
+                //Now, add in all the assemblies your app uses
+                //assembliesToInclude.Add(typeof(Plugin.Calendars.CalendarsImplementation).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(Plugin.Calendars.Abstractions.Calendar).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(Censored.Censor).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(FormsToolkit.HasDataConverter).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Humanizer.DateHumanizeExtensions).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(Microsoft.WindowsAzure.MobileServices.MobileServiceClient).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(Microsoft.WindowsAzure.MobileServices.Sync.MobileServiceSyncHandler).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(System.Net.Http.HttpClient).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Newtonsoft.Json.JsonConvert).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(NodaTime.DateTimeZone).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(PCLStorage.FileSystem).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Plugin.Permissions.PermissionsImplementation).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Plugin.Permissions.Abstractions.Permission).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Plugin.Share.ShareImplementation).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Plugin.Share.Abstractions.ShareColor).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(MvvmHelpers.ObservableObject).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(MvvmHelpers.ObservableRangeCollection<ItemCard>).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Refractored.XamForms.PullToRefresh.PullToRefreshLayout).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Plugin.Connectivity.ConnectivityImplementation).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Plugin.Connectivity.Abstractions.BaseConnectivity).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Plugin.EmbeddedResource.ResourceLoader).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(Plugin.ExternalMaps.ExternalMapsImplementation).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(Plugin.ExternalMaps.Abstractions.NavigationType).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(ImageCircle.Forms.Plugin.UWP.ImageCircleRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(ImageCircle.Forms.Plugin.Abstractions.CircleImage).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(Plugin.Messaging.CrossMessaging).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Plugin.Settings.SettingsImplementation).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(Plugin.Settings.Abstractions.ISettings).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(Xamarin.Insights).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(WoWTBGapp.Utils.Settings).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(WoWTBGapp.Clients.UI.AboutPage).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(WoWTBGapp.DataAccess.Abstractions.IItemCardAccess).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(WoWTBGapp.DataAccess.Nodejs.ItemCardAccess).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(WoWTBGapp.DataAccess.Abstractions.IRequirementImageData).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(WoWTBGapp.DataAccess.Nodejs.RequirementImageDataAccess).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(WoWTBGapp.DataAccess.Abstractions.IAccessManager).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(WoWTBGapp.DataAccess.Nodejs.NodejsAccessManager).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(XamarinEvolve.DataStore.Mock.CategoryStore).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(WoWTBGapp.Clients.Portable.FavoriteService).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(ZXing.BarcodeReader).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(Xamarin.FormsMaps).GetTypeInfo().Assembly);
+
+                Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+                ViewModelBase.Init(false);
+
+                try
+                {
+                    //await InitNotificationsAsync();
+                }
+                catch
+                {
+                }
+
+                if (ApiKeys.HockeyAppUWP != nameof(ApiKeys.HockeyAppUWP))
+                {
+                    Microsoft.HockeyApp.HockeyClient.Current.Configure(ApiKeys.HockeyAppUWP);
+                }
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
@@ -76,6 +168,10 @@ namespace WoWTBGapp.UWP
                 // parameter
                 rootFrame.Navigate(typeof(MainPage), e.Arguments);
             }
+            
+            // Set the reference to the Current Window.
+            CurrentWindow = Window.Current;
+
             // Ensure the current window is active
             Window.Current.Activate();
         }

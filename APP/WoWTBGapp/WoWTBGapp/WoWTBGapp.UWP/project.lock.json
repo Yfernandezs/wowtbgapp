@@ -3,6 +3,477 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
+      "FormsToolkit/1.1.18": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        }
+      },
+      "HockeySDK.Core/4.1.3": {
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        }
+      },
+      "HockeySDK.UWP/4.1.3": {
+        "dependencies": {
+          "HockeySDK.Core": "4.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        }
+      },
+      "Humanizer/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core.af": "2.1.0",
+          "Humanizer.Core.ar": "2.1.0",
+          "Humanizer.Core.bg": "2.1.0",
+          "Humanizer.Core.bn-BD": "2.1.0",
+          "Humanizer.Core.cs": "2.1.0",
+          "Humanizer.Core.da": "2.1.0",
+          "Humanizer.Core.de": "2.1.0",
+          "Humanizer.Core.el": "2.1.0",
+          "Humanizer.Core.es": "2.1.0",
+          "Humanizer.Core.fa": "2.1.0",
+          "Humanizer.Core.fi-FI": "2.1.0",
+          "Humanizer.Core.fr": "2.1.0",
+          "Humanizer.Core.fr-BE": "2.1.0",
+          "Humanizer.Core.he": "2.1.0",
+          "Humanizer.Core.hr": "2.1.0",
+          "Humanizer.Core.hu": "2.1.0",
+          "Humanizer.Core.id": "2.1.0",
+          "Humanizer.Core.it": "2.1.0",
+          "Humanizer.Core.ja": "2.1.0",
+          "Humanizer.Core.nb": "2.1.0",
+          "Humanizer.Core.nb-NO": "2.1.0",
+          "Humanizer.Core.nl": "2.1.0",
+          "Humanizer.Core.pl": "2.1.0",
+          "Humanizer.Core.pt": "2.1.0",
+          "Humanizer.Core.ro": "2.1.0",
+          "Humanizer.Core.ru": "2.1.0",
+          "Humanizer.Core.sk": "2.1.0",
+          "Humanizer.Core.sl": "2.1.0",
+          "Humanizer.Core.sr": "2.1.0",
+          "Humanizer.Core.sr-Latn": "2.1.0",
+          "Humanizer.Core.sv": "2.1.0",
+          "Humanizer.Core.tr": "2.1.0",
+          "Humanizer.Core.uk": "2.1.0",
+          "Humanizer.Core.uz-Cyrl-UZ": "2.1.0",
+          "Humanizer.Core.uz-Latn-UZ": "2.1.0",
+          "Humanizer.Core.vi": "2.1.0",
+          "Humanizer.Core.zh-CN": "2.1.0",
+          "Humanizer.Core.zh-Hans": "2.1.0",
+          "Humanizer.Core.zh-Hant": "2.1.0"
+        }
+      },
+      "Humanizer.Core/2.1.0": {
+        "compile": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        }
+      },
+      "Humanizer.Core.af/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/af/Humanizer.resources.dll": {
+            "locale": "af"
+          }
+        }
+      },
+      "Humanizer.Core.ar/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ar/Humanizer.resources.dll": {
+            "locale": "ar"
+          }
+        }
+      },
+      "Humanizer.Core.bg/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bg/Humanizer.resources.dll": {
+            "locale": "bg"
+          }
+        }
+      },
+      "Humanizer.Core.bn-BD/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bn-BD/Humanizer.resources.dll": {
+            "locale": "bn-BD"
+          }
+        }
+      },
+      "Humanizer.Core.cs/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/cs/Humanizer.resources.dll": {
+            "locale": "cs"
+          }
+        }
+      },
+      "Humanizer.Core.da/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/da/Humanizer.resources.dll": {
+            "locale": "da"
+          }
+        }
+      },
+      "Humanizer.Core.de/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/de/Humanizer.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Humanizer.Core.el/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/el/Humanizer.resources.dll": {
+            "locale": "el"
+          }
+        }
+      },
+      "Humanizer.Core.es/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/es/Humanizer.resources.dll": {
+            "locale": "es"
+          }
+        }
+      },
+      "Humanizer.Core.fa/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fa/Humanizer.resources.dll": {
+            "locale": "fa"
+          }
+        }
+      },
+      "Humanizer.Core.fi-FI/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fi-FI/Humanizer.resources.dll": {
+            "locale": "fi-FI"
+          }
+        }
+      },
+      "Humanizer.Core.fr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr/Humanizer.resources.dll": {
+            "locale": "fr"
+          }
+        }
+      },
+      "Humanizer.Core.fr-BE/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr-BE/Humanizer.resources.dll": {
+            "locale": "fr-BE"
+          }
+        }
+      },
+      "Humanizer.Core.he/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/he/Humanizer.resources.dll": {
+            "locale": "he"
+          }
+        }
+      },
+      "Humanizer.Core.hr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hr/Humanizer.resources.dll": {
+            "locale": "hr"
+          }
+        }
+      },
+      "Humanizer.Core.hu/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hu/Humanizer.resources.dll": {
+            "locale": "hu"
+          }
+        }
+      },
+      "Humanizer.Core.id/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/id/Humanizer.resources.dll": {
+            "locale": "id"
+          }
+        }
+      },
+      "Humanizer.Core.it/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/it/Humanizer.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Humanizer.Core.ja/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ja/Humanizer.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Humanizer.Core.nb/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb/Humanizer.resources.dll": {
+            "locale": "nb"
+          }
+        }
+      },
+      "Humanizer.Core.nb-NO/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb-NO/Humanizer.resources.dll": {
+            "locale": "nb-NO"
+          }
+        }
+      },
+      "Humanizer.Core.nl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nl/Humanizer.resources.dll": {
+            "locale": "nl"
+          }
+        }
+      },
+      "Humanizer.Core.pl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pl/Humanizer.resources.dll": {
+            "locale": "pl"
+          }
+        }
+      },
+      "Humanizer.Core.pt/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pt/Humanizer.resources.dll": {
+            "locale": "pt"
+          }
+        }
+      },
+      "Humanizer.Core.ro/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ro/Humanizer.resources.dll": {
+            "locale": "ro"
+          }
+        }
+      },
+      "Humanizer.Core.ru/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ru/Humanizer.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Humanizer.Core.sk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sk/Humanizer.resources.dll": {
+            "locale": "sk"
+          }
+        }
+      },
+      "Humanizer.Core.sl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sl/Humanizer.resources.dll": {
+            "locale": "sl"
+          }
+        }
+      },
+      "Humanizer.Core.sr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr/Humanizer.resources.dll": {
+            "locale": "sr"
+          }
+        }
+      },
+      "Humanizer.Core.sr-Latn/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr-Latn/Humanizer.resources.dll": {
+            "locale": "sr-Latn"
+          }
+        }
+      },
+      "Humanizer.Core.sv/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sv/Humanizer.resources.dll": {
+            "locale": "sv"
+          }
+        }
+      },
+      "Humanizer.Core.tr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/tr/Humanizer.resources.dll": {
+            "locale": "tr"
+          }
+        }
+      },
+      "Humanizer.Core.uk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uk/Humanizer.resources.dll": {
+            "locale": "uk"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Cyrl-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Cyrl-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Cyrl-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Latn-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Latn-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Latn-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.vi/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/vi/Humanizer.resources.dll": {
+            "locale": "vi"
+          }
+        }
+      },
+      "Humanizer.Core.zh-CN/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-CN/Humanizer.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hans/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hans/Humanizer.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hant/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -298,12 +769,61 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PCLStorage/1.0.0": {
+        "compile": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        }
+      },
+      "Plugin.Permissions/1.1.7": {
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.3": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.0.1": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
         "runtime": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        }
+      },
+      "Refractored.XamForms.PullToRefresh/1.0.10": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.1.6505"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.native.System.IO.Compression/4.1.0": {
@@ -2065,6 +2585,50 @@
           }
         }
       },
+      "Xam.Plugin.Connectivity/2.2.12": {
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugin.EmbeddedResource/1.0.1": {
+        "dependencies": {
+          "PCLStorage": "1.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.6.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.107"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.1.114": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -2081,6 +2645,477 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
+      "FormsToolkit/1.1.18": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        }
+      },
+      "HockeySDK.Core/4.1.3": {
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        }
+      },
+      "HockeySDK.UWP/4.1.3": {
+        "dependencies": {
+          "HockeySDK.Core": "4.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        }
+      },
+      "Humanizer/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core.af": "2.1.0",
+          "Humanizer.Core.ar": "2.1.0",
+          "Humanizer.Core.bg": "2.1.0",
+          "Humanizer.Core.bn-BD": "2.1.0",
+          "Humanizer.Core.cs": "2.1.0",
+          "Humanizer.Core.da": "2.1.0",
+          "Humanizer.Core.de": "2.1.0",
+          "Humanizer.Core.el": "2.1.0",
+          "Humanizer.Core.es": "2.1.0",
+          "Humanizer.Core.fa": "2.1.0",
+          "Humanizer.Core.fi-FI": "2.1.0",
+          "Humanizer.Core.fr": "2.1.0",
+          "Humanizer.Core.fr-BE": "2.1.0",
+          "Humanizer.Core.he": "2.1.0",
+          "Humanizer.Core.hr": "2.1.0",
+          "Humanizer.Core.hu": "2.1.0",
+          "Humanizer.Core.id": "2.1.0",
+          "Humanizer.Core.it": "2.1.0",
+          "Humanizer.Core.ja": "2.1.0",
+          "Humanizer.Core.nb": "2.1.0",
+          "Humanizer.Core.nb-NO": "2.1.0",
+          "Humanizer.Core.nl": "2.1.0",
+          "Humanizer.Core.pl": "2.1.0",
+          "Humanizer.Core.pt": "2.1.0",
+          "Humanizer.Core.ro": "2.1.0",
+          "Humanizer.Core.ru": "2.1.0",
+          "Humanizer.Core.sk": "2.1.0",
+          "Humanizer.Core.sl": "2.1.0",
+          "Humanizer.Core.sr": "2.1.0",
+          "Humanizer.Core.sr-Latn": "2.1.0",
+          "Humanizer.Core.sv": "2.1.0",
+          "Humanizer.Core.tr": "2.1.0",
+          "Humanizer.Core.uk": "2.1.0",
+          "Humanizer.Core.uz-Cyrl-UZ": "2.1.0",
+          "Humanizer.Core.uz-Latn-UZ": "2.1.0",
+          "Humanizer.Core.vi": "2.1.0",
+          "Humanizer.Core.zh-CN": "2.1.0",
+          "Humanizer.Core.zh-Hans": "2.1.0",
+          "Humanizer.Core.zh-Hant": "2.1.0"
+        }
+      },
+      "Humanizer.Core/2.1.0": {
+        "compile": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        }
+      },
+      "Humanizer.Core.af/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/af/Humanizer.resources.dll": {
+            "locale": "af"
+          }
+        }
+      },
+      "Humanizer.Core.ar/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ar/Humanizer.resources.dll": {
+            "locale": "ar"
+          }
+        }
+      },
+      "Humanizer.Core.bg/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bg/Humanizer.resources.dll": {
+            "locale": "bg"
+          }
+        }
+      },
+      "Humanizer.Core.bn-BD/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bn-BD/Humanizer.resources.dll": {
+            "locale": "bn-BD"
+          }
+        }
+      },
+      "Humanizer.Core.cs/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/cs/Humanizer.resources.dll": {
+            "locale": "cs"
+          }
+        }
+      },
+      "Humanizer.Core.da/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/da/Humanizer.resources.dll": {
+            "locale": "da"
+          }
+        }
+      },
+      "Humanizer.Core.de/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/de/Humanizer.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Humanizer.Core.el/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/el/Humanizer.resources.dll": {
+            "locale": "el"
+          }
+        }
+      },
+      "Humanizer.Core.es/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/es/Humanizer.resources.dll": {
+            "locale": "es"
+          }
+        }
+      },
+      "Humanizer.Core.fa/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fa/Humanizer.resources.dll": {
+            "locale": "fa"
+          }
+        }
+      },
+      "Humanizer.Core.fi-FI/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fi-FI/Humanizer.resources.dll": {
+            "locale": "fi-FI"
+          }
+        }
+      },
+      "Humanizer.Core.fr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr/Humanizer.resources.dll": {
+            "locale": "fr"
+          }
+        }
+      },
+      "Humanizer.Core.fr-BE/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr-BE/Humanizer.resources.dll": {
+            "locale": "fr-BE"
+          }
+        }
+      },
+      "Humanizer.Core.he/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/he/Humanizer.resources.dll": {
+            "locale": "he"
+          }
+        }
+      },
+      "Humanizer.Core.hr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hr/Humanizer.resources.dll": {
+            "locale": "hr"
+          }
+        }
+      },
+      "Humanizer.Core.hu/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hu/Humanizer.resources.dll": {
+            "locale": "hu"
+          }
+        }
+      },
+      "Humanizer.Core.id/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/id/Humanizer.resources.dll": {
+            "locale": "id"
+          }
+        }
+      },
+      "Humanizer.Core.it/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/it/Humanizer.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Humanizer.Core.ja/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ja/Humanizer.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Humanizer.Core.nb/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb/Humanizer.resources.dll": {
+            "locale": "nb"
+          }
+        }
+      },
+      "Humanizer.Core.nb-NO/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb-NO/Humanizer.resources.dll": {
+            "locale": "nb-NO"
+          }
+        }
+      },
+      "Humanizer.Core.nl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nl/Humanizer.resources.dll": {
+            "locale": "nl"
+          }
+        }
+      },
+      "Humanizer.Core.pl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pl/Humanizer.resources.dll": {
+            "locale": "pl"
+          }
+        }
+      },
+      "Humanizer.Core.pt/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pt/Humanizer.resources.dll": {
+            "locale": "pt"
+          }
+        }
+      },
+      "Humanizer.Core.ro/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ro/Humanizer.resources.dll": {
+            "locale": "ro"
+          }
+        }
+      },
+      "Humanizer.Core.ru/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ru/Humanizer.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Humanizer.Core.sk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sk/Humanizer.resources.dll": {
+            "locale": "sk"
+          }
+        }
+      },
+      "Humanizer.Core.sl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sl/Humanizer.resources.dll": {
+            "locale": "sl"
+          }
+        }
+      },
+      "Humanizer.Core.sr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr/Humanizer.resources.dll": {
+            "locale": "sr"
+          }
+        }
+      },
+      "Humanizer.Core.sr-Latn/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr-Latn/Humanizer.resources.dll": {
+            "locale": "sr-Latn"
+          }
+        }
+      },
+      "Humanizer.Core.sv/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sv/Humanizer.resources.dll": {
+            "locale": "sv"
+          }
+        }
+      },
+      "Humanizer.Core.tr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/tr/Humanizer.resources.dll": {
+            "locale": "tr"
+          }
+        }
+      },
+      "Humanizer.Core.uk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uk/Humanizer.resources.dll": {
+            "locale": "uk"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Cyrl-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Cyrl-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Cyrl-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Latn-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Latn-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Latn-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.vi/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/vi/Humanizer.resources.dll": {
+            "locale": "vi"
+          }
+        }
+      },
+      "Humanizer.Core.zh-CN/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-CN/Humanizer.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hans/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hans/Humanizer.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hant/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -2324,12 +3359,61 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PCLStorage/1.0.0": {
+        "compile": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        }
+      },
+      "Plugin.Permissions/1.1.7": {
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.3": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.0.1": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
         "runtime": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        }
+      },
+      "Refractored.XamForms.PullToRefresh/1.0.10": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.1.6505"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -4223,6 +5307,50 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/2.2.12": {
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugin.EmbeddedResource/1.0.1": {
+        "dependencies": {
+          "PCLStorage": "1.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.6.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.107"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.1.114": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -4239,6 +5367,477 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
+      "FormsToolkit/1.1.18": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        }
+      },
+      "HockeySDK.Core/4.1.3": {
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        }
+      },
+      "HockeySDK.UWP/4.1.3": {
+        "dependencies": {
+          "HockeySDK.Core": "4.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        }
+      },
+      "Humanizer/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core.af": "2.1.0",
+          "Humanizer.Core.ar": "2.1.0",
+          "Humanizer.Core.bg": "2.1.0",
+          "Humanizer.Core.bn-BD": "2.1.0",
+          "Humanizer.Core.cs": "2.1.0",
+          "Humanizer.Core.da": "2.1.0",
+          "Humanizer.Core.de": "2.1.0",
+          "Humanizer.Core.el": "2.1.0",
+          "Humanizer.Core.es": "2.1.0",
+          "Humanizer.Core.fa": "2.1.0",
+          "Humanizer.Core.fi-FI": "2.1.0",
+          "Humanizer.Core.fr": "2.1.0",
+          "Humanizer.Core.fr-BE": "2.1.0",
+          "Humanizer.Core.he": "2.1.0",
+          "Humanizer.Core.hr": "2.1.0",
+          "Humanizer.Core.hu": "2.1.0",
+          "Humanizer.Core.id": "2.1.0",
+          "Humanizer.Core.it": "2.1.0",
+          "Humanizer.Core.ja": "2.1.0",
+          "Humanizer.Core.nb": "2.1.0",
+          "Humanizer.Core.nb-NO": "2.1.0",
+          "Humanizer.Core.nl": "2.1.0",
+          "Humanizer.Core.pl": "2.1.0",
+          "Humanizer.Core.pt": "2.1.0",
+          "Humanizer.Core.ro": "2.1.0",
+          "Humanizer.Core.ru": "2.1.0",
+          "Humanizer.Core.sk": "2.1.0",
+          "Humanizer.Core.sl": "2.1.0",
+          "Humanizer.Core.sr": "2.1.0",
+          "Humanizer.Core.sr-Latn": "2.1.0",
+          "Humanizer.Core.sv": "2.1.0",
+          "Humanizer.Core.tr": "2.1.0",
+          "Humanizer.Core.uk": "2.1.0",
+          "Humanizer.Core.uz-Cyrl-UZ": "2.1.0",
+          "Humanizer.Core.uz-Latn-UZ": "2.1.0",
+          "Humanizer.Core.vi": "2.1.0",
+          "Humanizer.Core.zh-CN": "2.1.0",
+          "Humanizer.Core.zh-Hans": "2.1.0",
+          "Humanizer.Core.zh-Hant": "2.1.0"
+        }
+      },
+      "Humanizer.Core/2.1.0": {
+        "compile": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        }
+      },
+      "Humanizer.Core.af/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/af/Humanizer.resources.dll": {
+            "locale": "af"
+          }
+        }
+      },
+      "Humanizer.Core.ar/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ar/Humanizer.resources.dll": {
+            "locale": "ar"
+          }
+        }
+      },
+      "Humanizer.Core.bg/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bg/Humanizer.resources.dll": {
+            "locale": "bg"
+          }
+        }
+      },
+      "Humanizer.Core.bn-BD/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bn-BD/Humanizer.resources.dll": {
+            "locale": "bn-BD"
+          }
+        }
+      },
+      "Humanizer.Core.cs/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/cs/Humanizer.resources.dll": {
+            "locale": "cs"
+          }
+        }
+      },
+      "Humanizer.Core.da/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/da/Humanizer.resources.dll": {
+            "locale": "da"
+          }
+        }
+      },
+      "Humanizer.Core.de/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/de/Humanizer.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Humanizer.Core.el/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/el/Humanizer.resources.dll": {
+            "locale": "el"
+          }
+        }
+      },
+      "Humanizer.Core.es/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/es/Humanizer.resources.dll": {
+            "locale": "es"
+          }
+        }
+      },
+      "Humanizer.Core.fa/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fa/Humanizer.resources.dll": {
+            "locale": "fa"
+          }
+        }
+      },
+      "Humanizer.Core.fi-FI/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fi-FI/Humanizer.resources.dll": {
+            "locale": "fi-FI"
+          }
+        }
+      },
+      "Humanizer.Core.fr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr/Humanizer.resources.dll": {
+            "locale": "fr"
+          }
+        }
+      },
+      "Humanizer.Core.fr-BE/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr-BE/Humanizer.resources.dll": {
+            "locale": "fr-BE"
+          }
+        }
+      },
+      "Humanizer.Core.he/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/he/Humanizer.resources.dll": {
+            "locale": "he"
+          }
+        }
+      },
+      "Humanizer.Core.hr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hr/Humanizer.resources.dll": {
+            "locale": "hr"
+          }
+        }
+      },
+      "Humanizer.Core.hu/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hu/Humanizer.resources.dll": {
+            "locale": "hu"
+          }
+        }
+      },
+      "Humanizer.Core.id/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/id/Humanizer.resources.dll": {
+            "locale": "id"
+          }
+        }
+      },
+      "Humanizer.Core.it/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/it/Humanizer.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Humanizer.Core.ja/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ja/Humanizer.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Humanizer.Core.nb/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb/Humanizer.resources.dll": {
+            "locale": "nb"
+          }
+        }
+      },
+      "Humanizer.Core.nb-NO/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb-NO/Humanizer.resources.dll": {
+            "locale": "nb-NO"
+          }
+        }
+      },
+      "Humanizer.Core.nl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nl/Humanizer.resources.dll": {
+            "locale": "nl"
+          }
+        }
+      },
+      "Humanizer.Core.pl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pl/Humanizer.resources.dll": {
+            "locale": "pl"
+          }
+        }
+      },
+      "Humanizer.Core.pt/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pt/Humanizer.resources.dll": {
+            "locale": "pt"
+          }
+        }
+      },
+      "Humanizer.Core.ro/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ro/Humanizer.resources.dll": {
+            "locale": "ro"
+          }
+        }
+      },
+      "Humanizer.Core.ru/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ru/Humanizer.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Humanizer.Core.sk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sk/Humanizer.resources.dll": {
+            "locale": "sk"
+          }
+        }
+      },
+      "Humanizer.Core.sl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sl/Humanizer.resources.dll": {
+            "locale": "sl"
+          }
+        }
+      },
+      "Humanizer.Core.sr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr/Humanizer.resources.dll": {
+            "locale": "sr"
+          }
+        }
+      },
+      "Humanizer.Core.sr-Latn/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr-Latn/Humanizer.resources.dll": {
+            "locale": "sr-Latn"
+          }
+        }
+      },
+      "Humanizer.Core.sv/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sv/Humanizer.resources.dll": {
+            "locale": "sv"
+          }
+        }
+      },
+      "Humanizer.Core.tr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/tr/Humanizer.resources.dll": {
+            "locale": "tr"
+          }
+        }
+      },
+      "Humanizer.Core.uk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uk/Humanizer.resources.dll": {
+            "locale": "uk"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Cyrl-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Cyrl-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Cyrl-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Latn-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Latn-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Latn-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.vi/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/vi/Humanizer.resources.dll": {
+            "locale": "vi"
+          }
+        }
+      },
+      "Humanizer.Core.zh-CN/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-CN/Humanizer.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hans/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hans/Humanizer.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hant/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -4483,12 +6082,61 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PCLStorage/1.0.0": {
+        "compile": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        }
+      },
+      "Plugin.Permissions/1.1.7": {
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.3": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.0.1": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
         "runtime": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        }
+      },
+      "Refractored.XamForms.PullToRefresh/1.0.10": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.1.6505"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -6420,6 +8068,50 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/2.2.12": {
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugin.EmbeddedResource/1.0.1": {
+        "dependencies": {
+          "PCLStorage": "1.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.6.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.107"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.1.114": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -6436,6 +8128,477 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
+      "FormsToolkit/1.1.18": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        }
+      },
+      "HockeySDK.Core/4.1.3": {
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        }
+      },
+      "HockeySDK.UWP/4.1.3": {
+        "dependencies": {
+          "HockeySDK.Core": "4.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        }
+      },
+      "Humanizer/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core.af": "2.1.0",
+          "Humanizer.Core.ar": "2.1.0",
+          "Humanizer.Core.bg": "2.1.0",
+          "Humanizer.Core.bn-BD": "2.1.0",
+          "Humanizer.Core.cs": "2.1.0",
+          "Humanizer.Core.da": "2.1.0",
+          "Humanizer.Core.de": "2.1.0",
+          "Humanizer.Core.el": "2.1.0",
+          "Humanizer.Core.es": "2.1.0",
+          "Humanizer.Core.fa": "2.1.0",
+          "Humanizer.Core.fi-FI": "2.1.0",
+          "Humanizer.Core.fr": "2.1.0",
+          "Humanizer.Core.fr-BE": "2.1.0",
+          "Humanizer.Core.he": "2.1.0",
+          "Humanizer.Core.hr": "2.1.0",
+          "Humanizer.Core.hu": "2.1.0",
+          "Humanizer.Core.id": "2.1.0",
+          "Humanizer.Core.it": "2.1.0",
+          "Humanizer.Core.ja": "2.1.0",
+          "Humanizer.Core.nb": "2.1.0",
+          "Humanizer.Core.nb-NO": "2.1.0",
+          "Humanizer.Core.nl": "2.1.0",
+          "Humanizer.Core.pl": "2.1.0",
+          "Humanizer.Core.pt": "2.1.0",
+          "Humanizer.Core.ro": "2.1.0",
+          "Humanizer.Core.ru": "2.1.0",
+          "Humanizer.Core.sk": "2.1.0",
+          "Humanizer.Core.sl": "2.1.0",
+          "Humanizer.Core.sr": "2.1.0",
+          "Humanizer.Core.sr-Latn": "2.1.0",
+          "Humanizer.Core.sv": "2.1.0",
+          "Humanizer.Core.tr": "2.1.0",
+          "Humanizer.Core.uk": "2.1.0",
+          "Humanizer.Core.uz-Cyrl-UZ": "2.1.0",
+          "Humanizer.Core.uz-Latn-UZ": "2.1.0",
+          "Humanizer.Core.vi": "2.1.0",
+          "Humanizer.Core.zh-CN": "2.1.0",
+          "Humanizer.Core.zh-Hans": "2.1.0",
+          "Humanizer.Core.zh-Hant": "2.1.0"
+        }
+      },
+      "Humanizer.Core/2.1.0": {
+        "compile": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        }
+      },
+      "Humanizer.Core.af/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/af/Humanizer.resources.dll": {
+            "locale": "af"
+          }
+        }
+      },
+      "Humanizer.Core.ar/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ar/Humanizer.resources.dll": {
+            "locale": "ar"
+          }
+        }
+      },
+      "Humanizer.Core.bg/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bg/Humanizer.resources.dll": {
+            "locale": "bg"
+          }
+        }
+      },
+      "Humanizer.Core.bn-BD/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bn-BD/Humanizer.resources.dll": {
+            "locale": "bn-BD"
+          }
+        }
+      },
+      "Humanizer.Core.cs/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/cs/Humanizer.resources.dll": {
+            "locale": "cs"
+          }
+        }
+      },
+      "Humanizer.Core.da/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/da/Humanizer.resources.dll": {
+            "locale": "da"
+          }
+        }
+      },
+      "Humanizer.Core.de/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/de/Humanizer.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Humanizer.Core.el/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/el/Humanizer.resources.dll": {
+            "locale": "el"
+          }
+        }
+      },
+      "Humanizer.Core.es/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/es/Humanizer.resources.dll": {
+            "locale": "es"
+          }
+        }
+      },
+      "Humanizer.Core.fa/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fa/Humanizer.resources.dll": {
+            "locale": "fa"
+          }
+        }
+      },
+      "Humanizer.Core.fi-FI/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fi-FI/Humanizer.resources.dll": {
+            "locale": "fi-FI"
+          }
+        }
+      },
+      "Humanizer.Core.fr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr/Humanizer.resources.dll": {
+            "locale": "fr"
+          }
+        }
+      },
+      "Humanizer.Core.fr-BE/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr-BE/Humanizer.resources.dll": {
+            "locale": "fr-BE"
+          }
+        }
+      },
+      "Humanizer.Core.he/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/he/Humanizer.resources.dll": {
+            "locale": "he"
+          }
+        }
+      },
+      "Humanizer.Core.hr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hr/Humanizer.resources.dll": {
+            "locale": "hr"
+          }
+        }
+      },
+      "Humanizer.Core.hu/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hu/Humanizer.resources.dll": {
+            "locale": "hu"
+          }
+        }
+      },
+      "Humanizer.Core.id/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/id/Humanizer.resources.dll": {
+            "locale": "id"
+          }
+        }
+      },
+      "Humanizer.Core.it/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/it/Humanizer.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Humanizer.Core.ja/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ja/Humanizer.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Humanizer.Core.nb/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb/Humanizer.resources.dll": {
+            "locale": "nb"
+          }
+        }
+      },
+      "Humanizer.Core.nb-NO/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb-NO/Humanizer.resources.dll": {
+            "locale": "nb-NO"
+          }
+        }
+      },
+      "Humanizer.Core.nl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nl/Humanizer.resources.dll": {
+            "locale": "nl"
+          }
+        }
+      },
+      "Humanizer.Core.pl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pl/Humanizer.resources.dll": {
+            "locale": "pl"
+          }
+        }
+      },
+      "Humanizer.Core.pt/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pt/Humanizer.resources.dll": {
+            "locale": "pt"
+          }
+        }
+      },
+      "Humanizer.Core.ro/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ro/Humanizer.resources.dll": {
+            "locale": "ro"
+          }
+        }
+      },
+      "Humanizer.Core.ru/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ru/Humanizer.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Humanizer.Core.sk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sk/Humanizer.resources.dll": {
+            "locale": "sk"
+          }
+        }
+      },
+      "Humanizer.Core.sl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sl/Humanizer.resources.dll": {
+            "locale": "sl"
+          }
+        }
+      },
+      "Humanizer.Core.sr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr/Humanizer.resources.dll": {
+            "locale": "sr"
+          }
+        }
+      },
+      "Humanizer.Core.sr-Latn/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr-Latn/Humanizer.resources.dll": {
+            "locale": "sr-Latn"
+          }
+        }
+      },
+      "Humanizer.Core.sv/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sv/Humanizer.resources.dll": {
+            "locale": "sv"
+          }
+        }
+      },
+      "Humanizer.Core.tr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/tr/Humanizer.resources.dll": {
+            "locale": "tr"
+          }
+        }
+      },
+      "Humanizer.Core.uk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uk/Humanizer.resources.dll": {
+            "locale": "uk"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Cyrl-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Cyrl-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Cyrl-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Latn-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Latn-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Latn-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.vi/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/vi/Humanizer.resources.dll": {
+            "locale": "vi"
+          }
+        }
+      },
+      "Humanizer.Core.zh-CN/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-CN/Humanizer.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hans/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hans/Humanizer.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hant/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -6683,12 +8846,61 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PCLStorage/1.0.0": {
+        "compile": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        }
+      },
+      "Plugin.Permissions/1.1.7": {
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.3": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.0.1": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
         "runtime": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        }
+      },
+      "Refractored.XamForms.PullToRefresh/1.0.10": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.1.6505"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -8587,6 +10799,50 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/2.2.12": {
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugin.EmbeddedResource/1.0.1": {
+        "dependencies": {
+          "PCLStorage": "1.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.6.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.107"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.1.114": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -8603,6 +10859,477 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
+      "FormsToolkit/1.1.18": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        }
+      },
+      "HockeySDK.Core/4.1.3": {
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        }
+      },
+      "HockeySDK.UWP/4.1.3": {
+        "dependencies": {
+          "HockeySDK.Core": "4.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        }
+      },
+      "Humanizer/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core.af": "2.1.0",
+          "Humanizer.Core.ar": "2.1.0",
+          "Humanizer.Core.bg": "2.1.0",
+          "Humanizer.Core.bn-BD": "2.1.0",
+          "Humanizer.Core.cs": "2.1.0",
+          "Humanizer.Core.da": "2.1.0",
+          "Humanizer.Core.de": "2.1.0",
+          "Humanizer.Core.el": "2.1.0",
+          "Humanizer.Core.es": "2.1.0",
+          "Humanizer.Core.fa": "2.1.0",
+          "Humanizer.Core.fi-FI": "2.1.0",
+          "Humanizer.Core.fr": "2.1.0",
+          "Humanizer.Core.fr-BE": "2.1.0",
+          "Humanizer.Core.he": "2.1.0",
+          "Humanizer.Core.hr": "2.1.0",
+          "Humanizer.Core.hu": "2.1.0",
+          "Humanizer.Core.id": "2.1.0",
+          "Humanizer.Core.it": "2.1.0",
+          "Humanizer.Core.ja": "2.1.0",
+          "Humanizer.Core.nb": "2.1.0",
+          "Humanizer.Core.nb-NO": "2.1.0",
+          "Humanizer.Core.nl": "2.1.0",
+          "Humanizer.Core.pl": "2.1.0",
+          "Humanizer.Core.pt": "2.1.0",
+          "Humanizer.Core.ro": "2.1.0",
+          "Humanizer.Core.ru": "2.1.0",
+          "Humanizer.Core.sk": "2.1.0",
+          "Humanizer.Core.sl": "2.1.0",
+          "Humanizer.Core.sr": "2.1.0",
+          "Humanizer.Core.sr-Latn": "2.1.0",
+          "Humanizer.Core.sv": "2.1.0",
+          "Humanizer.Core.tr": "2.1.0",
+          "Humanizer.Core.uk": "2.1.0",
+          "Humanizer.Core.uz-Cyrl-UZ": "2.1.0",
+          "Humanizer.Core.uz-Latn-UZ": "2.1.0",
+          "Humanizer.Core.vi": "2.1.0",
+          "Humanizer.Core.zh-CN": "2.1.0",
+          "Humanizer.Core.zh-Hans": "2.1.0",
+          "Humanizer.Core.zh-Hant": "2.1.0"
+        }
+      },
+      "Humanizer.Core/2.1.0": {
+        "compile": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        }
+      },
+      "Humanizer.Core.af/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/af/Humanizer.resources.dll": {
+            "locale": "af"
+          }
+        }
+      },
+      "Humanizer.Core.ar/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ar/Humanizer.resources.dll": {
+            "locale": "ar"
+          }
+        }
+      },
+      "Humanizer.Core.bg/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bg/Humanizer.resources.dll": {
+            "locale": "bg"
+          }
+        }
+      },
+      "Humanizer.Core.bn-BD/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bn-BD/Humanizer.resources.dll": {
+            "locale": "bn-BD"
+          }
+        }
+      },
+      "Humanizer.Core.cs/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/cs/Humanizer.resources.dll": {
+            "locale": "cs"
+          }
+        }
+      },
+      "Humanizer.Core.da/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/da/Humanizer.resources.dll": {
+            "locale": "da"
+          }
+        }
+      },
+      "Humanizer.Core.de/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/de/Humanizer.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Humanizer.Core.el/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/el/Humanizer.resources.dll": {
+            "locale": "el"
+          }
+        }
+      },
+      "Humanizer.Core.es/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/es/Humanizer.resources.dll": {
+            "locale": "es"
+          }
+        }
+      },
+      "Humanizer.Core.fa/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fa/Humanizer.resources.dll": {
+            "locale": "fa"
+          }
+        }
+      },
+      "Humanizer.Core.fi-FI/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fi-FI/Humanizer.resources.dll": {
+            "locale": "fi-FI"
+          }
+        }
+      },
+      "Humanizer.Core.fr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr/Humanizer.resources.dll": {
+            "locale": "fr"
+          }
+        }
+      },
+      "Humanizer.Core.fr-BE/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr-BE/Humanizer.resources.dll": {
+            "locale": "fr-BE"
+          }
+        }
+      },
+      "Humanizer.Core.he/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/he/Humanizer.resources.dll": {
+            "locale": "he"
+          }
+        }
+      },
+      "Humanizer.Core.hr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hr/Humanizer.resources.dll": {
+            "locale": "hr"
+          }
+        }
+      },
+      "Humanizer.Core.hu/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hu/Humanizer.resources.dll": {
+            "locale": "hu"
+          }
+        }
+      },
+      "Humanizer.Core.id/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/id/Humanizer.resources.dll": {
+            "locale": "id"
+          }
+        }
+      },
+      "Humanizer.Core.it/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/it/Humanizer.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Humanizer.Core.ja/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ja/Humanizer.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Humanizer.Core.nb/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb/Humanizer.resources.dll": {
+            "locale": "nb"
+          }
+        }
+      },
+      "Humanizer.Core.nb-NO/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb-NO/Humanizer.resources.dll": {
+            "locale": "nb-NO"
+          }
+        }
+      },
+      "Humanizer.Core.nl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nl/Humanizer.resources.dll": {
+            "locale": "nl"
+          }
+        }
+      },
+      "Humanizer.Core.pl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pl/Humanizer.resources.dll": {
+            "locale": "pl"
+          }
+        }
+      },
+      "Humanizer.Core.pt/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pt/Humanizer.resources.dll": {
+            "locale": "pt"
+          }
+        }
+      },
+      "Humanizer.Core.ro/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ro/Humanizer.resources.dll": {
+            "locale": "ro"
+          }
+        }
+      },
+      "Humanizer.Core.ru/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ru/Humanizer.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Humanizer.Core.sk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sk/Humanizer.resources.dll": {
+            "locale": "sk"
+          }
+        }
+      },
+      "Humanizer.Core.sl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sl/Humanizer.resources.dll": {
+            "locale": "sl"
+          }
+        }
+      },
+      "Humanizer.Core.sr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr/Humanizer.resources.dll": {
+            "locale": "sr"
+          }
+        }
+      },
+      "Humanizer.Core.sr-Latn/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr-Latn/Humanizer.resources.dll": {
+            "locale": "sr-Latn"
+          }
+        }
+      },
+      "Humanizer.Core.sv/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sv/Humanizer.resources.dll": {
+            "locale": "sv"
+          }
+        }
+      },
+      "Humanizer.Core.tr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/tr/Humanizer.resources.dll": {
+            "locale": "tr"
+          }
+        }
+      },
+      "Humanizer.Core.uk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uk/Humanizer.resources.dll": {
+            "locale": "uk"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Cyrl-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Cyrl-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Cyrl-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Latn-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Latn-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Latn-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.vi/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/vi/Humanizer.resources.dll": {
+            "locale": "vi"
+          }
+        }
+      },
+      "Humanizer.Core.zh-CN/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-CN/Humanizer.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hans/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hans/Humanizer.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hant/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -8851,12 +11578,61 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PCLStorage/1.0.0": {
+        "compile": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        }
+      },
+      "Plugin.Permissions/1.1.7": {
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.3": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.0.1": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
         "runtime": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        }
+      },
+      "Refractored.XamForms.PullToRefresh/1.0.10": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.1.6505"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -10793,6 +13569,50 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/2.2.12": {
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugin.EmbeddedResource/1.0.1": {
+        "dependencies": {
+          "PCLStorage": "1.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.6.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.107"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.1.114": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -10809,6 +13629,477 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
+      "FormsToolkit/1.1.18": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        }
+      },
+      "HockeySDK.Core/4.1.3": {
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        }
+      },
+      "HockeySDK.UWP/4.1.3": {
+        "dependencies": {
+          "HockeySDK.Core": "4.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        }
+      },
+      "Humanizer/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core.af": "2.1.0",
+          "Humanizer.Core.ar": "2.1.0",
+          "Humanizer.Core.bg": "2.1.0",
+          "Humanizer.Core.bn-BD": "2.1.0",
+          "Humanizer.Core.cs": "2.1.0",
+          "Humanizer.Core.da": "2.1.0",
+          "Humanizer.Core.de": "2.1.0",
+          "Humanizer.Core.el": "2.1.0",
+          "Humanizer.Core.es": "2.1.0",
+          "Humanizer.Core.fa": "2.1.0",
+          "Humanizer.Core.fi-FI": "2.1.0",
+          "Humanizer.Core.fr": "2.1.0",
+          "Humanizer.Core.fr-BE": "2.1.0",
+          "Humanizer.Core.he": "2.1.0",
+          "Humanizer.Core.hr": "2.1.0",
+          "Humanizer.Core.hu": "2.1.0",
+          "Humanizer.Core.id": "2.1.0",
+          "Humanizer.Core.it": "2.1.0",
+          "Humanizer.Core.ja": "2.1.0",
+          "Humanizer.Core.nb": "2.1.0",
+          "Humanizer.Core.nb-NO": "2.1.0",
+          "Humanizer.Core.nl": "2.1.0",
+          "Humanizer.Core.pl": "2.1.0",
+          "Humanizer.Core.pt": "2.1.0",
+          "Humanizer.Core.ro": "2.1.0",
+          "Humanizer.Core.ru": "2.1.0",
+          "Humanizer.Core.sk": "2.1.0",
+          "Humanizer.Core.sl": "2.1.0",
+          "Humanizer.Core.sr": "2.1.0",
+          "Humanizer.Core.sr-Latn": "2.1.0",
+          "Humanizer.Core.sv": "2.1.0",
+          "Humanizer.Core.tr": "2.1.0",
+          "Humanizer.Core.uk": "2.1.0",
+          "Humanizer.Core.uz-Cyrl-UZ": "2.1.0",
+          "Humanizer.Core.uz-Latn-UZ": "2.1.0",
+          "Humanizer.Core.vi": "2.1.0",
+          "Humanizer.Core.zh-CN": "2.1.0",
+          "Humanizer.Core.zh-Hans": "2.1.0",
+          "Humanizer.Core.zh-Hant": "2.1.0"
+        }
+      },
+      "Humanizer.Core/2.1.0": {
+        "compile": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        }
+      },
+      "Humanizer.Core.af/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/af/Humanizer.resources.dll": {
+            "locale": "af"
+          }
+        }
+      },
+      "Humanizer.Core.ar/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ar/Humanizer.resources.dll": {
+            "locale": "ar"
+          }
+        }
+      },
+      "Humanizer.Core.bg/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bg/Humanizer.resources.dll": {
+            "locale": "bg"
+          }
+        }
+      },
+      "Humanizer.Core.bn-BD/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bn-BD/Humanizer.resources.dll": {
+            "locale": "bn-BD"
+          }
+        }
+      },
+      "Humanizer.Core.cs/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/cs/Humanizer.resources.dll": {
+            "locale": "cs"
+          }
+        }
+      },
+      "Humanizer.Core.da/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/da/Humanizer.resources.dll": {
+            "locale": "da"
+          }
+        }
+      },
+      "Humanizer.Core.de/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/de/Humanizer.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Humanizer.Core.el/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/el/Humanizer.resources.dll": {
+            "locale": "el"
+          }
+        }
+      },
+      "Humanizer.Core.es/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/es/Humanizer.resources.dll": {
+            "locale": "es"
+          }
+        }
+      },
+      "Humanizer.Core.fa/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fa/Humanizer.resources.dll": {
+            "locale": "fa"
+          }
+        }
+      },
+      "Humanizer.Core.fi-FI/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fi-FI/Humanizer.resources.dll": {
+            "locale": "fi-FI"
+          }
+        }
+      },
+      "Humanizer.Core.fr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr/Humanizer.resources.dll": {
+            "locale": "fr"
+          }
+        }
+      },
+      "Humanizer.Core.fr-BE/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr-BE/Humanizer.resources.dll": {
+            "locale": "fr-BE"
+          }
+        }
+      },
+      "Humanizer.Core.he/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/he/Humanizer.resources.dll": {
+            "locale": "he"
+          }
+        }
+      },
+      "Humanizer.Core.hr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hr/Humanizer.resources.dll": {
+            "locale": "hr"
+          }
+        }
+      },
+      "Humanizer.Core.hu/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hu/Humanizer.resources.dll": {
+            "locale": "hu"
+          }
+        }
+      },
+      "Humanizer.Core.id/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/id/Humanizer.resources.dll": {
+            "locale": "id"
+          }
+        }
+      },
+      "Humanizer.Core.it/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/it/Humanizer.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Humanizer.Core.ja/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ja/Humanizer.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Humanizer.Core.nb/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb/Humanizer.resources.dll": {
+            "locale": "nb"
+          }
+        }
+      },
+      "Humanizer.Core.nb-NO/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb-NO/Humanizer.resources.dll": {
+            "locale": "nb-NO"
+          }
+        }
+      },
+      "Humanizer.Core.nl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nl/Humanizer.resources.dll": {
+            "locale": "nl"
+          }
+        }
+      },
+      "Humanizer.Core.pl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pl/Humanizer.resources.dll": {
+            "locale": "pl"
+          }
+        }
+      },
+      "Humanizer.Core.pt/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pt/Humanizer.resources.dll": {
+            "locale": "pt"
+          }
+        }
+      },
+      "Humanizer.Core.ro/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ro/Humanizer.resources.dll": {
+            "locale": "ro"
+          }
+        }
+      },
+      "Humanizer.Core.ru/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ru/Humanizer.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Humanizer.Core.sk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sk/Humanizer.resources.dll": {
+            "locale": "sk"
+          }
+        }
+      },
+      "Humanizer.Core.sl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sl/Humanizer.resources.dll": {
+            "locale": "sl"
+          }
+        }
+      },
+      "Humanizer.Core.sr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr/Humanizer.resources.dll": {
+            "locale": "sr"
+          }
+        }
+      },
+      "Humanizer.Core.sr-Latn/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr-Latn/Humanizer.resources.dll": {
+            "locale": "sr-Latn"
+          }
+        }
+      },
+      "Humanizer.Core.sv/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sv/Humanizer.resources.dll": {
+            "locale": "sv"
+          }
+        }
+      },
+      "Humanizer.Core.tr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/tr/Humanizer.resources.dll": {
+            "locale": "tr"
+          }
+        }
+      },
+      "Humanizer.Core.uk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uk/Humanizer.resources.dll": {
+            "locale": "uk"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Cyrl-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Cyrl-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Cyrl-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Latn-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Latn-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Latn-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.vi/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/vi/Humanizer.resources.dll": {
+            "locale": "vi"
+          }
+        }
+      },
+      "Humanizer.Core.zh-CN/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-CN/Humanizer.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hans/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hans/Humanizer.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hant/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -11056,12 +14347,61 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PCLStorage/1.0.0": {
+        "compile": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        }
+      },
+      "Plugin.Permissions/1.1.7": {
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.3": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.0.1": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
         "runtime": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        }
+      },
+      "Refractored.XamForms.PullToRefresh/1.0.10": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.1.6505"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -12960,6 +16300,50 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/2.2.12": {
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugin.EmbeddedResource/1.0.1": {
+        "dependencies": {
+          "PCLStorage": "1.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.6.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.107"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.1.114": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -12976,6 +16360,477 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
+      "FormsToolkit/1.1.18": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll": {}
+        }
+      },
+      "HockeySDK.Core/4.1.3": {
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll": {}
+        }
+      },
+      "HockeySDK.UWP/4.1.3": {
+        "dependencies": {
+          "HockeySDK.Core": "4.1.3"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.HockeyApp.Kit.dll": {}
+        }
+      },
+      "Humanizer/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core.af": "2.1.0",
+          "Humanizer.Core.ar": "2.1.0",
+          "Humanizer.Core.bg": "2.1.0",
+          "Humanizer.Core.bn-BD": "2.1.0",
+          "Humanizer.Core.cs": "2.1.0",
+          "Humanizer.Core.da": "2.1.0",
+          "Humanizer.Core.de": "2.1.0",
+          "Humanizer.Core.el": "2.1.0",
+          "Humanizer.Core.es": "2.1.0",
+          "Humanizer.Core.fa": "2.1.0",
+          "Humanizer.Core.fi-FI": "2.1.0",
+          "Humanizer.Core.fr": "2.1.0",
+          "Humanizer.Core.fr-BE": "2.1.0",
+          "Humanizer.Core.he": "2.1.0",
+          "Humanizer.Core.hr": "2.1.0",
+          "Humanizer.Core.hu": "2.1.0",
+          "Humanizer.Core.id": "2.1.0",
+          "Humanizer.Core.it": "2.1.0",
+          "Humanizer.Core.ja": "2.1.0",
+          "Humanizer.Core.nb": "2.1.0",
+          "Humanizer.Core.nb-NO": "2.1.0",
+          "Humanizer.Core.nl": "2.1.0",
+          "Humanizer.Core.pl": "2.1.0",
+          "Humanizer.Core.pt": "2.1.0",
+          "Humanizer.Core.ro": "2.1.0",
+          "Humanizer.Core.ru": "2.1.0",
+          "Humanizer.Core.sk": "2.1.0",
+          "Humanizer.Core.sl": "2.1.0",
+          "Humanizer.Core.sr": "2.1.0",
+          "Humanizer.Core.sr-Latn": "2.1.0",
+          "Humanizer.Core.sv": "2.1.0",
+          "Humanizer.Core.tr": "2.1.0",
+          "Humanizer.Core.uk": "2.1.0",
+          "Humanizer.Core.uz-Cyrl-UZ": "2.1.0",
+          "Humanizer.Core.uz-Latn-UZ": "2.1.0",
+          "Humanizer.Core.vi": "2.1.0",
+          "Humanizer.Core.zh-CN": "2.1.0",
+          "Humanizer.Core.zh-Hans": "2.1.0",
+          "Humanizer.Core.zh-Hant": "2.1.0"
+        }
+      },
+      "Humanizer.Core/2.1.0": {
+        "compile": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        }
+      },
+      "Humanizer.Core.af/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/af/Humanizer.resources.dll": {
+            "locale": "af"
+          }
+        }
+      },
+      "Humanizer.Core.ar/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ar/Humanizer.resources.dll": {
+            "locale": "ar"
+          }
+        }
+      },
+      "Humanizer.Core.bg/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bg/Humanizer.resources.dll": {
+            "locale": "bg"
+          }
+        }
+      },
+      "Humanizer.Core.bn-BD/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/bn-BD/Humanizer.resources.dll": {
+            "locale": "bn-BD"
+          }
+        }
+      },
+      "Humanizer.Core.cs/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/cs/Humanizer.resources.dll": {
+            "locale": "cs"
+          }
+        }
+      },
+      "Humanizer.Core.da/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/da/Humanizer.resources.dll": {
+            "locale": "da"
+          }
+        }
+      },
+      "Humanizer.Core.de/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/de/Humanizer.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Humanizer.Core.el/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/el/Humanizer.resources.dll": {
+            "locale": "el"
+          }
+        }
+      },
+      "Humanizer.Core.es/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/es/Humanizer.resources.dll": {
+            "locale": "es"
+          }
+        }
+      },
+      "Humanizer.Core.fa/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fa/Humanizer.resources.dll": {
+            "locale": "fa"
+          }
+        }
+      },
+      "Humanizer.Core.fi-FI/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fi-FI/Humanizer.resources.dll": {
+            "locale": "fi-FI"
+          }
+        }
+      },
+      "Humanizer.Core.fr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr/Humanizer.resources.dll": {
+            "locale": "fr"
+          }
+        }
+      },
+      "Humanizer.Core.fr-BE/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/fr-BE/Humanizer.resources.dll": {
+            "locale": "fr-BE"
+          }
+        }
+      },
+      "Humanizer.Core.he/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/he/Humanizer.resources.dll": {
+            "locale": "he"
+          }
+        }
+      },
+      "Humanizer.Core.hr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hr/Humanizer.resources.dll": {
+            "locale": "hr"
+          }
+        }
+      },
+      "Humanizer.Core.hu/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/hu/Humanizer.resources.dll": {
+            "locale": "hu"
+          }
+        }
+      },
+      "Humanizer.Core.id/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/id/Humanizer.resources.dll": {
+            "locale": "id"
+          }
+        }
+      },
+      "Humanizer.Core.it/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/it/Humanizer.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Humanizer.Core.ja/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ja/Humanizer.resources.dll": {
+            "locale": "ja"
+          }
+        }
+      },
+      "Humanizer.Core.nb/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb/Humanizer.resources.dll": {
+            "locale": "nb"
+          }
+        }
+      },
+      "Humanizer.Core.nb-NO/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nb-NO/Humanizer.resources.dll": {
+            "locale": "nb-NO"
+          }
+        }
+      },
+      "Humanizer.Core.nl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/nl/Humanizer.resources.dll": {
+            "locale": "nl"
+          }
+        }
+      },
+      "Humanizer.Core.pl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pl/Humanizer.resources.dll": {
+            "locale": "pl"
+          }
+        }
+      },
+      "Humanizer.Core.pt/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/pt/Humanizer.resources.dll": {
+            "locale": "pt"
+          }
+        }
+      },
+      "Humanizer.Core.ro/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ro/Humanizer.resources.dll": {
+            "locale": "ro"
+          }
+        }
+      },
+      "Humanizer.Core.ru/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/ru/Humanizer.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Humanizer.Core.sk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sk/Humanizer.resources.dll": {
+            "locale": "sk"
+          }
+        }
+      },
+      "Humanizer.Core.sl/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sl/Humanizer.resources.dll": {
+            "locale": "sl"
+          }
+        }
+      },
+      "Humanizer.Core.sr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr/Humanizer.resources.dll": {
+            "locale": "sr"
+          }
+        }
+      },
+      "Humanizer.Core.sr-Latn/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sr-Latn/Humanizer.resources.dll": {
+            "locale": "sr-Latn"
+          }
+        }
+      },
+      "Humanizer.Core.sv/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/sv/Humanizer.resources.dll": {
+            "locale": "sv"
+          }
+        }
+      },
+      "Humanizer.Core.tr/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/tr/Humanizer.resources.dll": {
+            "locale": "tr"
+          }
+        }
+      },
+      "Humanizer.Core.uk/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uk/Humanizer.resources.dll": {
+            "locale": "uk"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Cyrl-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Cyrl-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Cyrl-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.uz-Latn-UZ/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/uz-Latn-UZ/Humanizer.resources.dll": {
+            "locale": "uz-Latn-UZ"
+          }
+        }
+      },
+      "Humanizer.Core.vi/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/vi/Humanizer.resources.dll": {
+            "locale": "vi"
+          }
+        }
+      },
+      "Humanizer.Core.zh-CN/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-CN/Humanizer.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hans/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hans/Humanizer.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Humanizer.Core.zh-Hant/2.1.0": {
+        "dependencies": {
+          "Humanizer.Core": "[2.1.0]"
+        },
+        "resource": {
+          "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -13224,12 +17079,61 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PCLStorage/1.0.0": {
+        "compile": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll": {},
+          "lib/portable-win8+wpa81/PCLStorage.dll": {}
+        }
+      },
+      "Plugin.Permissions/1.1.7": {
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.3": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        }
+      },
       "Refractored.MvvmHelpers/1.0.1": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
         "runtime": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
+        }
+      },
+      "Refractored.XamForms.PullToRefresh/1.0.10": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.1.6505"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -15166,6 +19070,50 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/2.2.12": {
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugin.EmbeddedResource/1.0.1": {
+        "dependencies": {
+          "PCLStorage": "1.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.6.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.107"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/2.1.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.1.114": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -15183,6 +19131,465 @@
     }
   },
   "libraries": {
+    "FormsToolkit/1.1.18": {
+      "sha512": "B5YlW8LScFW05N49Dq6HWVrGndiGDLNY4ybrjic40OpZdEWJvBgq6ifYV8nD4XjmsP/WuLq3yP9fFzBWuPJrKA==",
+      "type": "package",
+      "path": "FormsToolkit/1.1.18",
+      "files": [
+        "FormsToolkit.1.1.18.nupkg.sha512",
+        "FormsToolkit.nuspec",
+        "lib/MonoAndroid10/FormsToolkit.Android.dll",
+        "lib/MonoAndroid10/FormsToolkit.Android.xml",
+        "lib/MonoAndroid10/FormsToolkit.dll",
+        "lib/MonoAndroid10/FormsToolkit.xml",
+        "lib/Xamarin.iOS10/FormsToolkit.dll",
+        "lib/Xamarin.iOS10/FormsToolkit.iOS.dll",
+        "lib/Xamarin.iOS10/FormsToolkit.iOS.xml",
+        "lib/Xamarin.iOS10/FormsToolkit.xml",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/FormsToolkit.xml",
+        "readme.txt"
+      ]
+    },
+    "HockeySDK.Core/4.1.3": {
+      "sha512": "Kz/8GDh49nTPYXjUaykCGN0RIf44qgmv/Y224P+TFM8Bi49Tpcb/1yQzxnXWNp2xBlgt1ctgthXI/HnTeJq3EQ==",
+      "type": "package",
+      "path": "HockeySDK.Core/4.1.3",
+      "files": [
+        "HockeySDK.Core.4.1.3.nupkg.sha512",
+        "HockeySDK.Core.nuspec",
+        "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll",
+        "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll.CodeAnalysisLog.xml",
+        "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.Core45.dll.lastcodeanalysissucceeded",
+        "lib/portable-net45+win8+wp8+wpa81+win81+uap10.0/Microsoft.HockeyApp.XML"
+      ]
+    },
+    "HockeySDK.UWP/4.1.3": {
+      "sha512": "TlWuK1HomLUrqpUAzvBLIDj4tQhpYozlamJYZYhJe3v5a9Kn7gsGIvXJnOdZUidsvcfHfbrO46g8WwFEkGZgpQ==",
+      "type": "package",
+      "path": "HockeySDK.UWP/4.1.3",
+      "files": [
+        "HockeySDK.UWP.4.1.3.nupkg.sha512",
+        "HockeySDK.UWP.nuspec",
+        "lib/uap10.0/Microsoft.HockeyApp.Kit.dll",
+        "lib/uap10.0/Microsoft.HockeyApp.Kit.dll.CodeAnalysisLog.xml",
+        "lib/uap10.0/Microsoft.HockeyApp.Kit.dll.lastcodeanalysissucceeded",
+        "lib/uap10.0/Microsoft.HockeyApp.Kit.pri",
+        "lib/uap10.0/Microsoft.HockeyApp.Kit/Properties/Microsoft.HockeyApp.Kit.rd.xml",
+        "tools/Init.ps1"
+      ]
+    },
+    "Humanizer/2.1.0": {
+      "sha512": "8+FJZoGoDliqWGknLiLp6Y/6C3cjzwyPwD/FVyU1zIoCx86x9bxiIceSQpRapYiNApv7j9PAYzMDNBy9Ab9sAQ==",
+      "type": "package",
+      "path": "Humanizer/2.1.0",
+      "files": [
+        "Humanizer.2.1.0.nupkg.sha512",
+        "Humanizer.nuspec"
+      ]
+    },
+    "Humanizer.Core/2.1.0": {
+      "sha512": "Gq3K0yWbjVpOfHY22djAz4q4263/LzpgqFgvk7vaSEpkCp7JBRoifMRISYWaX9lxJvUShhVV7/adBLu8nZWNxg==",
+      "type": "package",
+      "path": "Humanizer.Core/2.1.0",
+      "files": [
+        "Humanizer.Core.2.1.0.nupkg.sha512",
+        "Humanizer.Core.nuspec",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.pdb",
+        "lib/netstandard1.0/Humanizer.xml"
+      ]
+    },
+    "Humanizer.Core.af/2.1.0": {
+      "sha512": "Tp2IglzbC+oKVr4qvmunEukNeWi9H1ghBWkfwLka8qIsKfSbWiMddDBn4XUpG3kW01/LXpgpkUszsbr2KWfaUw==",
+      "type": "package",
+      "path": "Humanizer.Core.af/2.1.0",
+      "files": [
+        "Humanizer.Core.af.2.1.0.nupkg.sha512",
+        "Humanizer.Core.af.nuspec",
+        "lib/netstandard1.0/af/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.ar/2.1.0": {
+      "sha512": "qGlAsYdnXKH6rZ/cK49vRyhrNfkWlnv7letJAcWMYwWAmXlUP2zH4LFPukudtefYCnZdRJTL8halwz4HiwJ4Zg==",
+      "type": "package",
+      "path": "Humanizer.Core.ar/2.1.0",
+      "files": [
+        "Humanizer.Core.ar.2.1.0.nupkg.sha512",
+        "Humanizer.Core.ar.nuspec",
+        "lib/netstandard1.0/ar/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.bg/2.1.0": {
+      "sha512": "i9c+6QijxWGxf38Qfijyv+g5KYmbTG7mBeM4Rhj0ygB/IGoqAp4RKHf60nKPM7vEmfj0EasuCb5J9C+1hGZD0w==",
+      "type": "package",
+      "path": "Humanizer.Core.bg/2.1.0",
+      "files": [
+        "Humanizer.Core.bg.2.1.0.nupkg.sha512",
+        "Humanizer.Core.bg.nuspec",
+        "lib/netstandard1.0/bg/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.bn-BD/2.1.0": {
+      "sha512": "Vc0x8zzAFTACKan0qw+72uSdkshGCWwqd4oEP6YwdEiEkCwmnl7QuoEh5IxQPKIwvp5s12kl85HB+tvY/v+v2w==",
+      "type": "package",
+      "path": "Humanizer.Core.bn-BD/2.1.0",
+      "files": [
+        "Humanizer.Core.bn-BD.2.1.0.nupkg.sha512",
+        "Humanizer.Core.bn-BD.nuspec",
+        "lib/netstandard1.0/bn-BD/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.cs/2.1.0": {
+      "sha512": "94X2bAZKpUL74snOGv0kCLP1bQaAd1wSarwFD+Y0+zN4hnd0Ku3Hj2FH5JZkaykk08A7B9DQAp/erarpX/8z+w==",
+      "type": "package",
+      "path": "Humanizer.Core.cs/2.1.0",
+      "files": [
+        "Humanizer.Core.cs.2.1.0.nupkg.sha512",
+        "Humanizer.Core.cs.nuspec",
+        "lib/netstandard1.0/cs/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.da/2.1.0": {
+      "sha512": "FK1bEi66zzFwQgc2X4oQxGfR0/mnIoYhvnbV7I6yMpkyUXYIoylgztGH+IMLU3XEllcTWf5lMzJ/Sey1bd+MIA==",
+      "type": "package",
+      "path": "Humanizer.Core.da/2.1.0",
+      "files": [
+        "Humanizer.Core.da.2.1.0.nupkg.sha512",
+        "Humanizer.Core.da.nuspec",
+        "lib/netstandard1.0/da/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.de/2.1.0": {
+      "sha512": "8vi5xuafayTfEPnQT+jMf/dTmO9aR6ICRsg520zgb1RHwXufBB30PQoDQ3WGTPIMRE8YFjssopB/eU+KRM6DlQ==",
+      "type": "package",
+      "path": "Humanizer.Core.de/2.1.0",
+      "files": [
+        "Humanizer.Core.de.2.1.0.nupkg.sha512",
+        "Humanizer.Core.de.nuspec",
+        "lib/netstandard1.0/de/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.el/2.1.0": {
+      "sha512": "D4AZ8Kl9/wHWOV3XUnO2DSeIcGSxiTPxgR7+fDGkVMZQja3QryO797tO/HzPhvp0H5MLw+/4R5BfVHfkd3g/7w==",
+      "type": "package",
+      "path": "Humanizer.Core.el/2.1.0",
+      "files": [
+        "Humanizer.Core.el.2.1.0.nupkg.sha512",
+        "Humanizer.Core.el.nuspec",
+        "lib/netstandard1.0/el/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.es/2.1.0": {
+      "sha512": "WNi78Y4nE/SABvomDBeojZ/7A0iRHJN90zgny9aTlgWoKtbWEy2vIUjpzDtNy3f+Xf6typsH3vTRdMFhqFCOhQ==",
+      "type": "package",
+      "path": "Humanizer.Core.es/2.1.0",
+      "files": [
+        "Humanizer.Core.es.2.1.0.nupkg.sha512",
+        "Humanizer.Core.es.nuspec",
+        "lib/netstandard1.0/es/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.fa/2.1.0": {
+      "sha512": "aILBiA1FkF8DzjY69EhOe3H3KI54XAoamAvGeK/krTpAfroTd/cB8BElb2WDQZnjO7XRuh5eIJUOQ6RVjMok3A==",
+      "type": "package",
+      "path": "Humanizer.Core.fa/2.1.0",
+      "files": [
+        "Humanizer.Core.fa.2.1.0.nupkg.sha512",
+        "Humanizer.Core.fa.nuspec",
+        "lib/netstandard1.0/fa/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.fi-FI/2.1.0": {
+      "sha512": "mBotAmjST99FlQNSEk6Ulh63z8gWQBBNO+WkogABX09Ym174deayAm20GJGHvrxq58siv2OIG0GNOumBH1wkEg==",
+      "type": "package",
+      "path": "Humanizer.Core.fi-FI/2.1.0",
+      "files": [
+        "Humanizer.Core.fi-FI.2.1.0.nupkg.sha512",
+        "Humanizer.Core.fi-FI.nuspec",
+        "lib/netstandard1.0/fi-FI/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.fr/2.1.0": {
+      "sha512": "E9knwq/izZGlKd560ua38IQCdCX0pLLPHKucf6A+70uQ+yEppJZ1ZvSZiZpVyz573ly12h9sDOT16b+KUyjThQ==",
+      "type": "package",
+      "path": "Humanizer.Core.fr/2.1.0",
+      "files": [
+        "Humanizer.Core.fr.2.1.0.nupkg.sha512",
+        "Humanizer.Core.fr.nuspec",
+        "lib/netstandard1.0/fr/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.fr-BE/2.1.0": {
+      "sha512": "CfBCURbSyD0DRJRolb8/CAKmb86HaItxOEOyr7aZ8Y/iLindP9T7q0x5bzk3UVlNojDD90K7ptQzP1xiI597wQ==",
+      "type": "package",
+      "path": "Humanizer.Core.fr-BE/2.1.0",
+      "files": [
+        "Humanizer.Core.fr-BE.2.1.0.nupkg.sha512",
+        "Humanizer.Core.fr-BE.nuspec",
+        "lib/netstandard1.0/fr-BE/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.he/2.1.0": {
+      "sha512": "KjfaD5HtGkNATVV1qEY5A/52XlUeUUpMH/lIGLb79Ieo2A7VbM5zTRsQPUzJ3YM8XTsNlGamUY6jSTQZksOlsg==",
+      "type": "package",
+      "path": "Humanizer.Core.he/2.1.0",
+      "files": [
+        "Humanizer.Core.he.2.1.0.nupkg.sha512",
+        "Humanizer.Core.he.nuspec",
+        "lib/netstandard1.0/he/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.hr/2.1.0": {
+      "sha512": "kbyHk4YUgsFeRqBIyXfROuGLWHleOm9Lmksox1My3vd1QDpnHvhoMFctcBeA6jT99IKTwFhVJi87+6FiXKPsug==",
+      "type": "package",
+      "path": "Humanizer.Core.hr/2.1.0",
+      "files": [
+        "Humanizer.Core.hr.2.1.0.nupkg.sha512",
+        "Humanizer.Core.hr.nuspec",
+        "lib/netstandard1.0/hr/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.hu/2.1.0": {
+      "sha512": "NLCHe2AGGzIOdqiV6RKZNZJeyu9MSNaTIhYYVfxxBo+4Bb8I8vtUqlD3lgZ2yQu981Dv1UiVBA8lV6jLIgzz9Q==",
+      "type": "package",
+      "path": "Humanizer.Core.hu/2.1.0",
+      "files": [
+        "Humanizer.Core.hu.2.1.0.nupkg.sha512",
+        "Humanizer.Core.hu.nuspec",
+        "lib/netstandard1.0/hu/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.id/2.1.0": {
+      "sha512": "sCfW+9+BfookwT+ZPRF4B8J/GvWZ5B5Aa+iyoQI2E6vyqKtvFOUD79Ze21Dkuzu7VEJD77aKd+XMyFBTHtMDJw==",
+      "type": "package",
+      "path": "Humanizer.Core.id/2.1.0",
+      "files": [
+        "Humanizer.Core.id.2.1.0.nupkg.sha512",
+        "Humanizer.Core.id.nuspec",
+        "lib/netstandard1.0/id/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.it/2.1.0": {
+      "sha512": "kLcBezKVDmgJhxnVoI+btL08sgJaGIQHgBRjXF972ZFX+lKaiig2NRN2n5aVGV1DYhZEW2L3vfV0v29xEsXLNg==",
+      "type": "package",
+      "path": "Humanizer.Core.it/2.1.0",
+      "files": [
+        "Humanizer.Core.it.2.1.0.nupkg.sha512",
+        "Humanizer.Core.it.nuspec",
+        "lib/netstandard1.0/it/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.ja/2.1.0": {
+      "sha512": "0yq7Fk7EOqNk+T6iHxp9aIkStjg7h+Ayi34rfnFfTQQtTOz9pzYlPX4huYMhATxjQm6bbzMyesj7BhZiUOescg==",
+      "type": "package",
+      "path": "Humanizer.Core.ja/2.1.0",
+      "files": [
+        "Humanizer.Core.ja.2.1.0.nupkg.sha512",
+        "Humanizer.Core.ja.nuspec",
+        "lib/netstandard1.0/ja/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.nb/2.1.0": {
+      "sha512": "voohc1qFY+n6/+h2Q4P2KjtdIsXGTw7c+J5HOa0BxDpfNfo2VsEYoiwdtQon2eyOgoztKWt+rpLqyvRf1W7boA==",
+      "type": "package",
+      "path": "Humanizer.Core.nb/2.1.0",
+      "files": [
+        "Humanizer.Core.nb.2.1.0.nupkg.sha512",
+        "Humanizer.Core.nb.nuspec",
+        "lib/netstandard1.0/nb/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.nb-NO/2.1.0": {
+      "sha512": "UyG+PrNuSURnhIMo9VTxr7JH57k8Z5CLMhIQBozydN6OAlXVlBhkIHga8BSsPw9g9S+yoU3wvHtBL0o7+x7rOA==",
+      "type": "package",
+      "path": "Humanizer.Core.nb-NO/2.1.0",
+      "files": [
+        "Humanizer.Core.nb-NO.2.1.0.nupkg.sha512",
+        "Humanizer.Core.nb-NO.nuspec",
+        "lib/netstandard1.0/nb-NO/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.nl/2.1.0": {
+      "sha512": "smS21cH49MOaaXkiJ3puNr9yGjWdVnebZxhNP0hG7Q5ONSkY/8Vwfh89cmDiL0WsJzWaJQ6PD4bCuWKvZgdxRA==",
+      "type": "package",
+      "path": "Humanizer.Core.nl/2.1.0",
+      "files": [
+        "Humanizer.Core.nl.2.1.0.nupkg.sha512",
+        "Humanizer.Core.nl.nuspec",
+        "lib/netstandard1.0/nl/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.pl/2.1.0": {
+      "sha512": "Ls3QND/+SNRJNq0aWvQsyzTK5xClzZj5iC6oEH0iFIWHDtbcrReoQlTYNCSqrF4NTNB6O8njZtYep3PT3f4VXw==",
+      "type": "package",
+      "path": "Humanizer.Core.pl/2.1.0",
+      "files": [
+        "Humanizer.Core.pl.2.1.0.nupkg.sha512",
+        "Humanizer.Core.pl.nuspec",
+        "lib/netstandard1.0/pl/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.pt/2.1.0": {
+      "sha512": "CWexe3G1Gf6K1ix3AJ/BNygGrbX+5B0Wgepd7u0dPVdUe49E+NwA10xmltWJvRjqif4dnY+wfKMLPYiQPUMLhA==",
+      "type": "package",
+      "path": "Humanizer.Core.pt/2.1.0",
+      "files": [
+        "Humanizer.Core.pt.2.1.0.nupkg.sha512",
+        "Humanizer.Core.pt.nuspec",
+        "lib/netstandard1.0/pt/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.ro/2.1.0": {
+      "sha512": "2nYxojCyLVk3QtcbylcvC07DBHAX36FI2nFW/8rm/X79T5Heqa4us7/QF/zFM26jZv5GMJ2Z/5J2IVDES53ilQ==",
+      "type": "package",
+      "path": "Humanizer.Core.ro/2.1.0",
+      "files": [
+        "Humanizer.Core.ro.2.1.0.nupkg.sha512",
+        "Humanizer.Core.ro.nuspec",
+        "lib/netstandard1.0/ro/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.ru/2.1.0": {
+      "sha512": "8YehIu1AWFuL3lYSmXiu5UCK8Z8WTlcDyjSWnQaGYvS/b2QhGbIO5RJk0iZh7tMbHcPUFKUtAUB0dnZo9V/QDA==",
+      "type": "package",
+      "path": "Humanizer.Core.ru/2.1.0",
+      "files": [
+        "Humanizer.Core.ru.2.1.0.nupkg.sha512",
+        "Humanizer.Core.ru.nuspec",
+        "lib/netstandard1.0/ru/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.sk/2.1.0": {
+      "sha512": "rkp5CYJ0gq461Z7GpUthJZ7pBA0Y5XEziShpS9OcMv2QIMfZLceH+jCZt+vdRtackYFbR9CJ0j66jkVVgUbnxw==",
+      "type": "package",
+      "path": "Humanizer.Core.sk/2.1.0",
+      "files": [
+        "Humanizer.Core.sk.2.1.0.nupkg.sha512",
+        "Humanizer.Core.sk.nuspec",
+        "lib/netstandard1.0/sk/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.sl/2.1.0": {
+      "sha512": "kw+jp4MDH9CLRNz0GZogubTcSASQU0+J27Sm/+7FIhbztwYJ2lnJqFAGUwEcEGkAN/xlQsXgMPdfvjHk0p8BYA==",
+      "type": "package",
+      "path": "Humanizer.Core.sl/2.1.0",
+      "files": [
+        "Humanizer.Core.sl.2.1.0.nupkg.sha512",
+        "Humanizer.Core.sl.nuspec",
+        "lib/netstandard1.0/sl/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.sr/2.1.0": {
+      "sha512": "QR1V2giZX0a14qRulLSaTWn54V0bmikW3Oi97d0FomIJbIxkGh0sgpkPfA3z/Gb7MPpNhpTIv7Jw7Ya2HYE3nQ==",
+      "type": "package",
+      "path": "Humanizer.Core.sr/2.1.0",
+      "files": [
+        "Humanizer.Core.sr.2.1.0.nupkg.sha512",
+        "Humanizer.Core.sr.nuspec",
+        "lib/netstandard1.0/sr/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.sr-Latn/2.1.0": {
+      "sha512": "gk2Mpq90pZZgBh0E/xPFdxULs7ieBEoTYQFX145HefDLQb1gpWsKbe9oZbmt7oJwxw5wl4C5lnftF+CbpqCZeQ==",
+      "type": "package",
+      "path": "Humanizer.Core.sr-Latn/2.1.0",
+      "files": [
+        "Humanizer.Core.sr-Latn.2.1.0.nupkg.sha512",
+        "Humanizer.Core.sr-Latn.nuspec",
+        "lib/netstandard1.0/sr-Latn/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.sv/2.1.0": {
+      "sha512": "NNYZa+ZbbLOgjeLFn4+He83FMFXtuppJHSGcg/4o2UaB0o2b0Ht6NqbJmzKNqDIHjWn9+6LMc7/ibnPFt9rMEw==",
+      "type": "package",
+      "path": "Humanizer.Core.sv/2.1.0",
+      "files": [
+        "Humanizer.Core.sv.2.1.0.nupkg.sha512",
+        "Humanizer.Core.sv.nuspec",
+        "lib/netstandard1.0/sv/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.tr/2.1.0": {
+      "sha512": "Gi57L7zCRNDLs3vjVtlYStrX7DoctYda+abo/pTWrbzkjr1zZVsrzTuHrgC/+7bvj2MckvMcnSoNSO2/zl8UEw==",
+      "type": "package",
+      "path": "Humanizer.Core.tr/2.1.0",
+      "files": [
+        "Humanizer.Core.tr.2.1.0.nupkg.sha512",
+        "Humanizer.Core.tr.nuspec",
+        "lib/netstandard1.0/tr/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.uk/2.1.0": {
+      "sha512": "+jBjeiIeakUdFGr4T9h5N03xFEdaMKZ+J17ns+WslIVUqzcjw96Wj8Jfp07ES1UFCQ/G2bTkXumsFWJcSCELZg==",
+      "type": "package",
+      "path": "Humanizer.Core.uk/2.1.0",
+      "files": [
+        "Humanizer.Core.uk.2.1.0.nupkg.sha512",
+        "Humanizer.Core.uk.nuspec",
+        "lib/netstandard1.0/uk/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.uz-Cyrl-UZ/2.1.0": {
+      "sha512": "ZFGB2RkpgWYls2RdowlHMLEjozFbuNZoJceLHayw+1SKyFn5EDmtvhBGiU8+S7TfKOIX5WfGkGUzNpa0NTbTog==",
+      "type": "package",
+      "path": "Humanizer.Core.uz-Cyrl-UZ/2.1.0",
+      "files": [
+        "Humanizer.Core.uz-Cyrl-UZ.2.1.0.nupkg.sha512",
+        "Humanizer.Core.uz-Cyrl-UZ.nuspec",
+        "lib/netstandard1.0/uz-Cyrl-UZ/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.uz-Latn-UZ/2.1.0": {
+      "sha512": "7Vm87lIS5CWbx8R15EYsBp/UXeEqbY2jm18lS4eZ3lDgr7OYoyUgez0KORbnyeJh1eN3oWsxucvZjmpgzj4osQ==",
+      "type": "package",
+      "path": "Humanizer.Core.uz-Latn-UZ/2.1.0",
+      "files": [
+        "Humanizer.Core.uz-Latn-UZ.2.1.0.nupkg.sha512",
+        "Humanizer.Core.uz-Latn-UZ.nuspec",
+        "lib/netstandard1.0/uz-Latn-UZ/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.vi/2.1.0": {
+      "sha512": "KWDT/CIR9SJFOk8Wv5OOrXr3y17rEnp45AEFi8QOqnuQJnnqkxrjDGvPoHSTScBtLiESpp4RSzhPjKhfTHgVwg==",
+      "type": "package",
+      "path": "Humanizer.Core.vi/2.1.0",
+      "files": [
+        "Humanizer.Core.vi.2.1.0.nupkg.sha512",
+        "Humanizer.Core.vi.nuspec",
+        "lib/netstandard1.0/vi/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.zh-CN/2.1.0": {
+      "sha512": "CGW6fEC7Z3H0xUOrFu4nV7gXz6FodlF7zoo6zZh+LXkVYGeIrkv0owlDidXJLiLl6cFxqoWn/ld9yYLOKMYFIg==",
+      "type": "package",
+      "path": "Humanizer.Core.zh-CN/2.1.0",
+      "files": [
+        "Humanizer.Core.zh-CN.2.1.0.nupkg.sha512",
+        "Humanizer.Core.zh-CN.nuspec",
+        "lib/netstandard1.0/zh-CN/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.zh-Hans/2.1.0": {
+      "sha512": "j659hK3/e87nnTSvsXU+APPGNoq8I1u2ci24dmApGt/y+aEtPGNmwxGbn6EqfWzpjIvxormdNiZBn4pVIZLsQA==",
+      "type": "package",
+      "path": "Humanizer.Core.zh-Hans/2.1.0",
+      "files": [
+        "Humanizer.Core.zh-Hans.2.1.0.nupkg.sha512",
+        "Humanizer.Core.zh-Hans.nuspec",
+        "lib/netstandard1.0/zh-Hans/Humanizer.resources.dll"
+      ]
+    },
+    "Humanizer.Core.zh-Hant/2.1.0": {
+      "sha512": "S3XcngcahId9/Q9aUP1m+/x8qs5AbPgX3iZfY232kavwKu4FsYvelyjxpk9peo42FuYS+cScX1EGnL8c8YiaLg==",
+      "type": "package",
+      "path": "Humanizer.Core.zh-Hant/2.1.0",
+      "files": [
+        "Humanizer.Core.zh-Hant.2.1.0.nupkg.sha512",
+        "Humanizer.Core.zh-Hant.nuspec",
+        "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll"
+      ]
+    },
     "Microsoft.Bcl/1.1.10": {
       "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
       "type": "package",
@@ -15654,6 +20061,176 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+      "type": "package",
+      "path": "Newtonsoft.Json/9.0.1",
+      "files": [
+        "Newtonsoft.Json.9.0.1.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "tools/install.ps1"
+      ]
+    },
+    "PCLStorage/1.0.0": {
+      "sha512": "J1Eo40CB8wumrf4oYS9jHNvQ3UtQurH2MmBYMHT2cTLd0MoBa4DmdBnsJBRc3k5XIUDExJs4wwu4PnvG8UlGNw==",
+      "type": "package",
+      "path": "PCLStorage/1.0.0",
+      "files": [
+        "PCLStorage.1.0.0.nupkg.sha512",
+        "PCLStorage.nuspec",
+        "lib/monoandroid/PCLStorage.Abstractions.dll",
+        "lib/monoandroid/PCLStorage.Abstractions.xml",
+        "lib/monoandroid/PCLStorage.dll",
+        "lib/monoandroid/PCLStorage.xml",
+        "lib/net45/PCLStorage.Abstractions.dll",
+        "lib/net45/PCLStorage.Abstractions.xml",
+        "lib/net45/PCLStorage.dll",
+        "lib/net45/PCLStorage.xml",
+        "lib/portable-monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll",
+        "lib/portable-monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.xml",
+        "lib/portable-monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.dll",
+        "lib/portable-monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.xml",
+        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll",
+        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.xml",
+        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.dll",
+        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.xml",
+        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.dll",
+        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.xml",
+        "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll",
+        "lib/portable-win8+wpa81/PCLStorage.Abstractions.xml",
+        "lib/portable-win8+wpa81/PCLStorage.dll",
+        "lib/portable-win8+wpa81/PCLStorage.xml",
+        "lib/sl5/PCLStorage.Abstractions.dll",
+        "lib/sl5/PCLStorage.Abstractions.xml",
+        "lib/sl5/PCLStorage.dll",
+        "lib/sl5/PCLStorage.xml",
+        "lib/wp8/PCLStorage.Abstractions.dll",
+        "lib/wp8/PCLStorage.Abstractions.xml",
+        "lib/wp8/PCLStorage.dll",
+        "lib/wp8/PCLStorage.xml"
+      ]
+    },
+    "Plugin.Permissions/1.1.7": {
+      "sha512": "RlZM/5XJDALJhaIGYqDNaKnJk/n7bLsmX279Ir7QRi7OyzAj22+8nEnlg1BIjn+apMDHbhYfKgT3TlinCXv9Qw==",
+      "type": "package",
+      "path": "Plugin.Permissions/1.1.7",
+      "files": [
+        "Plugin.Permissions.1.1.7.nupkg.sha512",
+        "Plugin.Permissions.nuspec",
+        "lib/MonoAndroid10/Plugin.Permissions.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Permissions.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Permissions.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Permissions.dll",
+        "lib/MonoAndroid10/Plugin.Permissions.pdb",
+        "lib/MonoAndroid10/Plugin.Permissions.xml",
+        "lib/UAP10/Plugin.Permissions.Abstractions.dll",
+        "lib/UAP10/Plugin.Permissions.Abstractions.pdb",
+        "lib/UAP10/Plugin.Permissions.Abstractions.xml",
+        "lib/UAP10/Plugin.Permissions.dll",
+        "lib/UAP10/Plugin.Permissions.pdb",
+        "lib/UAP10/Plugin.Permissions.xml",
+        "lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Permissions.dll",
+        "lib/Xamarin.iOS10/Plugin.Permissions.xml",
+        "lib/net45/Plugin.Permissions.Abstractions.dll",
+        "lib/net45/Plugin.Permissions.Abstractions.pdb",
+        "lib/net45/Plugin.Permissions.Abstractions.xml",
+        "lib/net45/Plugin.Permissions.dll",
+        "lib/net45/Plugin.Permissions.pdb",
+        "lib/net45/Plugin.Permissions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.xml",
+        "lib/win8/Plugin.Permissions.Abstractions.dll",
+        "lib/win8/Plugin.Permissions.Abstractions.pdb",
+        "lib/win8/Plugin.Permissions.Abstractions.xml",
+        "lib/win8/Plugin.Permissions.dll",
+        "lib/win8/Plugin.Permissions.pdb",
+        "lib/win8/Plugin.Permissions.xml",
+        "lib/wp8/Plugin.Permissions.Abstractions.dll",
+        "lib/wp8/Plugin.Permissions.Abstractions.pdb",
+        "lib/wp8/Plugin.Permissions.Abstractions.xml",
+        "lib/wp8/Plugin.Permissions.dll",
+        "lib/wp8/Plugin.Permissions.pdb",
+        "lib/wp8/Plugin.Permissions.xml",
+        "lib/wpa81/Plugin.Permissions.Abstractions.dll",
+        "lib/wpa81/Plugin.Permissions.Abstractions.pdb",
+        "lib/wpa81/Plugin.Permissions.Abstractions.xml",
+        "lib/wpa81/Plugin.Permissions.dll",
+        "lib/wpa81/Plugin.Permissions.pdb",
+        "lib/wpa81/Plugin.Permissions.xml",
+        "readme.txt"
+      ]
+    },
+    "Plugin.Share/4.0.3": {
+      "sha512": "hvgYgpGPbaVW+ymz2E9pvaJxm2WjY41qimOCkl9XxVYjwlmR0X5bLbP/EodoknwIkoBibkLvM6qiHiLy2zmOFw==",
+      "type": "package",
+      "path": "Plugin.Share/4.0.3",
+      "files": [
+        "Plugin.Share.4.0.3.nupkg.sha512",
+        "Plugin.Share.nuspec",
+        "lib/MonoAndroid10/Plugin.Share.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Share.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Share.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Share.dll",
+        "lib/MonoAndroid10/Plugin.Share.pdb",
+        "lib/MonoAndroid10/Plugin.Share.xml",
+        "lib/UAP10/Plugin.Share.Abstractions.dll",
+        "lib/UAP10/Plugin.Share.Abstractions.pdb",
+        "lib/UAP10/Plugin.Share.Abstractions.xml",
+        "lib/UAP10/Plugin.Share.dll",
+        "lib/UAP10/Plugin.Share.pdb",
+        "lib/UAP10/Plugin.Share.xml",
+        "lib/Xamarin.iOS10/Plugin.Share.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Share.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Share.dll",
+        "lib/Xamarin.iOS10/Plugin.Share.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.xml",
+        "lib/win8/Plugin.Share.Abstractions.dll",
+        "lib/win8/Plugin.Share.Abstractions.pdb",
+        "lib/win8/Plugin.Share.Abstractions.xml",
+        "lib/win8/Plugin.Share.dll",
+        "lib/win8/Plugin.Share.pdb",
+        "lib/win8/Plugin.Share.xml",
+        "lib/wp8/Plugin.Share.Abstractions.dll",
+        "lib/wp8/Plugin.Share.Abstractions.pdb",
+        "lib/wp8/Plugin.Share.Abstractions.xml",
+        "lib/wp8/Plugin.Share.dll",
+        "lib/wp8/Plugin.Share.pdb",
+        "lib/wp8/Plugin.Share.xml",
+        "lib/wpa81/Plugin.Share.Abstractions.dll",
+        "lib/wpa81/Plugin.Share.Abstractions.pdb",
+        "lib/wpa81/Plugin.Share.Abstractions.xml",
+        "lib/wpa81/Plugin.Share.dll",
+        "lib/wpa81/Plugin.Share.pdb",
+        "lib/wpa81/Plugin.Share.xml"
+      ]
+    },
     "Refractored.MvvmHelpers/1.0.1": {
       "sha512": "ZaQAQF+NqmOQC9jetZfKaafDgdu2pB+7E+hoaUjGDN5ydw+h0haxo5NPINr/zQ9+LOPiyIBZA0tcikiFp5kz0w==",
       "type": "package",
@@ -15663,6 +20240,25 @@
         "Refractored.MvvmHelpers.nuspec",
         "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll",
         "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.xml"
+      ]
+    },
+    "Refractored.XamForms.PullToRefresh/1.0.10": {
+      "sha512": "deVZ7kSgJEFoG7EE5XcxuuWZe9NzQlcoOnuy8WTzZp+zpOd3nrDon7aQks+cRm+9u3ELVskvN7Zag79381Gc/w==",
+      "type": "package",
+      "path": "Refractored.XamForms.PullToRefresh/1.0.10",
+      "files": [
+        "Refractored.XamForms.PullToRefresh.1.0.10.nupkg.sha512",
+        "Refractored.XamForms.PullToRefresh.nuspec",
+        "lib/MonoAndroid10/Refractored.XamForms.PullToRefresh.Droid.dll",
+        "lib/MonoAndroid10/Refractored.XamForms.PullToRefresh.Droid.xml",
+        "lib/MonoAndroid10/Refractored.XamForms.PullToRefresh.dll",
+        "lib/MonoAndroid10/Refractored.XamForms.PullToRefresh.xml",
+        "lib/Xamarin.iOS10/Refractored.XamForms.PullToRefresh.dll",
+        "lib/Xamarin.iOS10/Refractored.XamForms.PullToRefresh.iOS.dll",
+        "lib/Xamarin.iOS10/Refractored.XamForms.PullToRefresh.iOS.xml",
+        "lib/Xamarin.iOS10/Refractored.XamForms.PullToRefresh.xml",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.xml"
       ]
     },
     "runtime.any.System.Collections/4.0.11": {
@@ -21529,6 +26125,187 @@
         "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
+    "Xam.Plugin.Connectivity/2.2.12": {
+      "sha512": "Y/R/GEF+Lo1CuO5NMb4GmjD8lfelDV3q18P+5i2ne3JREgHYcoeW2yYVVGou1Gi9K7SBkzoCYI6+7ioMCR0QkA==",
+      "type": "package",
+      "path": "Xam.Plugin.Connectivity/2.2.12",
+      "files": [
+        "Xam.Plugin.Connectivity.2.2.12.nupkg.sha512",
+        "Xam.Plugin.Connectivity.nuspec",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Connectivity.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.pdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.xml",
+        "lib/MonoTouch10/Plugin.Connectivity.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.Connectivity.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.Connectivity.dll",
+        "lib/MonoTouch10/Plugin.Connectivity.xml",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.dll",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.xml",
+        "lib/UAP10/Plugin.Connectivity.dll",
+        "lib/UAP10/Plugin.Connectivity.pdb",
+        "lib/UAP10/Plugin.Connectivity.xml",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.xml",
+        "lib/net45/Plugin.Connectivity.Abstractions.dll",
+        "lib/net45/Plugin.Connectivity.Abstractions.pdb",
+        "lib/net45/Plugin.Connectivity.Abstractions.xml",
+        "lib/net45/Plugin.Connectivity.dll",
+        "lib/net45/Plugin.Connectivity.pdb",
+        "lib/net45/Plugin.Connectivity.xml",
+        "lib/portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+Xamarin.Mac20+UAP10/Plugin.Connectivity.Abstractions.dll",
+        "lib/portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+Xamarin.Mac20+UAP10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+Xamarin.Mac20+UAP10/Plugin.Connectivity.Abstractions.xml",
+        "lib/portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+Xamarin.Mac20+UAP10/Plugin.Connectivity.dll",
+        "lib/portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+Xamarin.Mac20+UAP10/Plugin.Connectivity.pdb",
+        "lib/portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+Xamarin.Mac20+UAP10/Plugin.Connectivity.xml",
+        "lib/win8/Plugin.Connectivity.Abstractions.dll",
+        "lib/win8/Plugin.Connectivity.Abstractions.pdb",
+        "lib/win8/Plugin.Connectivity.Abstractions.xml",
+        "lib/win8/Plugin.Connectivity.dll",
+        "lib/win8/Plugin.Connectivity.pdb",
+        "lib/win8/Plugin.Connectivity.xml",
+        "lib/wp80/Plugin.Connectivity.Abstractions.dll",
+        "lib/wp80/Plugin.Connectivity.Abstractions.pdb",
+        "lib/wp80/Plugin.Connectivity.Abstractions.xml",
+        "lib/wp80/Plugin.Connectivity.dll",
+        "lib/wp80/Plugin.Connectivity.pdb",
+        "lib/wp80/Plugin.Connectivity.xml",
+        "lib/wp81/Plugin.Connectivity.Abstractions.dll",
+        "lib/wp81/Plugin.Connectivity.Abstractions.pdb",
+        "lib/wp81/Plugin.Connectivity.Abstractions.xml",
+        "lib/wp81/Plugin.Connectivity.dll",
+        "lib/wp81/Plugin.Connectivity.pdb",
+        "lib/wp81/Plugin.Connectivity.xml",
+        "lib/wpa81/Plugin.Connectivity.Abstractions.dll",
+        "lib/wpa81/Plugin.Connectivity.Abstractions.pdb",
+        "lib/wpa81/Plugin.Connectivity.Abstractions.xml",
+        "lib/wpa81/Plugin.Connectivity.dll",
+        "lib/wpa81/Plugin.Connectivity.pdb",
+        "lib/wpa81/Plugin.Connectivity.xml",
+        "readme.txt"
+      ]
+    },
+    "Xam.Plugin.EmbeddedResource/1.0.1": {
+      "sha512": "Blr46PR0T5Lb14Oxm9js1XVfUk2wkWFC8sHvNE1l4XnotLAojuIfAojDD7hy5SSf0vrkmq9uQIabNe+p4S/q3g==",
+      "type": "package",
+      "path": "Xam.Plugin.EmbeddedResource/1.0.1",
+      "files": [
+        "Xam.Plugin.EmbeddedResource.1.0.1.nupkg.sha512",
+        "Xam.Plugin.EmbeddedResource.nuspec",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Plugin.EmbeddedResource.dll"
+      ]
+    },
+    "Xam.Plugins.Forms.ImageCircle/1.6.1": {
+      "sha512": "leqiEzxxTSkyDhw2u2zpstfr0w+jkrYuIFoqTKeRNSqmLQ9JdGVFWuc+Tfu5v4gi51vUliVhc4WaTek8y3KDUg==",
+      "type": "package",
+      "path": "Xam.Plugins.Forms.ImageCircle/1.6.1",
+      "files": [
+        "Xam.Plugins.Forms.ImageCircle.1.6.1.nupkg.sha512",
+        "Xam.Plugins.Forms.ImageCircle.nuspec",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Android.dll",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Android.pdb",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Android.xml",
+        "lib/MonoTouch10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/MonoTouch10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/MonoTouch10/ImageCircle.Forms.Plugin.iOS.dll",
+        "lib/MonoTouch10/ImageCircle.Forms.Plugin.iOS.xml",
+        "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll",
+        "lib/UAP10/ImageCircle.Forms.Plugin.UWP.pdb",
+        "lib/UAP10/ImageCircle.Forms.Plugin.UWP.xml",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.iOS.dll",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.iOS.xml",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/win81/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/win81/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/win81/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/win81/ImageCircle.Forms.Plugin.WindowsStore.dll",
+        "lib/win81/ImageCircle.Forms.Plugin.WindowsStore.pdb",
+        "lib/win81/ImageCircle.Forms.Plugin.WindowsStore.xml",
+        "lib/wp8/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/wp8/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/wp8/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/wp8/ImageCircle.Forms.Plugin.WindowsPhone.dll",
+        "lib/wp8/ImageCircle.Forms.Plugin.WindowsPhone.pdb",
+        "lib/wp8/ImageCircle.Forms.Plugin.WindowsPhone.xml",
+        "lib/wpa81/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/wpa81/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/wpa81/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.dll",
+        "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.pdb",
+        "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.xml"
+      ]
+    },
+    "Xam.Plugins.Settings/2.1.0": {
+      "sha512": "quBuIfhmcYN6V1hZTV7a3ODiNqdT0Zv+U/zQdOSQnLQhVd+U+HojacD4TYm+CzUz9+FxUEDpH8aTXHDRyzdZTg==",
+      "type": "package",
+      "path": "Xam.Plugins.Settings/2.1.0",
+      "files": [
+        "Xam.Plugins.Settings.2.1.0.nupkg.sha512",
+        "Xam.Plugins.Settings.nuspec",
+        "content/MonoAndroid10/Helpers/Settings.cs.pp",
+        "content/MonoTouch10/Helpers/Settings.cs.pp",
+        "content/UAP10/Helpers/Settings.cs.pp",
+        "content/Xamarin.iOS10/Helpers/Settings.cs.pp",
+        "content/net45/Helpers/Settings.cs.pp",
+        "content/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Helpers/Settings.cs.pp",
+        "content/win8/Helpers/Settings.cs.pp",
+        "content/wp8/Helpers/Settings.cs.pp",
+        "content/wpa81/Helpers/Settings.cs.pp",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Settings.dll",
+        "lib/MonoAndroid10/Plugin.Settings.xml",
+        "lib/MonoTouch10/Plugin.Settings.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.Settings.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.Settings.dll",
+        "lib/MonoTouch10/Plugin.Settings.xml",
+        "lib/UAP10/Plugin.Settings.Abstractions.dll",
+        "lib/UAP10/Plugin.Settings.Abstractions.xml",
+        "lib/UAP10/Plugin.Settings.dll",
+        "lib/UAP10/Plugin.Settings.xml",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Settings.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.xml",
+        "lib/net45/Plugin.Settings.Abstractions.dll",
+        "lib/net45/Plugin.Settings.Abstractions.xml",
+        "lib/net45/Plugin.Settings.dll",
+        "lib/net45/Plugin.Settings.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.xml",
+        "lib/win8/Plugin.Settings.Abstractions.dll",
+        "lib/win8/Plugin.Settings.Abstractions.xml",
+        "lib/win8/Plugin.Settings.dll",
+        "lib/win8/Plugin.Settings.xml",
+        "lib/wp8/Plugin.Settings.Abstractions.dll",
+        "lib/wp8/Plugin.Settings.Abstractions.xml",
+        "lib/wp8/Plugin.Settings.dll",
+        "lib/wp8/Plugin.Settings.xml",
+        "lib/wpa81/Plugin.Settings.Abstractions.dll",
+        "lib/wpa81/Plugin.Settings.Abstractions.xml",
+        "lib/wpa81/Plugin.Settings.dll",
+        "lib/wpa81/Plugin.Settings.xml",
+        "readme.txt"
+      ]
+    },
     "Xamarin.Forms/2.3.1.114": {
       "sha512": "gEUGBCLHSylRQfpzAwUzI9EuJ3UVlwo+BFXGUdeL+XW9HrAPB8FtcDZMK7/HBdywMxGDhEFwXCCSClyEsdrFvw==",
       "type": "package",
@@ -21736,11 +26513,22 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "FormsToolkit >= 1.1.18",
+      "HockeySDK.UWP >= 4.1.3",
+      "Humanizer >= 2.1.0",
       "Microsoft.Bcl >= 1.1.10",
       "Microsoft.Bcl.Build >= 1.0.21",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "Microsoft.Net.Http >= 2.2.29",
+      "Newtonsoft.Json >= 9.0.1",
+      "Plugin.Permissions >= 1.1.7",
+      "Plugin.Share >= 4.0.3",
       "Refractored.MvvmHelpers >= 1.0.1",
+      "Refractored.XamForms.PullToRefresh >= 1.0.10",
+      "Xam.Plugin.Connectivity >= 2.2.12",
+      "Xam.Plugin.EmbeddedResource >= 1.0.1",
+      "Xam.Plugins.Forms.ImageCircle >= 1.6.1",
+      "Xam.Plugins.Settings >= 2.1.0",
       "Xamarin.Forms >= 2.3.1.114"
     ],
     "UAP,Version=v10.0": []

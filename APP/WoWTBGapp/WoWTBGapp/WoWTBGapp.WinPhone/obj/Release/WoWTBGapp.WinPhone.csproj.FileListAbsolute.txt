@@ -80,3 +80,7 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGap
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\bin\Release\Newtonsoft.Json.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\bin\Release\WoWTBGapp.DataAccess.Nodejs.pdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\bin\Release\Newtonsoft.Json.xml
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\bin\Release\logoEX.png
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\bin\Release\menu_info.png
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\bin\Release\menu_settings.png
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp\WoWTBGapp.WinPhone\bin\Release\profile_generic.png

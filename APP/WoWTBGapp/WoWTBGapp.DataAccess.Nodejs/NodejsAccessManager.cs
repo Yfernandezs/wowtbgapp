@@ -125,7 +125,7 @@ namespace WoWTBGapp.DataAccess.Nodejs
                 //{
                 //    NodeRequest.Headers.TransferEncodingChunked = true;
                 //}
-                NodeRequest.Headers.TransferEncodingChunked = true;
+                //NodeRequest.Headers.TransferEncodingChunked = true;
 
                 HttpResponseMessage response = await Client.SendAsync(NodeRequest).ConfigureAwait(false);
 

@@ -36,55 +36,55 @@ namespace WoWTBGapp.Clients.Portable
                 }
             }
 
-            LoadRequirementImageDataCommand.Execute(true);
+            //LoadRequirementImageDataCommand.Execute(true);
         }
 
-        ICommand loadRequirementImageDataCommand;
-        public ICommand LoadRequirementImageDataCommand =>
-            loadRequirementImageDataCommand ?? (loadRequirementImageDataCommand = new Command<bool>(async (f) => await ExecuteLoadRequirementImageDataAsync()));
+        //ICommand loadRequirementImageDataCommand;
+        //public ICommand LoadRequirementImageDataCommand =>
+        //    loadRequirementImageDataCommand ?? (loadRequirementImageDataCommand = new Command<bool>(async (f) => await ExecuteLoadRequirementImageDataAsync()));
 
-        async Task<bool> ExecuteLoadRequirementImageDataAsync(bool force = false)
-        {
-            if (IsBusy)
-                return false;
+        //async Task<bool> ExecuteLoadRequirementImageDataAsync(bool force = false)
+        //{
+        //    if (IsBusy)
+        //        return false;
 
-            try
-            {
-                IsBusy = true;
+        //    try
+        //    {
+        //        IsBusy = true;
 
-                Counters.Clear();
+        //        Counters.Clear();
 
-                var requirements = await DataAccessManager.RequirementImageAccess.GetItemsAsync(force).ConfigureAwait(false);
+        //        var requirements = await DataAccessManager.RequirementImageAccess.GetItemsAsync(force).ConfigureAwait(false);
 
-                foreach (Counter requirement in Card.Requirements)
-                {
-                    var newRequirement = new Counter();
+        //        foreach (Counter requirement in Card.Requirements)
+        //        {
+        //            var newRequirement = new Counter();
 
-                    newRequirement.Name = requirement.Name;
-                    newRequirement.Value = requirement.Value;
+        //            newRequirement.Name = requirement.Name;
+        //            newRequirement.Value = requirement.Value;
 
-                    var requirementData = requirements.ToList().Find(x => x.Name.Equals(requirement.Name) && (x.Value == -1 || x.Value == requirement.Value));
+        //            var requirementData = requirements.ToList().Find(x => x.Name.Equals(requirement.Name) && (x.Value == -1 || x.Value == requirement.Value));
 
-                    if (requirementData != null)
-                    {
-                        newRequirement.Name = requirementData.ImageURL;
-                    }
+        //            if (requirementData != null)
+        //            {
+        //                newRequirement.Name = requirementData.ImageURL;
+        //            }
 
-                    Counters.Add(newRequirement);
-                }
-            }
-            catch (Exception ex)
-            {
-                Logger.Report(ex, "Method", "ExecuteLoadRequirementImageDataAsync");
-                MessagingService.Current.SendMessage(MessageKeys.Error, ex);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
+        //            Counters.Add(newRequirement);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Logger.Report(ex, "Method", "ExecuteLoadRequirementImageDataAsync");
+        //        MessagingService.Current.SendMessage(MessageKeys.Error, ex);
+        //    }
+        //    finally
+        //    {
+        //        IsBusy = false;
+        //    }
 
-            return true;
-        }
+        //    return true;
+        //}
 
         ICommand itemCardEffectSelectedCommand;
         public ICommand ItemCardEffectSelectedCommand =>

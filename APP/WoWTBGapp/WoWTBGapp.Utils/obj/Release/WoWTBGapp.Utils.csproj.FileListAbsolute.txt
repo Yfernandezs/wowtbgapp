@@ -18,9 +18,3 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\ob
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\bin\Release\WoWTBGapp.Utils.dll.mdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\obj\Release\WoWTBGapp.Utils.dll.mdb
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\bin\Release\WoWTBGapp.Utils.dll.mdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\obj\Release\WoWTBGapp.Utils.dll.mdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\bin\Release\WoWTBGapp.Utils.dll.mdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\obj\Release\WoWTBGapp.Utils.dll.mdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\bin\Release\WoWTBGapp.Utils.dll.mdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\obj\Release\WoWTBGapp.Utils.dll.mdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Utils\bin\Release\WoWTBGapp.Utils.dll.mdb

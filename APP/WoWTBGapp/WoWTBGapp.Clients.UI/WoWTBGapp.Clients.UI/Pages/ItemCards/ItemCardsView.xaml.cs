@@ -32,7 +32,7 @@ namespace WoWTBGapp.Clients.UI
                 ToolbarItems.Add(new ToolbarItem
                 {
                     Text = "Refresh",
-                    Icon = "toolbar_refresh.png",
+                    Icon = "Icons/toolbar_refresh.png",
                     Command = ViewModel.ForceRefreshCommand
                 });
             }
@@ -54,6 +54,7 @@ namespace WoWTBGapp.Clients.UI
                 var itemCardDetails = new ItemCardDetailsPage();
 
                 itemCardDetails.Card = card;
+                itemCardDetails.LoadCounterImageData(ViewModel.requirementImageData);
                 App.Logger.TrackPage(AppPage.ItemCardDetails.ToString(), card.Name);
                 await NavigationService.PushAsync(Navigation, itemCardDetails);
 
@@ -67,6 +68,8 @@ namespace WoWTBGapp.Clients.UI
 
             if (ViewModel.Cards.Count == 0)
             {
+                //ViewModel.LoadRequirementImageDataCommand.Execute(true);
+
                 ViewModel.LoadCardsCommand.Execute(false);
             }
         }

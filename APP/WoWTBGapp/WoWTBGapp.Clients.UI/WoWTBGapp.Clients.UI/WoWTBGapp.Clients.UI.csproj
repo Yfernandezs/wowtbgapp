@@ -74,6 +74,10 @@
     <Compile Include="Pages\ItemCards\ItemCardDetailsPage.xaml.cs">
       <DependentUpon>ItemCardDetailsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Windows\MenuPageUWP.xaml.cs">
+      <DependentUpon>MenuPageUWP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Windows\RootPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pages\ItemCards\ItemCardsView.xaml.cs">
       <DependentUpon>ItemCardsView.xaml</DependentUpon>
@@ -236,6 +240,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls\LabelSection.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\Windows\MenuPageUWP.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

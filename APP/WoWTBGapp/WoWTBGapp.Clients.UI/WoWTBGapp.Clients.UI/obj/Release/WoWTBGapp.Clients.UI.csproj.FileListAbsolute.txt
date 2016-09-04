@@ -60,5 +60,11 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Cells.WoWTBGGroupHeaderView.xaml.g.cs
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\WoWTBGapp.DataAccess.Nodejs.dll
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\WoWTBGapp.DataAccess.Nodejs.pdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.dll.mdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Release\WoWTBGapp.Clients.UI.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Pages.ItemCards.ItemCardDetailsPage.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Controls.HeaderDivider.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Controls.SectionDivider.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Controls.FooterDivider.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Cells.ItemCardRequirementsCell.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Cells.ItemCardsListCell.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Controls.LabelSection.xaml.g.cs
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Release\WoWTBGapp.Clients.UI.Pages.Windows.MenuPageUWP.xaml.g.cs

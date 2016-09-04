@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-
 using WoWTBGapp.DataObjects;
 using WoWTBGapp.Utils;
 
@@ -22,10 +21,12 @@ namespace WoWTBGapp.Clients.Portable
             Title = "Item Cards";
         }
         
-        #region Properties
+#region Properties
 
         public ObservableRangeCollection<ItemCard> Cards { get; } = new ObservableRangeCollection<ItemCard>();
         public ObservableRangeCollection<Grouping<string, ItemCard>> CardsGrouped { get; } = new ObservableRangeCollection<Grouping<string, ItemCard>>();
+
+        public List<RequirementImageData> requirementImageData;
 
         ItemCard selectedCard;
 
@@ -62,15 +63,27 @@ namespace WoWTBGapp.Clients.Portable
             }
         }
 
-        #endregion Properties
+#endregion Properties
 
 
-        #region Sorting
+#region Sorting
 
 
         void SortCards()
         {
-            CardsGrouped.ReplaceRange(Cards.GroupByPrimaryType());
+            var cards = Cards.GroupByPrimaryType();
+            
+            if (Device.OS != TargetPlatform.Windows)
+            {
+                CardsGrouped.ReplaceRange(cards);
+            }
+            else
+            {
+                if (WinUIUpdater != null)
+                {
+                    WinUIUpdater.UpdateItemCardsPageList(CardsGrouped, cards);
+                }
+            }
         }
 
 
@@ -109,7 +122,7 @@ namespace WoWTBGapp.Clients.Portable
             try
             {
                 IsBusy = true;
-
+                
                 var itemCards = await DataAccessManager.ItemCardAccess.GetItemsAsync(force).ConfigureAwait(false);
 
                 Cards.ReplaceRange(itemCards);
@@ -129,7 +142,28 @@ namespace WoWTBGapp.Clients.Portable
             return true;
         }
 
-        #endregion Commands
+        ICommand loadRequirementImageDataCommand;
+        public ICommand LoadRequirementImageDataCommand =>
+            loadRequirementImageDataCommand ?? (loadRequirementImageDataCommand = new Command<bool>(async (f) => await ExecuteLoadRequirementImageDataAsync()));
+
+        async Task<bool> ExecuteLoadRequirementImageDataAsync(bool force = false)
+        {
+            try
+            {
+                var requirements = await DataAccessManager.RequirementImageAccess.GetItemsAsync(force).ConfigureAwait(false);
+
+                requirementImageData = new List<RequirementImageData>(requirements);
+            }
+            catch (Exception ex)
+            {
+                Logger.Report(ex, "Method", "ExecuteLoadRequirementImageDataAsync");
+                MessagingService.Current.SendMessage(MessageKeys.Error, ex);
+            }
+
+            return true;
+        }
+
+#endregion Commands
 
     }
 }

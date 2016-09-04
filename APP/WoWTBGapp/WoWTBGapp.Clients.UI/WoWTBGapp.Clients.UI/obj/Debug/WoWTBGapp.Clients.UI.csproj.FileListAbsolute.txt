@@ -67,5 +67,4 @@ C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.Cells.ItemCardRequirementsCell.xaml.g.cs
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.Cells.ItemCardsListCell.xaml.g.cs
 C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.Controls.LabelSection.xaml.g.cs
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.dll.mdb
-C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\bin\Debug\WoWTBGapp.Clients.UI.dll.mdb
+C:\Sergio\Proyectos\WOW BG\Proyecto\App Xamarin\APP\WoWTBGapp\WoWTBGapp.Clients.UI\WoWTBGapp.Clients.UI\obj\Debug\WoWTBGapp.Clients.UI.Pages.Windows.MenuPageUWP.xaml.g.cs

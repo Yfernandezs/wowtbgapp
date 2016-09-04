@@ -37,9 +37,11 @@
   <ItemGroup>
     <Compile Include="Interfaces\IPushNotifications.cs" />
     <Compile Include="Interfaces\IToast.cs" />
+    <Compile Include="Interfaces\IUpdateUIWindows.cs" />
     <Compile Include="Model\AppPage.cs" />
     <Compile Include="Model\DeepLinkPage.cs" />
     <Compile Include="Model\Extensions\ItemCardExtensions.cs" />
+    <Compile Include="Model\MenuItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FavoriteService.cs" />
     <Compile Include="ViewModel\ItemCardDetailsViewModel.cs" />

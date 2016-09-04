@@ -71,6 +71,9 @@ namespace WoWTBGapp.Clients.Portable
         protected IAccessManager DataAccessManager { get; } = DependencyService.Get<IAccessManager>();
         protected IToast Toast { get; } = DependencyService.Get<IToast>();
 
+        // Helper DependencyService to update data Bindings that require to run on the UI Thread on Windows.
+        protected IUpdateUIWindows WinUIUpdater { get; } = DependencyService.Get<IUpdateUIWindows>();
+
         //protected FavoriteService FavoriteService { get; } = DependencyService.Get<FavoriteService>();
 
 
